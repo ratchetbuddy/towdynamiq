@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get a Towing Quote</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Quote Form</h2>
+    <form method="post">
+        <label>Tow Type:</label>
+        <select name="tow_type" id="towType">
+            <option value="flatbed">Flatbed ($4/mile)</option>
+            <option value="hook">Hook & Chain ($3/mile)</option>
+        </select><br><br>
+
+        <label>Mileage:</label>
+        <input type="number" name="mileage" id="mileage" step="0.1"><br><br>
+
+        <label>Extra Services:</label><br>
+        <input type="checkbox" name="extra_services" value="winch"> Winching<br>
+        <input type="checkbox" name="extra_services" value="lockout"> Lockout<br>
+        <input type="checkbox" name="extra_services" value="fuel"> Fuel Delivery<br><br>
+
+        <button type="submit">Calculate Quote</button>
+    </form>
+
+    {% if result is not none %}
+        <h3>Estimated Quote: ${{ result }}</h3>
+    {% endif %}
+
+    <script>
+        const towType = document.getElementById('towType');
+        const mileageInput = document.getElementById('mileage');
+        const quoteDisplay = document.querySelector('h3');
+
+        function updateLiveQuote() {
+            const rate = towType.value === 'flatbed' ? 4 : 3;
+            const mileage = parseFloat(mileageInput.value) || 0;
+            const estimate = mileage * rate;
+            if (!isNaN(estimate) && quoteDisplay) {
+                quoteDisplay.textContent = "Estimated Quote: $" + estimate.toFixed(2);
+            }
+        }
+
+        towType.addEventListener('change', updateLiveQuote);
+        mileageInput.addEventListener('input', updateLiveQuote);
+    </script>
+</body>
+</html>
