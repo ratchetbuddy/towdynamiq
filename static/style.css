@@ -32,3 +32,17 @@ h1 {
   0%, 100% { opacity: 0; }
   50%      { opacity: 1; }
 }
+
+@media (max-width: 600px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .logo img {
+        max-width: 300px;
+    }
+}
