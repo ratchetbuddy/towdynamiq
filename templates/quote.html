@@ -1,49 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Get a Towing Quote</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8">
+  <title>Get a Tow Quote - Towdynamiq</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h2>Quote Form</h2>
-    <form method="post">
-        <label>Tow Type:</label>
-        <select name="tow_type" id="towType">
-            <option value="flatbed">Flatbed ($4/mile)</option>
-            <option value="hook">Hook & Chain ($3/mile)</option>
-        </select><br><br>
+  <div class="container">
+    <h1>Get a Tow Quote</h1>
 
-        <label>Mileage:</label>
-        <input type="number" name="mileage" id="mileage" step="0.1"><br><br>
+    <form id="quote-form">
+      <label for="tow_type">Tow Type:</label>
+      <select id="tow_type" name="tow_type" required>
+        <option value="Light Duty">Light Duty</option>
+        <option value="Medium Duty">Medium Duty</option>
+        <option value="Heavy Duty">Heavy Duty</option>
+      </select><br><br>
 
-        <label>Extra Services:</label><br>
-        <input type="checkbox" name="extra_services" value="winch"> Winching<br>
-        <input type="checkbox" name="extra_services" value="lockout"> Lockout<br>
-        <input type="checkbox" name="extra_services" value="fuel"> Fuel Delivery<br><br>
+      <label for="service">Service Type:</label>
+      <select id="service" name="service" required>
+        <option value="hook">Hook</option>
+        <option value="connex">Connex</option>
+      </select><br><br>
 
-        <button type="submit">Calculate Quote</button>
+      <label for="distance">Distance (miles):</label>
+      <input type="number" id="distance" name="distance" min="1" required><br><br>
+
+      <button type="submit">Calculate Quote</button>
     </form>
 
-    {% if result is not none %}
-        <h3>Estimated Quote: ${{ result }}</h3>
-    {% endif %}
+    <div id="quote-box">
+      <pre id="quote-result"></pre>
+    </div>
+  </div>
 
-    <script>
-        const towType = document.getElementById('towType');
-        const mileageInput = document.getElementById('mileage');
-        const quoteDisplay = document.querySelector('h3');
-
-        function updateLiveQuote() {
-            const rate = towType.value === 'flatbed' ? 4 : 3;
-            const mileage = parseFloat(mileageInput.value) || 0;
-            const estimate = mileage * rate;
-            if (!isNaN(estimate) && quoteDisplay) {
-                quoteDisplay.textContent = "Estimated Quote: $" + estimate.toFixed(2);
-            }
-        }
-
-        towType.addEventListener('change', updateLiveQuote);
-        mileageInput.addEventListener('input', updateLiveQuote);
-    </script>
+  <script src="{{ url_for('static', filename='quote.js') }}"></script>
 </body>
 </html>

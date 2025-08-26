@@ -19,6 +19,22 @@ h1 {
     margin-top: 0;
 }
 
+#quote-result {
+  font-family: monospace;
+  white-space: pre;
+}
+
+#quote-box {
+  display: inline-block;   /* makes it only as wide as content */
+  text-align: left;        /* aligns the text inside to the left */
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.container {
+  text-align: center; /* keeps heading + form centered */
+}
+
 .dots span {
   opacity: 0;
   animation: pulse 1s infinite;
