@@ -44,7 +44,7 @@ def calculate():
 
     col_width = 25
     breakdown = (
-        f"{'Duty:'.ljust(col_width)}{tow_type}\n"
+        f"{'Tow Type:'.ljust(col_width)}{tow_type}\n"
         f"{'Service:'.ljust(col_width)}{config['label']}\n"
         f"{'Hook Fee:'.ljust(col_width)}${hook}\n"
         f"{'Miles Charged:'.ljust(col_width)}{extra_miles} @ ${per_mile}/mile = ${mileage_cost}\n"
