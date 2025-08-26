@@ -1,0 +1,183 @@
+{
+  "Light Duty": {
+    "tow": {
+      "label": "Tow",
+      "rate": 125,
+      "mileage": 5,
+      "includes": 0
+    },
+    "connex": {
+      "label": "Connex",
+      "rate": 250,
+      "mileage": 5,
+      "includes": 0
+    },
+    "ld_equipment": {
+      "label": "LD Equipment",
+      "rate": 175,
+      "mileage": 5,
+      "includes": 0
+    },
+    "motorcycle": {
+      "label": "Motorcycle",
+      "rate": 175,
+      "mileage": 5,
+      "includes": 0
+    },
+    "tool_box": {
+      "label": "Tool Box",
+      "rate": 250,
+      "mileage": 5,
+      "includes": 0
+    },
+    "elec_car_dollies": {
+      "label": "Elec Car Dollies",
+      "rate": 375,
+      "mileage": 5,
+      "includes": 0
+    },
+    "ld_winch/working time": {
+      "label": "LD Winch/Working Time",
+      "rate": 175,
+      "mileage": 5,
+      "includes": 15
+    },
+    "ld_unlock": {
+      "label": "LD Unlock",
+      "rate": 85,
+      "mileage": 5,
+      "includes": 10
+    },
+    "jump_start": {
+      "label": "Jump Start",
+      "rate": 85,
+      "mileage": 5,
+      "includes": 10
+    },
+    "tire_change": {
+      "label": "Tire Change",
+      "rate": 85,
+      "mileage": 5,
+      "includes": 10
+    },
+    "hd_unlock": {
+      "label": "HD Unlock",
+      "rate": 175,
+      "mileage": 5,
+      "includes": 15
+    },
+    "indemnity": {
+      "label": "Indemnity",
+      "rate": 175,
+      "mileage": 0,
+      "includes": 0
+    },
+    "ld_swap": {
+      "label": "LD Swap",
+      "rate": 175,
+      "mileage": 0,
+      "includes": 0
+    },
+    "window_film": {
+      "label": "Window Film",
+      "rate": 0,
+      "mileage": 20,
+      "includes": 0
+    },
+    "skid_steer_winch_box_off_road": {
+      "label": "Skid Steer Winch Box (Off Road)",
+      "rate": 750,
+      "mileage": 0,
+      "includes": 0,
+      "comment": "change logic and adjust value later"
+    },
+    "race_ramps": {
+      "label": "Race Ramps",
+      "rate": 50,
+      "mileage": 0,
+      "includes": 0
+    },
+    "go_jacks": {
+      "label": "Go Jacks",
+      "rate": 100,
+      "mileage": 0,
+      "includes": 0
+    },
+    "wheel_skates_ball_joint_specialty_tire_tools": {
+      "label": "Wheel skates/Ball Joint/Specialty tire tools",
+      "rate": 50,
+      "mileage": 0,
+      "includes": 0
+    },
+    "z_wings_w_forklift": {
+      "label": "Z wings w/ forklift",
+      "rate": 250,
+      "mileage": 0,
+      "includes": 0
+    },
+    "ld_tow_pulling_a_trailer": {
+      "label": "LD tow pulling a trailer",
+      "rate": 50,
+      "mileage": 0,
+      "includes": 0
+    },
+    "ld_set_in": {
+      "label": "LD Set In",
+      "rate": 100,
+      "mileage": 0,
+      "includes": 0
+    },
+    "ld_gas_delivery": {
+      "label": "LD Gas Delivery",
+      "rate": 85,
+      "mileage": 0,
+      "includes": 0
+    },
+    "hd_fuel_delivery": {
+      "label": "HD Fuel Delivery",
+      "rate": 300,
+      "mileage": 0,
+      "includes": 0
+    },
+    "pti_irondale_to_irondale": {
+      "label": "PTI - Irondale to Irondale",
+      "rate": 250,
+      "mileage": 0,
+      "includes": 0
+    },
+    "forklift_pallet_jack_swap": {
+      "label": "Forklift/Pallet Jack swap",
+      "rate": 175,
+      "mileage": 4,
+      "includes": 0
+    },
+    "penske_ind_forklift_shop_to_shop_in_homewood": {
+      "label": "Penske IND - Forklift Shop to Shop in Homewood",
+      "rate": 250,
+      "mileage": 0,
+      "includes": 0
+    },
+    "penske_ind_to_stivers_ford": {
+      "label": "Penske IND to Stivers Ford",
+      "rate": 175,
+      "mileage": 0,
+      "includes": 0
+    }
+  },
+  "Medium Duty": {
+    "tow": {
+      "label": "Tow",
+      "rate": 175,
+      "mileage": 0,
+      "includes": 0
+    }
+  },
+  "Heavy Duty": {
+    "tow": {
+      "label": "Tow",
+      "rate": 175,
+      "mileage": 15,
+      "includes": 5
+    }
+  }
+}

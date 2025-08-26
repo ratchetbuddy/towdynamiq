@@ -19,21 +19,34 @@ h1 {
     margin-top: 0;
 }
 
-#quote-result {
-  font-family: monospace;
-  white-space: pre;
-}
-
-#quote-box {
-  display: inline-block;   /* makes it only as wide as content */
-  text-align: left;        /* aligns the text inside to the left */
-  margin-top: 20px;
-  font-weight: bold;
-}
-
 .container {
   text-align: center; /* keeps heading + form centered */
 }
+
+#quote-form {
+  text-align: left;
+  margin: 20px 0;
+  display: inline-block;   /* block inside wrapper */
+}
+
+#quote-result {
+  font-family: monospace;
+  white-space: pre;
+  font-weight: bold;
+  display: none; 
+  max-width: 400px;      /* keeps box narrow */
+  margin: 20px auto 0;   /* top 20px, auto left/right = center */
+  text-align: left;      /* keep receipt text aligned left */
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  border-radius: 8px;
+}
+
+#quote-result {
+
+}
+
 
 .dots span {
   opacity: 0;

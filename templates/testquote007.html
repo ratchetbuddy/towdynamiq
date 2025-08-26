@@ -12,16 +12,13 @@
     <form id="quote-form">
       <label for="tow_type">Tow Type:</label>
       <select id="tow_type" name="tow_type" required>
-        <option value="Light Duty">Light Duty</option>
-        <option value="Medium Duty">Medium Duty</option>
-        <option value="Heavy Duty">Heavy Duty</option>
+        {% for tow_type in pricing.keys() %}
+          <option value="{{ tow_type }}">{{ tow_type }}</option>
+        {% endfor %}
       </select><br><br>
 
-      <label for="service">Service Type:</label>
-      <select id="service" name="service" required>
-        <option value="hook">Hook</option>
-        <option value="connex">Connex</option>
-      </select><br><br>
+      <label for="service_type">Service Type:</label>
+      <select id="service_type" name="service_type" required></select><br><br>
 
       <label for="distance">Distance (miles):</label>
       <input type="number" id="distance" name="distance" min="1" required><br><br>
@@ -29,11 +26,15 @@
       <button type="submit">Calculate Quote</button>
     </form>
 
-    <div id="quote-box">
-      <pre id="quote-result"></pre>
-    </div>
+    <pre id="quote-result"></pre>
   </div>
 
+  <!-- Embed pricing data for JS to read -->
+  <script id="pricing-data" type="application/json">
+    {{ pricing | tojson }}
+  </script>
+
+  <!-- External JS -->
   <script src="{{ url_for('static', filename='quote.js') }}"></script>
 </body>
 </html>

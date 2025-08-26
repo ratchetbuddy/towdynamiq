@@ -1,32 +1,62 @@
-document.getElementById("quote-form").addEventListener("submit", async function(e) {
+// Read the pricing JSON that Flask embedded in quote.html
+const pricing = JSON.parse(document.getElementById("pricing-data").textContent);
+
+const towTypeSelect = document.getElementById("tow_type");
+const serviceSelect = document.getElementById("service_type");
+const form = document.getElementById("quote-form");
+const resultBox = document.getElementById("quote-result");
+
+// Update the Service dropdown when Tow Type changes
+function updateServices() {
+  const towType = towTypeSelect.value;
+  const services = pricing[towType];
+  serviceSelect.innerHTML = "";
+
+  serviceSelect.innerHTML = "";
+
+
+  Object.keys(services).forEach((key) => {
+    const option = document.createElement("option");
+    option.value = key;                   // backend key (e.g. "hook", "connex")
+    option.textContent = services[key].label; // user-friendly label
+    serviceSelect.appendChild(option);
+  });
+
+  if (serviceSelect.options.length > 0) {
+    serviceSelect.selectedIndex = 0;
+  }
+
+  console.log("Tow type:", towType, "Services loaded:", Object.keys(services));
+}
+
+// Listen for tow_type changes
+towTypeSelect.addEventListener("change", updateServices);
+
+// Initialize Service dropdown on page load
+updateServices();
+
+// Handle form submission
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const tow_type = document.getElementById("tow_type").value;
-  const service = document.getElementById("service").value;
-  const distance = document.getElementById("distance").value;
+  const payload = {
+    tow_type: towTypeSelect.value,
+    service: serviceSelect.value,
+    distance: document.getElementById("distance").value
+  };
 
   try {
-    const response = await fetch("/calculate", {
+    const res = await fetch("/calculate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ tow_type, service, distance })
+      body: JSON.stringify(payload)
     });
 
-    const result = await response.json();
-    const output = document.getElementById("quote-result");
-
-    if (result.error) {
-      output.innerText = "Error: " + result.error;
-    } else {
-      // ✅ use Python-preformatted breakdown
-      output.innerText = result.breakdown;
-    }
-
-    // ✅ ensure the box becomes visible
-    output.style.display = "inline-block";
-
+    const data = await res.json();
+    resultBox.textContent = data.breakdown || data.error || JSON.stringify(data, null, 2);
+    resultBox.style.display = "block";   // ✅ reveal the box after calculation
   } catch (err) {
-    document.getElementById("quote-result").innerText = "Error calculating quote.";
-    document.getElementById("quote-result").style.display = "inline-block";
+    resultBox.textContent = "⚠️ Error contacting server.";
+    console.error("Fetch error:", err);
   }
 });

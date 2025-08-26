@@ -1,51 +1,23 @@
 from flask import Flask, render_template, request, jsonify
 import os
+import json
 
 app = Flask(__name__)
 
-# pricing map with display labels
-pricing = {
-    "Light Duty": {
-        "hook": {
-            "label": "Hook",
-            "rate": 125,      # flat fee for hookup
-            "mileage": 5,     # per-mile rate after included miles
-            "includes": 0     # free miles included
-        },
-        "connex": {
-            "label": "Connex",
-            "rate": 250,
-            "mileage": 5,
-            "includes": 0
-        }
-    },
-    "Medium Duty": {
-        "hook": {
-            "label": "Hook",
-            "rate": 150,
-            "mileage": 10,
-            "includes": 0
-        }
-    },
-    "Heavy Duty": {
-        "hook": {
-            "label": "Hook",
-            "rate": 175,
-            "mileage": 15,
-            "includes": 5
-        }
-    }
-}
-
+# helper function to load pricing.json
+def load_pricing():
+    with open(os.path.join("data", "pricing.json"), "r") as f:
+        return json.load(f)
 
 @app.route("/")
 def home():
     return render_template("home.html")  # still "coming soon"
 
 
-@app.route("/quote")
-def quote():
-    return render_template("quote.html")
+@app.route("/testquote007")
+def testquote007():
+    pricing = load_pricing()
+    return render_template("testquote007.html", pricing=pricing)
 
 
 @app.route("/calculate", methods=["POST"])
@@ -54,6 +26,8 @@ def calculate():
     tow_type = data.get("tow_type")
     service_type = data.get("service")
     miles = float(data.get("distance", 0))
+
+    pricing = load_pricing()
 
     if tow_type not in pricing or service_type not in pricing[tow_type]:
         return jsonify({"error": "Invalid duty or service type"}), 400
@@ -68,8 +42,7 @@ def calculate():
     mileage_cost = extra_miles * per_mile
     total = hook + mileage_cost
 
-    # format output like a receipt
-    col_width = 22  # width for labels
+    col_width = 25
     breakdown = (
         f"{'Duty:'.ljust(col_width)}{tow_type}\n"
         f"{'Service:'.ljust(col_width)}{config['label']}\n"
@@ -89,7 +62,7 @@ def calculate():
         "mileage_cost": round(mileage_cost, 2),
         "includes": included,
         "total": round(total, 2),
-        "breakdown": breakdown   # 👈 send preformatted text
+        "breakdown": breakdown
     })
 
 if __name__ == '__main__':
