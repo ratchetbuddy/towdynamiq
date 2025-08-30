@@ -66,5 +66,5 @@ def calculate():
     })
 
 if __name__ == '__main__':
-    debug_mode = os.environ.get("FLASK_DEBUG", "false").lower() == "true"
+    debug_mode = os.environ.get("debug_mode", "false").lower() == "true"
     app.run(host="0.0.0.0", port=10000, debug=debug_mode)
