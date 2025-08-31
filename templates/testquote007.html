@@ -15,10 +15,11 @@
         {% for tow_type in pricing.keys() %}
           <option value="{{ tow_type }}">{{ tow_type }}</option>
         {% endfor %}
-      </select><br><br>
+      </select>
 
-      <label for="service_type">Service Type:</label>
-      <select id="service_type" name="service_type" required></select><br><br>
+      <div id="extra-services"></div>
+
+      <div id="service-limit-msg" style="color: red; font-size: 13px; margin-top: 5px;"></div>
 
       <label for="distance">Distance (miles):</label>
       <input type="number" id="distance" name="distance" min="1" required><br><br>

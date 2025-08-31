@@ -26,8 +26,66 @@ h1 {
 #quote-form {
   text-align: left;
   margin: 20px 0;
-  display: inline-block;   /* block inside wrapper */
+  display: inline-block;
+  max-width: 400px;        /* keeps form narrow & clean */
+  width: 100%;
 }
+
+
+#quote-form label {
+  font-weight: 500;
+  color: #002f44;
+}
+
+#quote-form input[type="number"] {
+  width: 100%;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#quote-form button[type="submit"] {
+  margin-top: 12px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #002f44;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#quote-form button[type="submit"]:hover {
+  background-color: #004d66;
+}
+
+
+#service-limit-msg {
+  display: none;               /* hidden by default */
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background: #fdecea;        /* soft red background */
+  color: #611a15;             /* deep red text */
+  border: 1px solid #f5c2c0;  /* light red border */
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: left;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#service-limit-msg.show {
+  display: block;
+}
+
+#service-limit-msg::before {
+  content: "⚠ ";               /* warning icon */
+  font-weight: bold;
+}
+
 
 #quote-result {
   font-family: monospace;
@@ -43,10 +101,44 @@ h1 {
   border-radius: 8px;
 }
 
-#quote-result {
-
+.service-block {
+  margin-bottom: 10px;      /* space between each block */
+  margin-top: 10px;
+  padding: 10px 12px;       /* internal spacing */
+  background: #f9f9f9;      /* subtle background */
+  border: 1px solid #ddd;   /* light border */
+  border-radius: 6px;       /* rounded corners */
 }
 
+.service-block label {
+  display: block;           /* put label on its own line */
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #002f44;
+}
+
+.service-block select {
+  width: 100%;              /* full width dropdown */
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.service-block button {
+  margin-top: 8px;          /* space above add button */
+  font-size: 13px;
+  padding: 10px 10px;
+  background-color: #002f44;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.service-block button:hover {
+  background-color: #004d66;
+}
 
 .dots span {
   opacity: 0;
