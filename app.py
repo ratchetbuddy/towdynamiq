@@ -81,6 +81,7 @@ def calculate():
         "breakdown": breakdown
     })
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     debug_mode = os.environ.get("debug_mode", "false").lower() == "true"
-    app.run(host="0.0.0.0", port=10000, debug=debug_mode)
+    port = int(os.environ.get("PORT", 10000))  # use Render's PORT if present, else fallback
+    app.run(host="0.0.0.0", port=port, debug=debug_mode)
