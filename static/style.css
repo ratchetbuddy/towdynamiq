@@ -45,6 +45,16 @@ h1 {
   border-radius: 4px;
 }
 
+.service-block select {
+  margin-top: 8px;   /* space above */
+  margin-bottom: 12px; /* space below */
+}
+
+.service-block label {
+  display: block;      /* label on its own line */
+  margin-top: 10px;
+}
+
 #quote-form button[type="submit"] {
   margin-top: 12px;
   padding: 8px 16px;
@@ -64,13 +74,14 @@ h1 {
 
 #service-limit-msg {
   display: none;               /* hidden by default */
+  margin-top: 10px;
   margin-bottom: 10px;
   padding: 8px 12px;
   background: #fdecea;        /* soft red background */
-  color: #611a15;             /* deep red text */
+  color: red;
   border: 1px solid #f5c2c0;  /* light red border */
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 13px;
   text-align: left;
   max-width: 400px;
   margin-left: auto;
@@ -101,45 +112,6 @@ h1 {
   border-radius: 8px;
 }
 
-.service-block {
-  margin-bottom: 10px;      /* space between each block */
-  margin-top: 10px;
-  padding: 10px 12px;       /* internal spacing */
-  background: #f9f9f9;      /* subtle background */
-  border: 1px solid #ddd;   /* light border */
-  border-radius: 6px;       /* rounded corners */
-}
-
-.service-block label {
-  display: block;           /* put label on its own line */
-  margin-bottom: 6px;
-  font-weight: 500;
-  color: #002f44;
-}
-
-.service-block select {
-  width: 100%;              /* full width dropdown */
-  padding: 6px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.service-block button {
-  margin-top: 8px;          /* space above add button */
-  font-size: 13px;
-  padding: 10px 10px;
-  background-color: #002f44;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.service-block button:hover {
-  background-color: #004d66;
-}
-
 .dots span {
   opacity: 0;
   animation: pulse 1s infinite;
@@ -167,3 +139,44 @@ h1 {
         max-width: 300px;
     }
 }
+
+
+/* 
+.service-block {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: #f9f9f9;      
+  border: 1px solid #ddd;   
+  border-radius: 6px;
+}
+
+.service-block label {
+  display: block;          
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #002f44;
+}
+
+.service-block select {
+  width: 100%;              
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.service-block button {
+  margin-top: 8px;         
+  font-size: 13px;
+  padding: 10px 10px;
+  background-color: #002f44;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.service-block button:hover {
+  background-color: #004d66;
+} */

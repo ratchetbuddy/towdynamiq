@@ -114,7 +114,7 @@ function updateServices() {
   console.log("Tow type:", towType, "Services loaded");
 }
 
-function createServiceBlock(isFirst = false) {
+function createServiceBlock(isFirst = false, defaultValue = null) {
   const wrapper = document.createElement("div");
   wrapper.classList.add("service-block");
 
@@ -127,22 +127,27 @@ function createServiceBlock(isFirst = false) {
 
   populateServices(select, towTypeSelect.value);
 
+  // ✅ Pre-select default value if provided
+  if (defaultValue && [...select.options].some(opt => opt.value === defaultValue)) {
+    select.value = defaultValue;
+  }
+
   // Add More button
   const addBtn = document.createElement("button");
   addBtn.type = "button";
   addBtn.textContent = "+ Add More Service";
   const msgBox = document.getElementById("service-limit-msg");
 
-addBtn.addEventListener("click", () => {
-  const currentBlocks = document.querySelectorAll(".service-block").length;
-  if (currentBlocks < 3) {
-    extraServicesDiv.appendChild(createServiceBlock());
-    msgBox.classList.remove("show");  // hide if under limit
-  } else {
-    msgBox.textContent = "You can only select up to 3 services.";
-    msgBox.classList.add("show");
-  }
-});
+  addBtn.addEventListener("click", () => {
+    const currentBlocks = document.querySelectorAll(".service-block").length;
+    if (currentBlocks < 3) {
+      extraServicesDiv.appendChild(createServiceBlock());
+      msgBox.classList.remove("show");  // hide if under limit
+    } else {
+      msgBox.textContent = "You can only select up to 3 services.";
+      msgBox.classList.add("show");
+    }
+  });
 
   // assemble
   wrapper.appendChild(label);
@@ -154,11 +159,24 @@ addBtn.addEventListener("click", () => {
   return wrapper;
 }
 
-
 const extraServicesDiv = document.getElementById("extra-services");
 
-// Initialize with the first block (main dropdown + button)
-extraServicesDiv.appendChild(createServiceBlock(true));
+const needTowRadios = document.querySelectorAll("input[name='need_tow']");
+needTowRadios.forEach(radio => {
+  radio.addEventListener("change", () => {
+    extraServicesDiv.innerHTML = ""; // clear old blocks
+    if (radio.value === "yes" && radio.checked) {
+      // ✅ Use "tow" because that's the option value in JSON
+      extraServicesDiv.appendChild(createServiceBlock(true, "tow"));
+    } else if (radio.value === "no" && radio.checked) {
+      extraServicesDiv.appendChild(createServiceBlock(true));
+    }
+  });
+});
+
+//Next two lines could be rendundant
+// // Initialize with the first block (main dropdown + button)
+// extraServicesDiv.appendChild(createServiceBlock(true));
 
 // Listen for tow_type changes
 towTypeSelect.addEventListener("change", updateServices);
