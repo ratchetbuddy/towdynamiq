@@ -55,7 +55,7 @@
       </select>
     </div><br>
 
-    <div>
+    <!-- <div>
       <label for="make_select">Make:</label>
       <select id="make_select" name="make">
         <option value="">-- Select Make --</option>
@@ -69,7 +69,30 @@
         <option value="">-- Select Model --</option>
       </select>
 
+    </div> -->
+
+
+    <div>
+      <!-- Make -->
+      <label for="make_input">Make:</label>
+      <input list="make_list" id="make_input" name="make" placeholder="Start typing a make...">
+
+      <datalist id="make_list">
+        {% for make_key, make_data in cars.items() %}
+          <option value="{{ make_key }}">{{ make_data.label }}</option>
+        {% endfor %}
+      </datalist>
+
+      <!-- Model -->
+      <label for="model_input">Model:</label>
+      <input list="model_list" id="model_input" name="model" placeholder="Start typing a model..." disabled>
+
+      <datalist id="model_list">
+        <!-- JS will populate this -->
+      </datalist>
     </div>
+
+
 
 
 

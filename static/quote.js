@@ -24,35 +24,57 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ---------------- Make / Model Dropdowns ----------------
   const cars = JSON.parse(document.getElementById("cars-data").textContent);
-  const makeSelect = document.getElementById("make_select");
-  const modelSelect = document.getElementById("model_select");
+  const makeInput = document.getElementById("make_input");
+  const modelInput = document.getElementById("model_input");
+  const modelList = document.getElementById("model_list");
 
-  function populateModels() {
-    const selectedMake = makeSelect.value;
 
-    // Reset models dropdown
-    modelSelect.innerHTML = '<option value="">-- Select Model --</option>';
-    modelSelect.disabled = true;
-
-    if (selectedMake && cars[selectedMake] && cars[selectedMake].models) {
-      const models = cars[selectedMake].models;
-
-      Object.keys(models).forEach(modelKey => {
-        const modelData = models[modelKey];
-        const opt = document.createElement("option");
-        opt.value = modelKey;
-        opt.textContent = modelData.label || modelKey;
-        modelSelect.appendChild(opt);
-      });
-
-      modelSelect.disabled = false;
-    }
-  }
-
-  makeSelect.addEventListener("change", populateModels);
-  populateModels(); // run on load
+// 🔄 Reset when user clicks into make input
+makeInput.addEventListener("focus", () => {
+  makeInput.value = "";
+  modelInput.value = "";
+  modelList.innerHTML = "";
+  modelInput.disabled = true;
 });
 
+// 🔄 Reset when user clicks into model input
+modelInput.addEventListener("focus", () => {
+  modelInput.value = "";
+});
+
+  function populateModels() {
+    const selectedMake = makeInput.value.trim();
+    console.log("Selected Make:", selectedMake);
+
+    // Reset models
+    modelList.innerHTML = "";
+    modelInput.value = "";
+    modelInput.disabled = true;
+
+    if (!selectedMake) return;
+
+    // Try direct key match first
+    let makeEntry = cars[selectedMake];
+    console.log("Direct lookup result:", makeEntry);
+
+    // If not found, search by label
+    if (!makeEntry) {
+      makeEntry = Object.values(cars).find(m => m.label === selectedMake);
+      console.log("Label lookup result:", makeEntry);
+    }
+
+    if (makeEntry && makeEntry.models) {
+      Object.keys(makeEntry.models).forEach(modelKey => {
+        const modelData = makeEntry.models[modelKey];
+        const opt = document.createElement("option");
+        opt.value = modelData.label || modelKey;
+        modelList.appendChild(opt);
+      });
+      modelInput.disabled = false;  // ✅ enable
+    }
+  }
+  makeInput.addEventListener("change", populateModels);
+});
 
 // Read the pricing JSON that Flask embedded in quote.html
 const pricing = JSON.parse(document.getElementById("pricing-data").textContent);
