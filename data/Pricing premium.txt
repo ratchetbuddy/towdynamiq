@@ -1,0 +1,71 @@
+Pricing Premium:
+
+1. Weather
+Rain - 10%
+ThunderStorm/Lightening - 15%
+Tornado/Hurricane/Hail - 25%
+Clear - 0%
+Low Visibility - 10%
+Flood - 20%
+Ice/Snow - 25%
+Extreme Heat - 15%
+
+2. Truck Utilization - % Value
+	- 80% - 5%
+	- 85% - 7%
+	- 90% - 10%
+	- 95% - 15%
+	- 100% - 20%
+3. Time of Day (Traffic)
+	- 7 to 8 - 10%
+	- 8 to 9 - 15%
+	- 9 to 10 - 12%
+	- 3 to 4 - 10%
+	- 4 to 5 - 15%
+	- 5 to 6
+
+4. Bucket Mileage Pricing
+	0 to 5  0%
+	5-7
+	8-10
+	11-14
+	15-20
+	21-26
+5. Holiday should be same as notion
+6. Sports Car
+	- 20% straight increase
+
+
+
+6. Location - THink more
+7. 
+
+
+4. Time of Day (Future Schedule)
+	- Reduce 10% for non contract customers
+5. Day of week (Future Schedule)
+	- 
+2. Holiday
+3. 
+
+Accidents Optioins
+Adjusters
+
+
+Need asana type project tracking
+
+Flow Type
+
+1. Need a tow? Yes/No
+2. Name and Call Back Number
+3. ARe you in a safe location? middle of highway or side of road?
+4. Vehicle info type of tow
+5. Location
+
+
+4. Vehicle Info?
+2. Call Back Number?
+3. What Kinda car?
+3. Pickup and Drop Location
+
+2. Weather?

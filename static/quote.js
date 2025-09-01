@@ -1,3 +1,59 @@
+document.addEventListener("DOMContentLoaded", () => {
+  // ---------------- Safe Location Radios ----------------
+  const vehicleRadios = document.querySelectorAll("input[name='vehicle_location']");
+  const unsafeLocationDiv = document.getElementById("unsafe_location");
+  const unsafeLocationSelect = document.getElementById("unsafe_location_select");
+
+  function toggleUnsafeLocation() {
+    const selected = document.querySelector("input[name='vehicle_location']:checked");
+    if (selected && selected.value === "no") {
+      unsafeLocationDiv.style.display = "block";
+      unsafeLocationSelect.setAttribute("required", "required");
+    } else {
+      unsafeLocationDiv.style.display = "none";
+      unsafeLocationSelect.removeAttribute("required");
+      unsafeLocationSelect.value = "";
+    }
+  }
+
+  vehicleRadios.forEach(radio => {
+    radio.addEventListener("change", toggleUnsafeLocation);
+  });
+  toggleUnsafeLocation(); // run on load
+
+
+  // ---------------- Make / Model Dropdowns ----------------
+  const cars = JSON.parse(document.getElementById("cars-data").textContent);
+  const makeSelect = document.getElementById("make_select");
+  const modelSelect = document.getElementById("model_select");
+
+  function populateModels() {
+    const selectedMake = makeSelect.value;
+
+    // Reset models dropdown
+    modelSelect.innerHTML = '<option value="">-- Select Model --</option>';
+    modelSelect.disabled = true;
+
+    if (selectedMake && cars[selectedMake] && cars[selectedMake].models) {
+      const models = cars[selectedMake].models;
+
+      Object.keys(models).forEach(modelKey => {
+        const modelData = models[modelKey];
+        const opt = document.createElement("option");
+        opt.value = modelKey;
+        opt.textContent = modelData.label || modelKey;
+        modelSelect.appendChild(opt);
+      });
+
+      modelSelect.disabled = false;
+    }
+  }
+
+  makeSelect.addEventListener("change", populateModels);
+  populateModels(); // run on load
+});
+
+
 // Read the pricing JSON that Flask embedded in quote.html
 const pricing = JSON.parse(document.getElementById("pricing-data").textContent);
 
@@ -21,6 +77,8 @@ function populateServices(selectEl, towType) {
     selectEl.selectedIndex = 0;
   }
 }
+
+
 
 // Update the Service dropdown when Tow Type changes
 function updateServices() {

@@ -9,6 +9,16 @@ def load_pricing():
     with open(os.path.join("data", "pricing.json"), "r") as f:
         return json.load(f)
 
+# helper function to load dynamic_modifiers.json
+def load_modifiers():
+    with open(os.path.join("data", "dynamic_modifiers.json"), "r") as f:
+        return json.load(f)
+
+# helper function to load cars.json
+def load_cars():
+    with open(os.path.join("data", "cars.json"), "r") as f:
+        return json.load(f)
+
 @app.route("/")
 def home():
     return render_template("home.html")  # still "coming soon"
@@ -17,7 +27,13 @@ def home():
 @app.route("/testquote007")
 def testquote007():
     pricing = load_pricing()
-    return render_template("testquote007.html", pricing=pricing)
+    dynamic_modifiers = load_modifiers()
+    cars = load_cars()
+    return render_template("testquote007.html",
+                           pricing=pricing,
+                           dynamic_modifiers=dynamic_modifiers,
+                           cars=cars)
+
 
 
 @app.route("/calculate", methods=["POST"])

@@ -1,0 +1,51 @@
+{
+  "vehicle_location": {
+    "Interstate": {
+      "label": "Interstate",
+      "lanes": {
+        "Left Shoulder": {
+          "label": "Left Shoulder",
+          "upcharge_percent": 15
+        },
+        "Right Shoulder": {
+          "label": "Right Shoulder",
+          "upcharge_percent": 0
+        },
+        "Median": {
+          "label": "Median",
+          "upcharge_percent": 20
+        }
+      }
+    },
+    "Highway": {
+      "label": "Highway",
+      "lanes": {
+        "Left Shoulder": {
+          "label": "Left Shoulder",
+          "upcharge_percent": 15
+        },
+        "Right Shoulder": {
+          "label": "Right Shoulder",
+          "upcharge_percent": 0
+        },
+        "Median": {
+          "label": "Median",
+          "upcharge_percent": 20
+        }
+      }
+    },
+    "Two Lane": {
+      "label": "Two Lane",
+      "lanes": {
+        "Side of road": {
+          "label": "Side of road",
+          "upcharge_percent": 0
+        },
+        "Middle of road": {
+          "label": "Middle of road",
+          "upcharge_percent": 20
+        }
+      }
+    }
+  }
+}
