@@ -119,8 +119,21 @@ function createServiceBlock(isFirst = false, defaultValue = null) {
   wrapper.classList.add("service-block");
   wrapper.style.position = "relative"; // for ❌ positioning
 
+  const blockCount = document.querySelectorAll(".service-block").length + 1;
+
+  let labelText;
+  if (blockCount === 1) {
+    labelText = "Service Type 1: Choose your first service";
+  } else if (blockCount === 2) {
+    labelText = "Service Type 2: Select another service";
+  } else if (blockCount === 3) {
+    labelText = "Service Type 2: Select final service";
+  } else {
+    labelText = "Service Type:";
+  }
+
   const label = document.createElement("label");
-  label.textContent = "Service Type:";
+  label.textContent = labelText;
 
   const select = document.createElement("select");
   select.name = "service_type";

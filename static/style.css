@@ -31,6 +31,13 @@ h1 {
   width: 100%;
 }
 
+#quote-form label[for="tow_type"] {
+  margin: 10px 0px;        /* space above */
+}
+
+#quote-form select[id="tow_type"] {
+  margin: 10px 0px;        /* space above */
+}
 
 #quote-form label {
   font-weight: 500;
@@ -46,11 +53,16 @@ h1 {
 }
 
 .service-block select {
-  margin-top: 10px;   /* space above */
+  margin-top: 8px;   /* space above */
   margin-bottom: 10px; /* space below */
 }
 
 .service-block label {
+  display: block;      /* label on its own line */
+  margin-top: 10px;
+}
+
+.service-block button {
   display: block;      /* label on its own line */
   margin-top: 10px;
 }
