@@ -25,7 +25,7 @@ h1 {
 
 #quote-form {
   text-align: left;
-  margin: 20px 0;
+  margin: 10px 0;
   display: inline-block;
   max-width: 400px;        /* keeps form narrow & clean */
   width: 100%;
@@ -46,8 +46,8 @@ h1 {
 }
 
 .service-block select {
-  margin-top: 8px;   /* space above */
-  margin-bottom: 12px; /* space below */
+  margin-top: 10px;   /* space above */
+  margin-bottom: 10px; /* space below */
 }
 
 .service-block label {
@@ -56,7 +56,7 @@ h1 {
 }
 
 #quote-form button[type="submit"] {
-  margin-top: 12px;
+  margin-top: 10px;
   padding: 8px 16px;
   font-size: 14px;
   font-weight: 600;
@@ -104,7 +104,7 @@ h1 {
   font-weight: bold;
   display: none; 
   max-width: 400px;      /* keeps box narrow */
-  margin: 20px auto 0;   /* top 20px, auto left/right = center */
+  margin: 10px auto 0;   /* top 20px, auto left/right = center */
   text-align: left;      /* keep receipt text aligned left */
   background: #fff;
   padding: 15px;

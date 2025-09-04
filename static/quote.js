@@ -117,6 +117,7 @@ function updateServices() {
 function createServiceBlock(isFirst = false, defaultValue = null) {
   const wrapper = document.createElement("div");
   wrapper.classList.add("service-block");
+  wrapper.style.position = "relative"; // for ❌ positioning
 
   const label = document.createElement("label");
   label.textContent = "Service Type:";
@@ -125,54 +126,99 @@ function createServiceBlock(isFirst = false, defaultValue = null) {
   select.name = "service_type";
   if (!isFirst) select.classList.add("extra-service");
 
-  populateServices(select, towTypeSelect.value);
+  // ✅ Only populate if towTypeSelect exists
+  if (typeof populateServices === "function" && typeof towTypeSelect !== "undefined") {
+    populateServices(select, towTypeSelect.value);
+  }
 
   // ✅ Pre-select default value if provided
   if (defaultValue && [...select.options].some(opt => opt.value === defaultValue)) {
     select.value = defaultValue;
   }
 
-  // Add More button
+    // Add More button wrapped in container
+  const addContainer = document.createElement("div");
+  addContainer.classList.add("add-container");
+
   const addBtn = document.createElement("button");
   addBtn.type = "button";
   addBtn.textContent = "+ Add More Service";
+  addBtn.classList.add("add-service"); // mark for easier query
+
+  addContainer.appendChild(addBtn);
+
   const msgBox = document.getElementById("service-limit-msg");
 
+
   addBtn.addEventListener("click", () => {
-    const currentBlocks = document.querySelectorAll(".service-block").length;
-    if (currentBlocks < 3) {
+    const currentBlocks = document.querySelectorAll(".service-block");
+
+    if (currentBlocks.length < 3) {
+      // hide ALL existing "+ Add" buttons
+      currentBlocks.forEach(block => {
+        const container = block.querySelector(".add-container");
+        if (container) container.style.display = "none";
+      });
+
+      // add new block → its own Add button will stay visible
       extraServicesDiv.appendChild(createServiceBlock());
-      msgBox.classList.remove("show");  // hide if under limit
+      msgBox.classList.remove("show");
     } else {
       msgBox.textContent = "You can only select up to 3 services.";
       msgBox.classList.add("show");
     }
   });
 
+  // ❌ Cross button only for extra services
+  if (!isFirst) {
+    const removeBtn = document.createElement("span");
+    removeBtn.textContent = "✖";
+    removeBtn.style.position = "absolute";
+    removeBtn.style.top = "5px";
+    removeBtn.style.right = "5px";
+    removeBtn.style.cursor = "pointer";
+    removeBtn.style.color = "red";
+    removeBtn.style.fontWeight = "bold";
+
+    removeBtn.addEventListener("click", () => {
+      wrapper.remove();
+      msgBox.classList.remove("show");
+
+      // ✅ After removal, make sure the LAST block shows its +Add button
+      const blocks = document.querySelectorAll(".service-block");
+      if (blocks.length > 0) {
+        const lastBlock = blocks[blocks.length - 1];
+        const lastContainer = lastBlock.querySelector(".add-container");
+        if (lastContainer) lastContainer.style.display = "block";
+      }
+    });
+
+    wrapper.appendChild(removeBtn);
+  }
+
   // assemble
   wrapper.appendChild(label);
   wrapper.appendChild(select);
-  wrapper.appendChild(document.createElement("br"));
-  wrapper.appendChild(addBtn);
-  wrapper.appendChild(document.createElement("br"));
+  wrapper.appendChild(addContainer);
 
   return wrapper;
 }
 
 const extraServicesDiv = document.getElementById("extra-services");
 
+// ---------------- Need Tow Radios ----------------
 const needTowRadios = document.querySelectorAll("input[name='need_tow']");
 needTowRadios.forEach(radio => {
   radio.addEventListener("change", () => {
     extraServicesDiv.innerHTML = ""; // clear old blocks
     if (radio.value === "yes" && radio.checked) {
-      // ✅ Use "tow" because that's the option value in JSON
       extraServicesDiv.appendChild(createServiceBlock(true, "tow"));
     } else if (radio.value === "no" && radio.checked) {
       extraServicesDiv.appendChild(createServiceBlock(true));
     }
   });
 });
+
 
 //Next two lines could be rendundant
 // // Initialize with the first block (main dropdown + button)
