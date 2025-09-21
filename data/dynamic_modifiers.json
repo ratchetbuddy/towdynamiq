@@ -3,49 +3,64 @@
     "Interstate": {
       "label": "Interstate",
       "lanes": {
-        "Left Shoulder": {
-          "label": "Left Shoulder",
-          "upcharge_percent": 15
-        },
-        "Right Shoulder": {
-          "label": "Right Shoulder",
-          "upcharge_percent": 0
-        },
-        "Median": {
-          "label": "Median",
-          "upcharge_percent": 20
-        }
+        "Left Shoulder": { "label": "Left Shoulder", "upcharge": 0.15 },
+        "Right Shoulder": { "label": "Right Shoulder", "upcharge": 0.0 },
+        "Median": { "label": "Median", "upcharge": 0.20 }
       }
     },
     "Highway": {
       "label": "Highway",
       "lanes": {
-        "Left Shoulder": {
-          "label": "Left Shoulder",
-          "upcharge_percent": 15
-        },
-        "Right Shoulder": {
-          "label": "Right Shoulder",
-          "upcharge_percent": 0
-        },
-        "Median": {
-          "label": "Median",
-          "upcharge_percent": 20
-        }
+        "Left Shoulder": { "label": "Left Shoulder", "upcharge": 0.15 },
+        "Right Shoulder": { "label": "Right Shoulder", "upcharge": 0.0 },
+        "Median": { "label": "Median", "upcharge": 0.20 }
       }
     },
     "Two Lane": {
       "label": "Two Lane",
       "lanes": {
-        "Side of road": {
-          "label": "Side of road",
-          "upcharge_percent": 0
-        },
-        "Middle of road": {
-          "label": "Middle of road",
-          "upcharge_percent": 20
-        }
+        "Side of road": { "label": "Side of road", "upcharge": 0.0 },
+        "Middle of road": { "label": "Middle of road", "upcharge": 0.20 }
       }
+    }
+  },
+
+  "weather": {
+    "rain": { "label": "Rain", "upcharge": 0.10 },
+    "thunderstorm_lightening": { "label": "ThunderStorm/Lightening", "upcharge": 0.15 },
+    "tornado_hurricane_hail": { "label": "Tornado/Hurricane/Hail", "upcharge": 0.25 },
+    "clear": { "label": "Clear", "upcharge": 0.0 },
+    "low_visibility": { "label": "Low Visibility", "upcharge": 0.10 },
+    "flood": { "label": "Flood", "upcharge": 0.20 },
+    "ice_snow": { "label": "Ice/Snow", "upcharge": 0.25 },
+    "extreme_heat": { "label": "Extreme Heat", "upcharge": 0.15 }
+  },
+
+  "truck_utilization": {
+    "80%": { "threshold": 80, "upcharge": 0.05 },
+    "85%": { "threshold": 85, "upcharge": 0.07 },
+    "90%": { "threshold": 90, "upcharge": 0.10 },
+    "95%": { "threshold": 95, "upcharge": 0.15 },
+    "100%": { "threshold": 100, "upcharge": 0.20 }
+  },
+
+  "time_of_day": {
+    "07:00-08:00": { "start": "07:00", "end": "08:00", "upcharge": 0.10 },
+    "08:00-09:00": { "start": "08:00", "end": "09:00", "upcharge": 0.15 },
+    "09:00-10:00": { "start": "09:00", "end": "10:00", "upcharge": 0.12 },
+    "15:00-16:00": { "start": "15:00", "end": "16:00", "upcharge": 0.10 },
+    "16:00-17:00": { "start": "16:00", "end": "17:00", "upcharge": 0.15 },
+    "17:00-18:00": { "start": "17:00", "end": "18:00", "upcharge": 0.0 }
+  },
+
+  "bucket_mileage_pricing": {
+    "mode": "pattern",
+    "pattern": {
+      "start": 6,
+      "first_step": 2,
+      "step_growth": 1,
+      "max_miles": 1000,
+      "free_range": { "min": 0, "max": 5, "billable_miles": 0 }
     }
   }
 }

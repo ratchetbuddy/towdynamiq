@@ -9,6 +9,10 @@
   <div class="container">
     <h1>Get a Tow Quote</h1>
 
+    <div id="current-datetime" style="font-weight: bold; margin-bottom: 15px;">
+      <!-- JavaScript will update this -->
+    </div>
+
     <form id="quote-form">
       
     <fieldset id="need_tow">
@@ -85,10 +89,38 @@
       
       <div id="extra-services"></div><br>
 
-      <div id="service-limit-msg"></div>
+      <div id="service-limit-msg"></div><br>
 
-      <label for="distance">Distance (miles):</label>
-      <input type="number" id="distance" name="distance" min="1" required><br>
+      <div id = "distance">
+        <label for="distance">Distance (miles):</label>
+        <input type="number" id="distance" name="distance" min="1" required>
+      </div><br>
+
+      <div id="quote_type">
+        <label for="quote_type_select">Quote Type:</label>
+        <select id="quote_type_select" name="quote_type" required>
+          <option value="" disabled selected>-- Select Requestor Type --</option>
+          <option value="customer">Customer</option>
+          <option value="private">Private</option>
+        </select>
+      </div><br>
+
+
+      <div id="weather">
+        <label for="weather_select">Weather Condition:</label>
+        <select id="weather_select" name="weather" required>
+          <option value="" disabled selected>-- Select weather condition --</option>
+          {% for key, weather_data in dynamic_modifiers.weather.items() %}
+            <option value="{{ key }}">{{ weather_data.label }}</option>
+          {% endfor %}
+        </select>
+      </div><br>
+
+      <div id = "truck_utilization">
+        <label for="truck_utilization">Enter Truck Utilizatoin (%):</label>
+        <input type="number" id="truck_utilization" name="truck_utilization" min="1" required>
+      </div><br>
+
 
       <button type="submit">Calculate Quote</button>
     </form>
