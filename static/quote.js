@@ -56,6 +56,20 @@ updateDateTime();
   toggleUnsafeLocation(); // Run once on page load, to set initial state
 
 
+  const unsafeLocationDisplay = document.getElementById("unsafe_location_select");
+
+  unsafeLocationDisplay.addEventListener("change", () => {
+    const selected = unsafeLocationDisplay.options[unsafeLocationDisplay.selectedIndex];
+    const roadType = selected.closest("optgroup")?.label || "";
+    const laneLabel = selected.textContent;
+
+    if (roadType && laneLabel) {
+      // Update visible text inside the <option>
+      selected.textContent = `${roadType} – ${laneLabel}`;
+    }
+  });
+
+
   // ---------------- Make / Model Dropdowns ----------------
   // Parse car make/model data from JSON embedded in the HTML
   const cars = JSON.parse(document.getElementById("cars-data").textContent);
@@ -79,7 +93,6 @@ updateDateTime();
   // Populate model dropdown once a make has been chosen
   function populateModels() {
     const selectedMake = makeInput.value.trim();
-    console.log("Selected Make:", selectedMake);
 
     // Always reset the model list first
     modelList.innerHTML = "";
@@ -90,12 +103,10 @@ updateDateTime();
 
     // Try direct dictionary key lookup first (cars["Ford"])
     let makeEntry = cars[selectedMake];
-    console.log("Direct lookup result:", makeEntry);
 
     // If not found by key, try to match by label instead
     if (!makeEntry) {
       makeEntry = Object.values(cars).find(m => m.label === selectedMake);
-      console.log("Label lookup result:", makeEntry);
     }
 
     // If we found a valid make, populate the models
@@ -112,7 +123,6 @@ updateDateTime();
 
   // Re-populate models whenever "make" changes
   makeInput.addEventListener("change", populateModels);
-});
 
 
 // ---------------- Pricing + Services ----------------
@@ -152,7 +162,6 @@ function updateServices() {
     populateServices(sel, towType);
   });
 
-  console.log("Tow type:", towType, "Services loaded");
 }
 
 
@@ -163,7 +172,6 @@ function createServiceBlock(isFirst = false, defaultValue = null) {
   wrapper.classList.add("service-block");
   wrapper.style.position = "relative"; // allow absolute positioning of ❌ button
 
-  console.log(wrapper)
 
   const blockCount = document.querySelectorAll(".service-block").length + 1;
 
@@ -306,12 +314,37 @@ form.addEventListener("submit", async (e) => {
     if (sel.value) services.push(sel.value);
   });
 
+  // ✅ Get safe/unsafe vehicle location
+  const vehicle_location = document.querySelector("input[name='vehicle_location']:checked")?.value;
+  let unsafe_location = null;
+
+  if (vehicle_location === "no") {
+    const sel = document.getElementById("unsafe_location_select");
+    const lane = sel.value || null;
+    const roadType = sel.options[sel.selectedIndex]?.dataset.roadType || null;
+
+    if (lane && roadType) {
+      unsafe_location = { road_type: roadType, lane: lane };
+    }
+  }
+
   // Build JSON payload similar to a Python dict
   const payload = {
+    need_tow: document.querySelector("input[name='need_tow']:checked")?.value || null,
+    is_accident: document.querySelector("input[name='is_accident']:checked")?.value || null,
+    vehicle_location: document.querySelector("input[name='vehicle_location']:checked")?.value || null,
+    unsafe_location: unsafe_location,
+    make: document.getElementById("make_input").value || null,
+    model: document.getElementById("model_input").value || null,
     tow_type: towTypeSelect.value,
     services: services,
-    distance: document.getElementById("distance").value,
+    distance: document.querySelector("input[name='distance']").value,
+    quote_type: document.getElementById("quote_type_select").value,
+    weather: document.getElementById("weather_select").value,
+    truck_utilization: document.getElementById("truck_utilization_input").value,
   };
+
+  console.log(payload)
 
   try {
     // POST to backend Flask route /calculate
@@ -329,4 +362,5 @@ form.addEventListener("submit", async (e) => {
     resultBox.textContent = "⚠️ Error contacting server.";
     console.error("Fetch error:", err);
   }
+});
 });

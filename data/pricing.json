@@ -4,7 +4,11 @@
       "label": "Tow",
       "rate": 125,
       "mileage": 5,
-      "includes": 0
+      "includes": 0,
+      "accident": {
+        "hook": 250,
+        "mileage": 5
+      }
     },
     "connex": {
       "label": "Connex",
