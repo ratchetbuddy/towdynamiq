@@ -5,20 +5,10 @@ from collections import OrderedDict
 
 app = Flask(__name__)
 
-# helper function to load pricing.json
-def load_pricing():
-    with open(os.path.join("data", "pricing.json"), "r") as f:
+def load_json(filename):
+    with open(os.path.join("data", filename), "r") as f:
         return json.load(f)
 
-# helper function to load dynamic_modifiers.json
-def load_modifiers():
-    with open(os.path.join("data", "dynamic_modifiers.json"), "r") as f:
-        return json.load(f)
-
-# helper function to load cars.json
-def load_cars():
-    with open(os.path.join("data", "cars.json"), "r") as f:
-        return json.load(f)
 
 def get_billable_miles(actual_miles: int, dynamic_modifiers: dict) -> int:
     """
@@ -27,7 +17,7 @@ def get_billable_miles(actual_miles: int, dynamic_modifiers: dict) -> int:
     mode = dynamic_modifiers["bucket_mileage_pricing"]["mode"]
 
     if mode == "tiers":
-        for rng, values in config["tiers"].items():
+        for rng, values in dynamic_modifiers["bucket_mileage_pricing"]["tiers"].items():
             start, end = map(int, rng.split("-"))
             if start <= actual_miles <= end:
                 return values["billable_miles"]
@@ -62,9 +52,9 @@ def home():
 
 @app.route("/testquote007")
 def testquote007():
-    pricing = load_pricing()
-    dynamic_modifiers = load_modifiers()
-    cars = load_cars()
+    pricing = load_json("pricing.json")
+    dynamic_modifiers = load_json("dynamic_modifiers.json")
+    cars = load_json("cars.json")
     return render_template("testquote007.html",
                            pricing=pricing,
                            dynamic_modifiers=dynamic_modifiers,
@@ -80,8 +70,8 @@ def calculate():
     miles = float(data.get("distance", 0))
     is_accident = data.get("is_accident") == "yes"  # True/False
 
-    pricing = load_pricing()
-    dynamic_modifiers = load_modifiers()
+    pricing = load_json("pricing.json")
+    dynamic_modifiers = load_json("dynamic_modifiers.json")
 
     if tow_type not in pricing:
         return jsonify({"error": f"Invalid tow type: {tow_type}"}), 400

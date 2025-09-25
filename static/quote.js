@@ -355,6 +355,8 @@ form.addEventListener("submit", async (e) => {
     });
 
     const data = await res.json();
+
+    console.log(data)
     resultBox.textContent =
       data.breakdown || data.error || JSON.stringify(data, null, 2);
     resultBox.style.display = "block"; // Show the result box
