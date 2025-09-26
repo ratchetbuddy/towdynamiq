@@ -124,6 +124,40 @@ updateDateTime();
   // Re-populate models whenever "make" changes
   makeInput.addEventListener("change", populateModels);
 
+/**
+ * Dynamic Truck Label Updater
+ * ---------------------------
+ * This code updates the "How many trucks are available?" label
+ * to include the selected tow type (e.g., "Light Duty", "Heavy Duty").
+ * It runs once on page load and again whenever the tow type changes.
+ */
+
+// Grab the tow type <select> element from the form
+const towTypeSelectForLabel = document.getElementById("tow_type");
+
+// Grab the label element for the truck utilization input
+const truckLabel = document.getElementById("truck_utilization_label");
+
+// Function that updates the label text based on the selected tow type
+function updateTruckLabel() {
+  const towType = towTypeSelectForLabel.value; // get the currently selected tow type
+
+  if (towType) {
+    // If a tow type is selected, customize the label with it
+    truckLabel.textContent = `How many ${towType} trucks are available?`;
+  } else {
+    // If no tow type is selected, fall back to the default label
+    truckLabel.textContent = "How many trucks are available?";
+  }
+}
+
+// Run the function once right away so the label matches the default tow type on page load
+updateTruckLabel();
+
+// Attach an event listener so that every time the tow type changes,
+// the truck label is updated dynamically
+towTypeSelectForLabel.addEventListener("change", updateTruckLabel);
+
 
 // ---------------- Pricing + Services ----------------
 // Parse pricing JSON from hidden HTML element
