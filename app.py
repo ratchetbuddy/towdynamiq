@@ -113,7 +113,7 @@ def calculate():
             "per_mile": per_mile,
             "mileage_cost": round(mileage_cost, 2),
             "includes": included,
-            "subtotal": round(subtotal, 2),
+            # "subtotal": round(subtotal, 2),
             "accident_applied": is_accident and "accident" in config
         })
 
