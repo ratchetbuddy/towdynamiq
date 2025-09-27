@@ -1,9 +1,100 @@
 from flask import Flask, render_template, request, jsonify, Response
 import os
 import json
+import requests
 from collections import OrderedDict
 
 app = Flask(__name__)
+
+
+API_KEY = os.environ.get("GOOGLE_MAPS_API_KEY", "YOUR_API_KEY_HERE")
+
+print("Google Maps API Key loaded:", bool(API_KEY))   # ✅ True if loaded
+print("Value (first 10 chars):", API_KEY[:10] if API_KEY else "NOT SET")
+
+def get_distance(origin, destination):
+    url = "https://maps.googleapis.com/maps/api/distancematrix/json"
+    params = {
+        "origins": origin,
+        "destinations": destination,
+        "key": API_KEY,
+        "units": "imperial"  # miles
+    }
+    response = requests.get(url, params=params)
+    data = response.json()
+
+    if data["status"] != "OK":
+        raise Exception(f"Error from API: {data}")
+
+    element = data["rows"][0]["elements"][0]
+    if element["status"] != "OK":
+        raise Exception(f"Error in element: {element}")
+
+    # Distance
+    distance_value = element["distance"]["value"]  # meters
+    miles = distance_value / 1609.34
+
+    # Round consistently to 1 decimal place
+    miles_rounded = round(miles, 1)                # numeric
+    distance_text = f"{miles_rounded:.1f} mi"      # string with 1 decimal
+
+    # Normalized addresses (Google's best guess)
+    resolved_origin = data.get("origin_addresses", [""])[0]
+    resolved_destination = data.get("destination_addresses", [""])[0]
+
+    return {
+        "miles": miles_rounded,                # e.g. 21.2
+        "distance_text": distance_text,        # e.g. "21.2 mi"
+        "resolved_origin": resolved_origin,
+        "resolved_destination": resolved_destination
+    }
+
+
+def format_breakdown(response_json):
+    col_width = 25
+    lines = []
+
+    # Header
+    lines.append(f"{'Tow Type:'.ljust(col_width)}{response_json['tow_type']}")
+    # lines.append(f"{'Original Pickup:'.ljust(col_width)}{response_json.get('source', '')}")
+    # lines.append(f"{'Pickup - TowDynamiq AI:'.ljust(col_width)}{response_json.get('source_resolved', '')}")
+    # lines.append(f"{'Original Drop:'.ljust(col_width)}{response_json.get('destination', '')}")
+    # lines.append(f"{'Drop - TowDynamiq AI:'.ljust(col_width)}{response_json.get('destination_resolved', '')}")
+    lines.append(f"{'Distance:'.ljust(col_width)}{response_json['distance_text']}")
+    lines.append("-" * (col_width * 2))
+
+    # Services (numbered)
+    for i, service in enumerate(response_json["services"], start=1):
+        lines.append(f"Service {i}:".ljust(col_width) + f"{service['service']}")
+        lines.append(f"{'Hook Fee:'.ljust(col_width)}${service['hook']}")
+        lines.append(
+            f"{'Miles Charged:'.ljust(col_width)}"
+            f"{service['mileage']} @ ${service['per_mile']}/mile = ${service['mileage_cost']}"
+        )
+        lines.append(f"{'Included Miles:'.ljust(col_width)}{service['includes']}")
+        lines.append("-" * (col_width * 2))
+
+    # Upcharges (only show if any > 0)
+    non_zero_upcharges = {k: v for k, v in response_json["upcharges"].items() if v > 0}
+    if non_zero_upcharges:
+        lines.append("")
+        lines.append("Upcharges:")
+        for k, v in non_zero_upcharges.items():
+            pct = f"{round(v * 100, 1)}%"
+            label = k.replace("_", " ").title() + ":"
+            lines.append(f"{label.ljust(col_width)}{pct}")
+        lines.append("-" * (col_width * 2))
+
+    # Totals
+    lines.append(f"{'Standard Quote:'.ljust(col_width)}${response_json['standard_quote']}")
+    lines.append(f"{'Combined Upcharge %:'.ljust(col_width)}{response_json['combined_upcharge_percentage']*100}%")
+    lines.append(f"{'Upcharge Amount:'.ljust(col_width)}${response_json['upcharge_amount']}")
+    lines.append(f"{'TowDynamiq Quote:'.ljust(col_width)}${response_json['todynamiq_quote']}")
+
+    return "\n".join(lines)
+
+
+
 
 def load_json(filename):
     with open(os.path.join("data", filename), "r") as f:
@@ -69,8 +160,22 @@ def calculate():
 
     tow_type = data.get("tow_type")
     services = data.get("services", [])
-    miles = float(data.get("distance", 0))
     is_accident = data.get("is_accident") == "yes"
+    source = data.get("source")
+    destination = data.get("destination")
+
+    if not source or not destination:
+        return jsonify({"error": "Source and destination are required"}), 400
+
+    try:
+        distance_info = get_distance(source, destination)
+        miles = distance_info["miles"]
+        distance_text = distance_info["distance_text"]
+        # Overwrite with Google's resolved addresses
+        resolved_source = distance_info["resolved_origin"]
+        resolved_destination = distance_info["resolved_destination"]
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
     make = data.get("make")
     model = data.get("model")
@@ -102,20 +207,38 @@ def calculate():
             per_mile = config["accident"].get("mileage", per_mile)
             included = config["accident"].get("includes", included)
 
-        mileage = max(0, get_billable_miles(miles, dynamic_modifiers) - included)
-        mileage_cost = mileage * per_mile
+        # mileage = max(0, get_billable_miles(miles, dynamic_modifiers) - included)
+        # mileage_cost = mileage * per_mile
+        # subtotal = hook + mileage_cost
+
+        # breakdowns.append({
+        #     "service": config["label"],
+        #     "hook": hook,
+        #     "mileage": mileage,
+        #     "per_mile": per_mile,
+        #     "mileage_cost": round(mileage_cost, 2),
+        #     "includes": included,
+        #     # "subtotal": round(subtotal, 2),
+        #     "accident_applied": is_accident and "accident" in config
+        # })
+        # get the global billable miles once (outside loop)
+        billable_miles = get_billable_miles(miles, dynamic_modifiers)
+
+        # then inside loop use this:
+        extra_miles = max(0, billable_miles - included)
+        mileage_cost = round(extra_miles * per_mile, 2)
         subtotal = hook + mileage_cost
 
         breakdowns.append({
             "service": config["label"],
             "hook": hook,
-            "mileage": mileage,
+            "mileage": extra_miles,   # 👈 now reflects per-service miles after included
             "per_mile": per_mile,
-            "mileage_cost": round(mileage_cost, 2),
+            "mileage_cost": mileage_cost,
             "includes": included,
-            # "subtotal": round(subtotal, 2),
             "accident_applied": is_accident and "accident" in config
         })
+
 
         total += subtotal
 
@@ -171,13 +294,30 @@ def calculate():
     # ✅ RESPONSE
     # -------------------------
     response = OrderedDict()
+    # User input
+    response["source"] = source
+    response["destination"] = destination
+    # Google resolved addresses
+    response["source_resolved"] = resolved_source
+    response["destination_resolved"] = resolved_destination
+
+    # Distance
+    response["distance_miles"] = miles
+    response["distance_text"] = distance_text
+
+    # Tow info
     response["tow_type"] = tow_type
     response["services"] = breakdowns
+
+    # Pricing
     response["standard_quote"] = round(total, 2)
     response["upcharges"] = {k: round(v, 3) for k, v in upcharges.items()}
     response["combined_upcharge_percentage"] = round(combined_upcharge, 3)
     response["upcharge_amount"] = upcharge_amount
     response["todynamiq_quote"] = final_total
+
+    # Breakdown string
+    response["breakdown"] = format_breakdown(response)
 
     return Response(json.dumps(response), mimetype="application/json")
 

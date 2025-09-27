@@ -115,7 +115,7 @@ h1 {
   white-space: pre;
   font-weight: bold;
   display: none; 
-  max-width: 400px;      /* keeps box narrow */
+  max-width: 500px;      /* keeps box narrow */
   margin: 10px auto 0;   /* top 20px, auto left/right = center */
   text-align: left;      /* keep receipt text aligned left */
   background: #fff;
