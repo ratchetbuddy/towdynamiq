@@ -321,6 +321,7 @@ form.addEventListener("submit", async (e) => {
   });
 
   // ✅ Get vehicle lane position
+  
 
   const sel = document.getElementById("unsafe_location_select");
   const lane = sel.value || null;
@@ -330,6 +331,13 @@ form.addEventListener("submit", async (e) => {
   if (lane && roadType) {
     unsafe_location = { road_type: roadType, lane: lane };
   }
+
+  // Get client local time + timezone offset
+
+  const submitTime = new Date();
+  payload.local_time = submitTime.toISOString();              // e.g. "2025-09-27T02:57:00.000Z"
+  payload.timezone_offset = submitTime.getTimezoneOffset();   // minutes difference from UTC
+
 
   // Build JSON payload similar to a Python dict
   const payload = {
@@ -345,6 +353,8 @@ form.addEventListener("submit", async (e) => {
     quote_type: document.getElementById("quote_type_select").value,
     weather: document.getElementById("weather_select").value,
     truck_utilization: document.getElementById("truck_utilization_input").value,
+    local_time: submitTime.toISOString(),
+    timezone_offset: submitTime.getTimezoneOffset()
   };
 
   console.log(payload)

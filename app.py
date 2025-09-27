@@ -56,9 +56,9 @@ def format_breakdown(response_json):
 
     # Header
     lines.append(f"{'Tow Type:'.ljust(col_width)}{response_json['tow_type']}")
-    # lines.append(f"{'Original Pickup:'.ljust(col_width)}{response_json.get('source', '')}")
+    lines.append(f"{'Original Pickup:'.ljust(col_width)}{response_json.get('source', '')}")
     # lines.append(f"{'Pickup - TowDynamiq AI:'.ljust(col_width)}{response_json.get('source_resolved', '')}")
-    # lines.append(f"{'Original Drop:'.ljust(col_width)}{response_json.get('destination', '')}")
+    lines.append(f"{'Original Drop:'.ljust(col_width)}{response_json.get('destination', '')}")
     # lines.append(f"{'Drop - TowDynamiq AI:'.ljust(col_width)}{response_json.get('destination_resolved', '')}")
     lines.append(f"{'Distance:'.ljust(col_width)}{response_json['distance_text']}")
     lines.append("-" * (col_width * 2))
@@ -275,7 +275,20 @@ def calculate():
         upcharges["weather"] = dynamic_modifiers["weather"][weather].get("upcharge", 0.0)
 
     # --- Time of day ---
-    now = datetime.now().time()  # server local time
+    local_time_str = data.get("local_time")
+    tz_offset = data.get("timezone_offset")
+
+    if local_time_str and tz_offset is not None:
+        try:
+            # Parse the ISO string from the browser (e.g. "2025-09-27T02:57:00.000Z")
+            client_time = datetime.fromisoformat(local_time_str.replace("Z", "+00:00"))
+            now = client_time.time()
+        except Exception:
+            now = datetime.utcnow().time()
+    else:
+        # Fallback: if frontend didn’t send local time
+        now = datetime.utcnow().time()
+
     for slot, slot_data in dynamic_modifiers.get("time_of_day", {}).items():
         start = datetime.strptime(slot_data["start"], "%H:%M").time()
         end = datetime.strptime(slot_data["end"], "%H:%M").time()
