@@ -35,19 +35,9 @@
       </label>
     </fieldset><br>
 
-    <fieldset id="vehicle_location">
-      <legend>Is the vehicle currently in a safe location?</legend>
-      <label>
-        <input type="radio" name="vehicle_location" value="yes" required> Yes
-      </label>
-      <label>
-        <input type="radio" name="vehicle_location" value="no"> No
-      </label>
-    </fieldset><br>
-
-    <div id="unsafe_location" style="display:none;">
-      <label for="unsafe_location_select">Exact vehicle location:</label>
-      <select id="unsafe_location_select" name="unsafe_location">
+    <div id="unsafe_location">
+      <label for="unsafe_location_select">Vehicle lane location:</label>
+      <select id="unsafe_location_select" name="unsafe_location" required>
         <option value="">-- Select Location --</option>
         {% for road_type, road_data in dynamic_modifiers.vehicle_location.items() %}
           <optgroup label="{{ road_data.label }}">
@@ -60,6 +50,7 @@
         {% endfor %}
       </select>
     </div><br>
+
 
     <div>
       <!-- Make -->

@@ -62,5 +62,1188 @@
       "max_miles": 1000,
       "free_range": { "min": 0, "max": 5, "billable_miles": 0 }
     }
+  },
+
+  "make_model": {
+    "Skoda": {
+    "label": "Skoda",
+    "models": {
+      "Octavia": {
+        "label": "Octavia",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Acura": {
+    "label": "Acura",
+    "models": {
+      "MDX": {
+        "label": "MDX",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "RDX": {
+        "label": "RDX",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Alfa Romeo": {
+    "label": "Alfa Romeo",
+    "models": {
+      "Giulia": {
+        "label": "Giulia",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Stelvio": {
+        "label": "Stelvio",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Aston Martin": {
+    "label": "Aston Martin",
+    "models": {
+      "DB11": {
+        "label": "DB11",
+        "car_type": "Sportscar",
+        "upcharge_percentage": 0.2
+      },
+      "Vantage": {
+        "label": "Vantage",
+        "car_type": "Sportscar",
+        "upcharge_percentage": 0.2
+      }
+    }
+  },
+  "Audi": {
+    "label": "Audi",
+    "models": {
+      "A4": {
+        "label": "A4",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Q5": {
+        "label": "Q5",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Bentley": {
+    "label": "Bentley",
+    "models": {
+      "Continental GT": {
+        "label": "Continental GT",
+        "car_type": "Sportscar",
+        "upcharge_percentage": 0.2
+      },
+      "Bentayga": {
+        "label": "Bentayga",
+        "car_type": "Sportscar",
+        "upcharge_percentage": 0.2
+      }
+    }
+  },
+  "BMW": {
+    "label": "BMW",
+    "models": {
+      "3 Series": {
+        "label": "3 Series",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "X5": {
+        "label": "X5",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "5 Series": {
+        "label": "5 Series",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "X3": {
+        "label": "X3",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Bugatti": {
+    "label": "Bugatti",
+    "models": {
+      "Chiron": {
+        "label": "Chiron",
+        "car_type": "Sportscar",
+        "upcharge_percentage": 0.2
+      }
+    }
+  },
+  "Buick": {
+    "label": "Buick",
+    "models": {
+      "Enclave": {
+        "label": "Enclave",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Cadillac": {
+    "label": "Cadillac",
+    "models": {
+      "Escalade": {
+        "label": "Escalade",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Chevrolet": {
+    "label": "Chevrolet",
+    "models": {
+      "Silverado": {
+        "label": "Silverado",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Silverado 1500": {
+        "label": "Silverado 1500",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Silverado 2500": {
+        "label": "Silverado 2500",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Tahoe": {
+        "label": "Tahoe",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Suburban": {
+        "label": "Suburban",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Traverse": {
+        "label": "Traverse",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Equinox": {
+        "label": "Equinox",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Malibu": {
+        "label": "Malibu",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Impala": {
+        "label": "Impala",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Camaro": {
+        "label": "Camaro",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Corvette": {
+        "label": "Corvette",
+        "car_type": "Sportscar",
+        "upcharge_percentage": 0.2
+      }
+    }
+  },
+  "Chrysler": {
+    "label": "Chrysler",
+    "models": {
+      "300": {
+        "label": "300",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Citroën": {
+    "label": "Citroën",
+    "models": {
+      "C3": {
+        "label": "C3",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Dacia": {
+    "label": "Dacia",
+    "models": {
+      "Duster": {
+        "label": "Duster",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Daewoo": {
+    "label": "Daewoo",
+    "models": {
+      "Lanos": {
+        "label": "Lanos",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Daihatsu": {
+    "label": "Daihatsu",
+    "models": {
+      "Terios": {
+        "label": "Terios",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Dodge/RAM": {
+    "label": "Dodge/RAM",
+    "models": {
+      "Charger": {
+        "label": "Charger",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Ram 1500": {
+        "label": "Ram 1500",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Ram 2500": {
+        "label": "Ram 2500",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Challenger": {
+        "label": "Challenger",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Durango": {
+        "label": "Durango",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Journey": {
+        "label": "Journey",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Caravan": {
+        "label": "Caravan",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Eagle": {
+    "label": "Eagle",
+    "models": {
+      "Talon": {
+        "label": "Talon",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Ferrari": {
+    "label": "Ferrari",
+    "models": {
+      "488 GTB": {
+        "label": "488 GTB",
+        "car_type": "Sportscar",
+        "upcharge_percentage": 0.2
+      }
+    }
+  },
+  "Fiat": {
+    "label": "Fiat",
+    "models": {
+      "500": {
+        "label": "500",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Fisker": {
+    "label": "Fisker",
+    "models": {
+      "Karma": {
+        "label": "Karma",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Ford": {
+    "label": "Ford",
+    "models": {
+      "F-150": {
+        "label": "F-150",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "F-250": {
+        "label": "F-250",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "F-350": {
+        "label": "F-350",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Explorer": {
+        "label": "Explorer",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Escape": {
+        "label": "Escape",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Edge": {
+        "label": "Edge",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Expedition": {
+        "label": "Expedition",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Fusion": {
+        "label": "Fusion",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Focus": {
+        "label": "Focus",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Mustang": {
+        "label": "Mustang",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Freightliner": {
+    "label": "Freightliner",
+    "models": {
+      "Sprinter": {
+        "label": "Sprinter",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Genesis": {
+    "label": "Genesis",
+    "models": {
+      "G80": {
+        "label": "G80",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Geo": {
+    "label": "Geo",
+    "models": {
+      "Metro": {
+        "label": "Metro",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "GMC": {
+    "label": "GMC",
+    "models": {
+      "Sierra": {
+        "label": "Sierra",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Sierra 1500": {
+        "label": "Sierra 1500",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Sierra 2500": {
+        "label": "Sierra 2500",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Yukon": {
+        "label": "Yukon",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Acadia": {
+        "label": "Acadia",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Terrain": {
+        "label": "Terrain",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Hino": {
+    "label": "Hino",
+    "models": {
+      "500 Series": {
+        "label": "500 Series",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Honda": {
+    "label": "Honda",
+    "models": {
+      "Civic": {
+        "label": "Civic",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Accord": {
+        "label": "Accord",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "CR-V": {
+        "label": "CR-V",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Pilot": {
+        "label": "Pilot",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Odyssey": {
+        "label": "Odyssey",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Ridgeline": {
+        "label": "Ridgeline",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Hummer": {
+    "label": "Hummer",
+    "models": {
+      "H2": {
+        "label": "H2",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Hyundai": {
+    "label": "Hyundai",
+    "models": {
+      "Elantra": {
+        "label": "Elantra",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Sonata": {
+        "label": "Sonata",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Santa Fe": {
+        "label": "Santa Fe",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Tucson": {
+        "label": "Tucson",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Palisade": {
+        "label": "Palisade",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Infiniti": {
+    "label": "Infiniti",
+    "models": {
+      "Q50": {
+        "label": "Q50",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "International": {
+    "label": "International",
+    "models": {
+      "ProStar": {
+        "label": "ProStar",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Isuzu": {
+    "label": "Isuzu",
+    "models": {
+      "D-Max": {
+        "label": "D-Max",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Jaguar": {
+    "label": "Jaguar",
+    "models": {
+      "XF": {
+        "label": "XF",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Jeep": {
+    "label": "Jeep",
+    "models": {
+      "Wrangler": {
+        "label": "Wrangler",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Cherokee": {
+        "label": "Cherokee",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Grand Cherokee": {
+        "label": "Grand Cherokee",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Compass": {
+        "label": "Compass",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Gladiator": {
+        "label": "Gladiator",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Kia": {
+    "label": "Kia",
+    "models": {
+      "Sorento": {
+        "label": "Sorento",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Optima (K5)": {
+        "label": "Optima (K5)",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Forte": {
+        "label": "Forte",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Sportage": {
+        "label": "Sportage",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Telluride": {
+        "label": "Telluride",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Koenigsegg": {
+    "label": "Koenigsegg",
+    "models": {
+      "Jesko": {
+        "label": "Jesko",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Lamborghini": {
+    "label": "Lamborghini",
+    "models": {
+      "Huracán": {
+        "label": "Huracán",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Land Rover": {
+    "label": "Land Rover",
+    "models": {
+      "Discovery": {
+        "label": "Discovery",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Lexus": {
+    "label": "Lexus",
+    "models": {
+      "RX": {
+        "label": "RX",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Lincoln": {
+    "label": "Lincoln",
+    "models": {
+      "Navigator": {
+        "label": "Navigator",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Lotus": {
+    "label": "Lotus",
+    "models": {
+      "Evora": {
+        "label": "Evora",
+        "car_type": "Sportscar",
+        "upcharge_percentage": 0.2
+      }
+    }
+  },
+  "Maserati": {
+    "label": "Maserati",
+    "models": {
+      "Ghibli": {
+        "label": "Ghibli",
+        "car_type": "Sportscar",
+        "upcharge_percentage": 0.2
+      }
+    }
+  },
+  "Maybach": {
+    "label": "Maybach",
+    "models": {
+      "57": {
+        "label": "57",
+        "car_type": "Sportscar",
+        "upcharge_percentage": 0.2
+      }
+    }
+  },
+  "Mazda": {
+    "label": "Mazda",
+    "models": {
+      "CX-5": {
+        "label": "CX-5",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "McLaren": {
+    "label": "McLaren",
+    "models": {
+      "720S": {
+        "label": "720S",
+        "car_type": "Sportscar",
+        "upcharge_percentage": 0.2
+      }
+    }
+  },
+  "Mercedes-Benz": {
+    "label": "Mercedes-Benz",
+    "models": {
+      "C-Class": {
+        "label": "C-Class",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "E-Class": {
+        "label": "E-Class",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "GLC": {
+        "label": "GLC",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "GLE": {
+        "label": "GLE",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Mercury": {
+    "label": "Mercury",
+    "models": {
+      "Grand Marquis": {
+        "label": "Grand Marquis",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Mini": {
+    "label": "Mini",
+    "models": {
+      "Cooper": {
+        "label": "Cooper",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Mitsubishi": {
+    "label": "Mitsubishi",
+    "models": {
+      "Outlander": {
+        "label": "Outlander",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Nissan": {
+    "label": "Nissan",
+    "models": {
+      "Altima": {
+        "label": "Altima",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Sentra": {
+        "label": "Sentra",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Maxima": {
+        "label": "Maxima",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Rogue": {
+        "label": "Rogue",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Murano": {
+        "label": "Murano",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Pathfinder": {
+        "label": "Pathfinder",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Titan": {
+        "label": "Titan",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Oldsmobile": {
+    "label": "Oldsmobile",
+    "models": {
+      "Alero": {
+        "label": "Alero",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Opel": {
+    "label": "Opel",
+    "models": {
+      "Astra": {
+        "label": "Astra",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Pagani": {
+    "label": "Pagani",
+    "models": {
+      "Huayra": {
+        "label": "Huayra",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Peugeot": {
+    "label": "Peugeot",
+    "models": {
+      "208": {
+        "label": "208",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Plymouth": {
+    "label": "Plymouth",
+    "models": {
+      "Neon": {
+        "label": "Neon",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Polestar": {
+    "label": "Polestar",
+    "models": {
+      "2": {
+        "label": "2",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Pontiac": {
+    "label": "Pontiac",
+    "models": {
+      "G6": {
+        "label": "G6",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Porsche": {
+    "label": "Porsche",
+    "models": {
+      "911": {
+        "label": "911",
+        "car_type": "Sportscar",
+        "upcharge_percentage": 0.2
+      }
+    }
+  },
+  "Proton": {
+    "label": "Proton",
+    "models": {
+      "Saga": {
+        "label": "Saga",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "RAM": {
+    "label": "RAM",
+    "models": {
+      "1500": {
+        "label": "1500",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Renault": {
+    "label": "Renault",
+    "models": {
+      "Clio": {
+        "label": "Clio",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Rivian": {
+    "label": "Rivian",
+    "models": {
+      "R1T": {
+        "label": "R1T",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Rolls-Royce": {
+    "label": "Rolls-Royce",
+    "models": {
+      "Phantom": {
+        "label": "Phantom",
+        "car_type": "Sportscar",
+        "upcharge_percentage": 0.2
+      }
+    }
+  },
+  "Saab": {
+    "label": "Saab",
+    "models": {
+      "45903": {
+        "label": "45903",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Saturn": {
+    "label": "Saturn",
+    "models": {
+      "Ion": {
+        "label": "Ion",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Scion": {
+    "label": "Scion",
+    "models": {
+      "tC": {
+        "label": "tC",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "SEAT": {
+    "label": "SEAT",
+    "models": {
+      "Ibiza": {
+        "label": "Ibiza",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Smart": {
+    "label": "Smart",
+    "models": {
+      "Fortwo": {
+        "label": "Fortwo",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Subaru": {
+    "label": "Subaru",
+    "models": {
+      "Outback": {
+        "label": "Outback",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Forester": {
+        "label": "Forester",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Crosstrek": {
+        "label": "Crosstrek",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Impreza": {
+        "label": "Impreza",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Suzuki": {
+    "label": "Suzuki",
+    "models": {
+      "Swift": {
+        "label": "Swift",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Tesla": {
+    "label": "Tesla",
+    "models": {
+      "Model S": {
+        "label": "Model S",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Toyota": {
+    "label": "Toyota",
+    "models": {
+      "Camry": {
+        "label": "Camry",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Corolla": {
+        "label": "Corolla",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "RAV4": {
+        "label": "RAV4",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Highlander": {
+        "label": "Highlander",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Tacoma": {
+        "label": "Tacoma",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Tundra": {
+        "label": "Tundra",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "4Runner": {
+        "label": "4Runner",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Vauxhall": {
+    "label": "Vauxhall",
+    "models": {
+      "Corsa": {
+        "label": "Corsa",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Volkswagen": {
+    "label": "Volkswagen",
+    "models": {
+      "Jetta": {
+        "label": "Jetta",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Passat": {
+        "label": "Passat",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Tiguan": {
+        "label": "Tiguan",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      },
+      "Atlas": {
+        "label": "Atlas",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Volkswagen (VW)": {
+    "label": "Volkswagen (VW)",
+    "models": {
+      "Golf": {
+        "label": "Golf",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Volvo": {
+    "label": "Volvo",
+    "models": {
+      "XC90": {
+        "label": "XC90",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Workhorse": {
+    "label": "Workhorse",
+    "models": {
+      "W-15": {
+        "label": "W-15",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Yugo": {
+    "label": "Yugo",
+    "models": {
+      "GV": {
+        "label": "GV",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  },
+  "Zastava": {
+    "label": "Zastava",
+    "models": {
+      "Koral": {
+        "label": "Koral",
+        "car_type": "Standard",
+        "upcharge_percentage": 0.0
+      }
+    }
+  }
   }
 }

@@ -26,34 +26,6 @@ function updateDateTime() {
 
 setInterval(updateDateTime, 1000);
 updateDateTime();
-  
-  // ---------------- Safe Location Radios ----------------
-  // Grab all radio buttons for "Is the vehicle in a safe location?"
-  const vehicleRadios = document.querySelectorAll("input[name='vehicle_location']");
-  // Grab the div that contains the "unsafe location" follow-up question
-  const unsafeLocationDiv = document.getElementById("unsafe_location");
-  const unsafeLocationSelect = document.getElementById("unsafe_location_select");
-
-  // Show or hide the unsafe location dropdown depending on radio selection
-  function toggleUnsafeLocation() {
-    const selected = document.querySelector("input[name='vehicle_location']:checked");
-    if (selected && selected.value === "no") {
-      // If user says "No, not safe", show the extra dropdown and make it required
-      unsafeLocationDiv.style.display = "block";
-      unsafeLocationSelect.setAttribute("required", "required");
-    } else {
-      // If safe (or nothing selected), hide the dropdown and reset its value
-      unsafeLocationDiv.style.display = "none";
-      unsafeLocationSelect.removeAttribute("required");
-      unsafeLocationSelect.value = "";
-    }
-  }
-
-  // Whenever a radio changes, re-check visibility of the unsafe location field
-  vehicleRadios.forEach(radio => {
-    radio.addEventListener("change", toggleUnsafeLocation);
-  });
-  toggleUnsafeLocation(); // Run once on page load, to set initial state
 
 
   const unsafeLocationDisplay = document.getElementById("unsafe_location_select");
@@ -144,7 +116,7 @@ function updateTruckLabel() {
 
   if (towType) {
     // If a tow type is selected, customize the label with it
-    truckLabel.textContent = `How many ${towType} trucks are available?`;
+    truckLabel.textContent = `How many ${towType.toLowerCase()} trucks are available?`;
   } else {
     // If no tow type is selected, fall back to the default label
     truckLabel.textContent = "How many trucks are available?";
@@ -348,25 +320,21 @@ form.addEventListener("submit", async (e) => {
     if (sel.value) services.push(sel.value);
   });
 
-  // ✅ Get safe/unsafe vehicle location
-  const vehicle_location = document.querySelector("input[name='vehicle_location']:checked")?.value;
+  // ✅ Get vehicle lane position
+
+  const sel = document.getElementById("unsafe_location_select");
+  const lane = sel.value || null;
+  const roadType = sel.options[sel.selectedIndex]?.dataset.roadType || null;
+
   let unsafe_location = null;
-
-  if (vehicle_location === "no") {
-    const sel = document.getElementById("unsafe_location_select");
-    const lane = sel.value || null;
-    const roadType = sel.options[sel.selectedIndex]?.dataset.roadType || null;
-
-    if (lane && roadType) {
-      unsafe_location = { road_type: roadType, lane: lane };
-    }
+  if (lane && roadType) {
+    unsafe_location = { road_type: roadType, lane: lane };
   }
 
   // Build JSON payload similar to a Python dict
   const payload = {
     need_tow: document.querySelector("input[name='need_tow']:checked")?.value || null,
     is_accident: document.querySelector("input[name='is_accident']:checked")?.value || null,
-    vehicle_location: document.querySelector("input[name='vehicle_location']:checked")?.value || null,
     unsafe_location: unsafe_location,
     make: document.getElementById("make_input").value || null,
     model: document.getElementById("model_input").value || null,
