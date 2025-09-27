@@ -3,6 +3,7 @@ import os
 import json
 import requests
 from collections import OrderedDict
+from datetime import datetime, timedelta   # ✅ add timedelta here
 
 app = Flask(__name__)
 
@@ -86,6 +87,7 @@ def format_breakdown(response_json):
         lines.append("-" * (col_width * 2))
 
     # Totals
+    lines.append(f"{'Time Used:'.ljust(col_width)}{response_json.get('calculation_time', '')}")
     lines.append(f"{'Standard Quote:'.ljust(col_width)}${response_json['standard_quote']}")
     lines.append(f"{'Combined Upcharge %:'.ljust(col_width)}{response_json['combined_upcharge_percentage']*100}%")
     lines.append(f"{'Upcharge Amount:'.ljust(col_width)}${response_json['upcharge_amount']}")
@@ -280,10 +282,20 @@ def calculate():
 
     if local_time_str and tz_offset is not None:
         try:
-            # Parse the ISO string from the browser (e.g. "2025-09-27T02:57:00.000Z")
+            # Parse as UTC first
             client_time = datetime.fromisoformat(local_time_str.replace("Z", "+00:00"))
-            now = client_time.time()
-        except Exception:
+
+            # Adjust using browser's offset (JS getTimezoneOffset gives minutes *behind* UTC)
+            offset = timedelta(minutes=-int(tz_offset))
+            local_time = client_time + offset
+
+            # keep full datetime for display
+            calculation_datetime = local_time # Just for display
+            calculation_time = calculation_datetime.strftime("%Y-%m-%d %H:%M:%S")  # Just for display
+
+            now = local_time.time() # for calculation
+        except Exception as e:
+            print("⚠️ Failed to parse local_time:", local_time_str, tz_offset, e)
             now = datetime.utcnow().time()
     else:
         # Fallback: if frontend didn’t send local time
@@ -295,6 +307,7 @@ def calculate():
         if start <= now <= end:
             upcharges["time_of_day"] = slot_data.get("upcharge", 0.0)
             break
+
 
     # --- Final combined percentage (capped at 0.25) ---
     combined_upcharge = sum(upcharges.values())
@@ -321,6 +334,7 @@ def calculate():
     # Tow info
     response["tow_type"] = tow_type
     response["services"] = breakdowns
+    response["calculation_time"] = calculation_time
 
     # Pricing
     response["standard_quote"] = round(total, 2)
@@ -331,6 +345,7 @@ def calculate():
 
     # Breakdown string
     response["breakdown"] = format_breakdown(response)
+
 
     return Response(json.dumps(response), mimetype="application/json")
 

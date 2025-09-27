@@ -334,28 +334,27 @@ form.addEventListener("submit", async (e) => {
 
   // Get client local time + timezone offset
 
-  const submitTime = new Date();
-  payload.local_time = submitTime.toISOString();              // e.g. "2025-09-27T02:57:00.000Z"
-  payload.timezone_offset = submitTime.getTimezoneOffset();   // minutes difference from UTC
+// Build JSON payload similar to a Python dict
+const submitTime = new Date();
+const payload = {
+  need_tow: document.querySelector("input[name='need_tow']:checked")?.value || null,
+  is_accident: document.querySelector("input[name='is_accident']:checked")?.value || null,
+  unsafe_location: unsafe_location,
+  make: document.getElementById("make_input").value || null,
+  model: document.getElementById("model_input").value || null,
+  tow_type: towTypeSelect.value,
+  services: services,
+  source: document.getElementById("source_input").value,
+  destination: document.getElementById("destination_input").value,
+  quote_type: document.getElementById("quote_type_select").value,
+  weather: document.getElementById("weather_select").value,
+  truck_utilization: document.getElementById("truck_utilization_input").value,
 
+  // ✅ add here
+  local_time: submitTime.toISOString(),
+  timezone_offset: submitTime.getTimezoneOffset()
+};
 
-  // Build JSON payload similar to a Python dict
-  const payload = {
-    need_tow: document.querySelector("input[name='need_tow']:checked")?.value || null,
-    is_accident: document.querySelector("input[name='is_accident']:checked")?.value || null,
-    unsafe_location: unsafe_location,
-    make: document.getElementById("make_input").value || null,
-    model: document.getElementById("model_input").value || null,
-    tow_type: towTypeSelect.value,
-    services: services,
-    source: document.getElementById("source_input").value,
-    destination: document.getElementById("destination_input").value,
-    quote_type: document.getElementById("quote_type_select").value,
-    weather: document.getElementById("weather_select").value,
-    truck_utilization: document.getElementById("truck_utilization_input").value,
-    local_time: submitTime.toISOString(),
-    timezone_offset: submitTime.getTimezoneOffset()
-  };
 
   console.log(payload)
 
