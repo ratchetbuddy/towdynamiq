@@ -1,41 +1,134 @@
-import os
-import pandas as pd
+import csv
 import json
+import os
+from collections import defaultdict
+import re
 
-# go up one level from current working dir
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_DIR = os.path.join(BASE_DIR, "data")
+def parse_condition(expr: str):
+    expr = expr.strip()
 
-CSV_FILE = os.path.join(DATA_DIR, "pricing.csv")
-JSON_FILE = os.path.join(DATA_DIR, "pricing.json")
+    # Remove outer parentheses
+    if expr.startswith("(") and expr.endswith(")"):
+        return parse_condition(expr[1:-1].strip())
 
-print("Looking for CSV at:", CSV_FILE)
+    # Handle OR at top level
+    parts = split_top_level(expr, "|")
+    if len(parts) > 1:
+        return {"type": "OR", "triggers": [parse_condition(p) for p in parts]}
 
-df = pd.read_csv(CSV_FILE)
+    # Handle AND at top level
+    parts = split_top_level(expr, "&")
+    if len(parts) > 1:
+        return {"type": "AND", "triggers": [parse_condition(p) for p in parts]}
 
-pricing = {}
+    # Base case: single token (normalize to dict!)
+    return {"type": "SINGLE", "triggers": [expr.strip()]}
 
-for _, row in df.iterrows():
-    tow_type = str(row["tow_type"]).strip()
-    service = str(row["service"]).strip()
+def split_top_level(expr: str, op: str):
+    """Split expression by operator, ignoring parentheses nesting."""
+    parts = []
+    depth = 0
+    start = 0
+    for i, ch in enumerate(expr):
+        if ch == "(":
+            depth += 1
+        elif ch == ")":
+            depth -= 1
+        elif ch == op and depth == 0:
+            parts.append(expr[start:i].strip())
+            start = i + 1
+    parts.append(expr[start:].strip())
+    return [p for p in parts if p]
 
-    entry = {
-        "label": str(row["label"]).strip() if not pd.isna(row["label"]) else "",
-        "rate": int(row["rate"]) if not pd.isna(row["rate"]) else 0,
-        "mileage": int(row["mileage"]) if not pd.isna(row["mileage"]) else 0,
-        "includes": int(row["includes"]) if not pd.isna(row["includes"]) else 0,
-    }
+def csv_to_json(csv_file, json_file):
+    services_by_type = defaultdict(dict)
+    units_map = defaultdict(lambda: defaultdict(dict))  # tow_type -> service_code -> units
 
-    if "comment" in row and not pd.isna(row["comment"]):
-        entry["comment"] = str(row["comment"]).strip()
+    with open(csv_file, newline='', encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            tow_type = row["tow_type"].strip()
+            service_code = row["service_code"].strip()
+            pricing_type = row["pricing_type"].strip().lower()
 
-    if tow_type not in pricing:
-        pricing[tow_type] = {}
-    pricing[tow_type][service] = entry
+            # --- Build modifiers dict ---
+            modifiers = {m.strip(): True for m in row["applies_modifiers"].split(",") if m.strip()}
+            for mod in ["weather","lane","make_model","truck_utilization","time_of_day","holiday"]:
+                modifiers.setdefault(mod, False)
 
-# Save JSON
-os.makedirs(DATA_DIR, exist_ok=True)
-with open(JSON_FILE, "w") as f:
-    json.dump(pricing, f, indent=2)
+            # --- Handle per_unit services ---
+            if pricing_type == "per_unit":
+                units_map[tow_type][service_code][row["unit_code"]] = float(row["unit_price"]) if row["unit_price"] else 0
+                if service_code not in services_by_type[tow_type]:
+                    services_by_type[tow_type][service_code] = {
+                        "label": row["service_label"],
+                        "pricing_type": "per_unit",
+                        "units": units_map[tow_type][service_code],
+                        "requires_inputs": ["unit_type", "count"],
+                        "modifiers": modifiers
+                    }
+                else:
+                    services_by_type[tow_type][service_code]["units"] = units_map[tow_type][service_code]
+                continue
 
-print(f"✅ pricing.json created successfully at {JSON_FILE}")
+            # --- Handle time_based services ---
+            if pricing_type == "time_based":
+                services_by_type[tow_type][service_code] = {
+                    "label": row["service_label"],
+                    "pricing_type": "time_based",
+                    "base_rate": float(row["base_rate"] or 0),
+                    "includes_time": int(row["included_minutes"] or 0),
+                    "increment_minutes": int(row["increment_minutes"] or 0),
+                    "rate_per_increment": float(row["increment_price"] or 0),
+                    "requires_inputs": ["duration_minutes"],
+                    "modifiers": modifiers
+                }
+                continue
+
+            # --- Default flat pricing ---
+            service_obj = {
+                "label": row["service_label"],
+                "pricing_type": "flat",
+                "base_rate": float(row["base_rate"] or 0),
+                "mileage": int(row["mileage_rate"] or 0),
+                "includes": int(row["included_miles"] or 0),
+                "rules": [],
+                "requires_inputs": [],
+                "modifiers": modifiers
+            }
+
+            # Accident pricing if provided
+            if row.get("accident_hook"):
+                try:
+                    accident_hook = float(row["accident_hook"])
+                    service_obj["accident"] = {
+                        "hook": accident_hook
+                    }
+                except ValueError:
+                    pass
+
+            # Handle addon rules
+            if row.get("addon_price") and row.get("addon_trigger_service_code"):
+                trigger_expr = row["addon_trigger_service_code"].strip()
+                condition = parse_condition(trigger_expr)
+                service_obj["rules"].append({
+                    "addon_rate": float(row["addon_price"]),
+                    "condition": condition
+                })
+
+            services_by_type[tow_type][service_code] = service_obj
+
+    # --- Save JSON file ---
+    with open(json_file, "w", encoding="utf-8") as f:
+        json.dump(services_by_type, f, indent=2)
+
+    print(f"✅ JSON saved to {json_file}")
+
+
+
+if __name__ == "__main__":
+    base_dir = r"E:\towdynamiq\git\towdynamiq\data"
+    csv_file = os.path.join(base_dir, "pricing2.0.csv")
+    json_file = os.path.join(base_dir, "pricing2.0.json")
+
+    csv_to_json(csv_file, json_file)

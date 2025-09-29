@@ -1,0 +1,30 @@
+tow_type,service_code,service_label,pricing_type,unit_code,unit_label,base_rate,mileage_rate,included_miles,accident_hook,unit_price,included_minutes,increment_minutes,increment_price,addon_price,addon_trigger_service_code,applies_modifiers
+Light Duty,tow,Tow,flat,,,125,5,0,250,,,,,,,"weather, vehicle_location, make_model, truck_utilization, time_of_day"
+Light Duty,connex,Connex,flat,,,250,5,0,,,,,,,,"weather, truck_utilization, time_of_day"
+Light Duty,ld_equipment,LD Equipment,flat,,,175,5,0,,,,,,50,tow,"weather, vehicle_location, truck_utilization, time_of_day"
+Light Duty,motorcycle,Motorcycle,flat,,,175,5,0,,,,,,,,"weather, vehicle_location, truck_utilization, time_of_day"
+Light Duty,tool_box,Tool Box,flat,,,250,5,0,,,,,,,,"weather, vehicle_location, truck_utilization, time_of_day"
+Light Duty,elec_car_dollies,Elec Car Dollies,flat,,,375,5,0,,,,,,,,"weather, vehicle_location, truck_utilization, time_of_day"
+Light Duty,ld_winch/working time,LD Winch/Working Time,flat,,,175,5,15,,,,,,,,"weather, vehicle_location, truck_utilization, time_of_day"
+Light Duty,ld_unlock,LD Unlock,flat,,,85,5,10,,,,,,,,"weather, vehicle_location, truck_utilization, time_of_day"
+Light Duty,jump_start,Jump Start,flat,,,85,5,10,,,,,,,,"weather, vehicle_location, truck_utilization, time_of_day"
+Light Duty,tire_change,Tire Change,flat,,,85,5,10,,,,,,,(tow & tool_box) | motorcycle,"weather, vehicle_location, truck_utilization, time_of_day"
+Light Duty,hd_unlock,HD Unlock,flat,,,175,5,15,,,,,,,,"weather, vehicle_location, truck_utilization, time_of_day"
+Light Duty,indemnity,Indemnity,flat,,,175,,,,,,,,,,"weather, vehicle_location, truck_utilization, time_of_day"
+Light Duty,ld_swap,LD Swap,flat,,,175,,,,,,,,,,"weather, truck_utilization, time_of_day"
+Light Duty,window_film,Window Film,per_unit,side_window,Side Windows,,,,,20,,,,,,"weather, truck_utilization, time_of_day"
+Light Duty,window_film,Window Film,per_unit,front_or_back_window,Front or Back Windows,,,,,40,,,,,,
+Light Duty,skid_steer_winch_box_off_road,Skid Steer Winch Box (Off Road),time_based,,,750,,,,,30,30,250,,,"weather, truck_utilization, time_of_day"
+Light Duty,race_ramps,Race Ramps,flat,,,50,,,,,,,,,,"weather, truck_utilization, time_of_day"
+Light Duty,go_jacks,Go Jacks,flat,,,100,,,,,,,,7000,(tow & tool_box) | (motorcycle & race_ramps) | indemnity,"weather, truck_utilization, time_of_day"
+Light Duty,wheel_skates_ball_joint_specialty_tire_tools,Wheel skates/Ball Joint/Specialty tire tools,flat,,,50,,,,,,,,,,"weather, truck_utilization, time_of_day"
+Light Duty,z_wings_w_forklift,Z wings w/ forklift,flat,,,250,,,,,,,,,,"weather, truck_utilization, time_of_day"
+Light Duty,ld_set_in,LD Set In,flat,,,100,,,,,,,,,,"weather, truck_utilization, time_of_day"
+Light Duty,ld_gas_delivery,LD Gas Delivery,flat,,,85,,,,,,,,,,"weather, vehicle_location, truck_utilization, time_of_day"
+Light Duty,hd_fuel_delivery,HD Fuel Delivery,flat,,,300,,,,,,,,,,"weather, vehicle_location, truck_utilization, time_of_day"
+Light Duty,pti_irondale_to_irondale,PTI - Irondale to Irondale,flat,,,250,,,,,,,,,,
+Light Duty,forklift_pallet_jack_swap,Forklift/Pallet Jack swap,flat,,,175,4,,,,,,,,,"weather, truck_utilization, time_of_day"
+Light Duty,penske_ind_forklift_shop_to_shop_in_homewood,Penske IND - Forklift Shop to Shop in Homewood,flat,,,250,,,,,,,,,,
+Light Duty,penske_ind_to_stivers_ford,Penske IND to Stivers Ford,flat,,,175,,,,,,,,,,
+Medium Duty,tow,Tow,flat,,,175,,,,,,,,,,"weather, vehicle_location, make_model, truck_utilization, time_of_day"
+Heavy Duty,tow,Tow,flat,,,175,15,5,,,,,,,,"weather, vehicle_location, make_model, truck_utilization, time_of_day"
