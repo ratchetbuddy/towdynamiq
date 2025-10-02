@@ -1,0 +1,19 @@
+Road Type,Lane location,Upcharge
+Interstate,Left Shoulder,10%
+Interstate,Right Shoulder,0%
+Interstate,Middle Lane,20%
+Interstate,Median,10%
+Highway,Left Shoulder,10%
+Highway,Right Shoulder,0%
+Highway,Middle of Highway,20%
+Highway,Median,10%
+Two Lane,Side of road,0%
+Two Lane,Middle of road,20%
+Parking,Parking Lot,0%
+Parking,Parking Deck,15%
+Parking,Street,5%
+Residential,Driveway,0%
+Residential,Garage,0%
+Facility,Garage,0%
+Facility,Mechanic,0%
+Offroad,Woods,10%

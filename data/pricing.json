@@ -2,186 +2,561 @@
   "Light Duty": {
     "tow": {
       "label": "Tow",
-      "rate": 125,
+      "pricing_type": "flat",
+      "dropdown_rank": 23,
+      "rules": [],
+      "modifiers": {
+        "make_model": true,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": true,
+        "weather": true
+      },
+      "base_rate": 125.0,
       "mileage": 5,
       "includes": 0,
+      "requires_inputs": [],
       "accident": {
-        "hook": 250,
-        "mileage": 5
+        "hook": 250.0
       }
     },
     "connex": {
       "label": "Connex",
-      "rate": 250,
+      "pricing_type": "flat",
+      "dropdown_rank": 1,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": false,
+        "weather": true
+      },
+      "base_rate": 250.0,
       "mileage": 5,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     },
     "ld_equipment": {
       "label": "LD Equipment",
-      "rate": 175,
+      "pricing_type": "flat",
+      "dropdown_rank": 9,
+      "rules": [
+        {
+          "addon_rate": 50.0,
+          "condition": {
+            "type": "SINGLE",
+            "triggers": [
+              "tow"
+            ]
+          }
+        }
+      ],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": true,
+        "weather": true
+      },
+      "base_rate": 175.0,
       "mileage": 5,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     },
     "motorcycle": {
       "label": "Motorcycle",
-      "rate": 175,
+      "pricing_type": "flat",
+      "dropdown_rank": 15,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": true,
+        "weather": true
+      },
+      "base_rate": 175.0,
       "mileage": 5,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     },
     "tool_box": {
       "label": "Tool Box",
-      "rate": 250,
+      "pricing_type": "flat",
+      "dropdown_rank": 22,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": true,
+        "weather": true
+      },
+      "base_rate": 250.0,
       "mileage": 5,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     },
     "elec_car_dollies": {
       "label": "Elec Car Dollies",
-      "rate": 375,
+      "pricing_type": "flat",
+      "dropdown_rank": 2,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": true,
+        "weather": true
+      },
+      "base_rate": 375.0,
       "mileage": 5,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     },
     "ld_winch/working time": {
       "label": "LD Winch/Working Time",
-      "rate": 175,
+      "pricing_type": "flat",
+      "dropdown_rank": 14,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": true,
+        "weather": true
+      },
+      "base_rate": 175.0,
       "mileage": 5,
-      "includes": 15
+      "includes": 15,
+      "requires_inputs": []
     },
     "ld_unlock": {
       "label": "LD Unlock",
-      "rate": 85,
+      "pricing_type": "flat",
+      "dropdown_rank": 13,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": true,
+        "weather": true
+      },
+      "base_rate": 85.0,
       "mileage": 5,
-      "includes": 10
+      "includes": 10,
+      "requires_inputs": []
     },
     "jump_start": {
       "label": "Jump Start",
-      "rate": 85,
+      "pricing_type": "flat",
+      "dropdown_rank": 8,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": true,
+        "weather": true
+      },
+      "base_rate": 85.0,
       "mileage": 5,
-      "includes": 10
+      "includes": 10,
+      "requires_inputs": []
     },
     "tire_change": {
       "label": "Tire Change",
-      "rate": 85,
+      "pricing_type": "flat",
+      "dropdown_rank": 21,
+      "rules": [
+        {
+          "addon_rate": 100.0,
+          "condition": {
+            "type": "AND",
+            "triggers": [
+              {
+                "type": "SINGLE",
+                "triggers": [
+                  "tow"
+                ]
+              },
+              {
+                "type": "SINGLE",
+                "triggers": [
+                  "tool_box"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": true,
+        "weather": true
+      },
+      "base_rate": 85.0,
       "mileage": 5,
-      "includes": 10
+      "includes": 10,
+      "requires_inputs": []
     },
     "hd_unlock": {
       "label": "HD Unlock",
-      "rate": 175,
+      "pricing_type": "flat",
+      "dropdown_rank": 6,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": true,
+        "weather": true
+      },
+      "base_rate": 175.0,
       "mileage": 5,
-      "includes": 15
+      "includes": 15,
+      "requires_inputs": []
     },
     "indemnity": {
       "label": "Indemnity",
-      "rate": 175,
+      "pricing_type": "flat",
+      "dropdown_rank": 7,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": true,
+        "weather": true
+      },
+      "base_rate": 175.0,
       "mileage": 0,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     },
     "ld_swap": {
       "label": "LD Swap",
-      "rate": 175,
+      "pricing_type": "flat",
+      "dropdown_rank": 12,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": false,
+        "weather": true
+      },
+      "base_rate": 175.0,
       "mileage": 0,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     },
     "window_film": {
       "label": "Window Film",
-      "rate": 0,
-      "mileage": 20,
-      "includes": 0
+      "pricing_type": "per_unit",
+      "dropdown_rank": 25,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": false,
+        "truck_utilization": false,
+        "vehicle_location": false,
+        "weather": false
+      },
+      "base_rate": 0.0,
+      "mileage": 0,
+      "includes": 0,
+      "accident": null,
+      "units": {
+        "side_window": {
+          "label": "Side Windows",
+          "price": 20.0
+        },
+        "front_or_back_window": {
+          "label": "Front or Back Windows",
+          "price": 40.0
+        }
+      },
+      "requires_inputs": [
+        "unit_type",
+        "count"
+      ]
     },
     "skid_steer_winch_box_off_road": {
       "label": "Skid Steer Winch Box (Off Road)",
-      "rate": 750,
-      "mileage": 0,
-      "includes": 0,
-      "comment": "change logic and adjust value later"
+      "pricing_type": "time_based",
+      "dropdown_rank": 20,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": false,
+        "weather": true
+      },
+      "base_rate": 750.0,
+      "includes_time": 30,
+      "increment_minutes": 30,
+      "rate_per_increment": 250.0,
+      "requires_inputs": [
+        "duration_minutes"
+      ]
     },
     "race_ramps": {
       "label": "Race Ramps",
-      "rate": 50,
+      "pricing_type": "flat",
+      "dropdown_rank": 19,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": false,
+        "weather": true
+      },
+      "base_rate": 50.0,
       "mileage": 0,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     },
     "go_jacks": {
       "label": "Go Jacks",
-      "rate": 100,
+      "pricing_type": "flat",
+      "dropdown_rank": 4,
+      "rules": [
+        {
+          "addon_rate": 7000.0,
+          "condition": {
+            "type": "OR",
+            "triggers": [
+              {
+                "type": "SINGLE",
+                "triggers": [
+                  "tow"
+                ]
+              },
+              {
+                "type": "SINGLE",
+                "triggers": [
+                  "tool_box"
+                ]
+              },
+              {
+                "type": "SINGLE",
+                "triggers": [
+                  "connex"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": false,
+        "weather": true
+      },
+      "base_rate": 100.0,
       "mileage": 0,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     },
     "wheel_skates_ball_joint_specialty_tire_tools": {
       "label": "Wheel skates/Ball Joint/Specialty tire tools",
-      "rate": 50,
+      "pricing_type": "flat",
+      "dropdown_rank": 24,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": false,
+        "weather": true
+      },
+      "base_rate": 50.0,
       "mileage": 0,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     },
     "z_wings_w_forklift": {
       "label": "Z wings w/ forklift",
-      "rate": 250,
+      "pricing_type": "flat",
+      "dropdown_rank": 27,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": false,
+        "weather": true
+      },
+      "base_rate": 250.0,
       "mileage": 0,
-      "includes": 0
-    },
-    "ld_tow_pulling_a_trailer": {
-      "label": "LD tow pulling a trailer",
-      "rate": 50,
-      "mileage": 0,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     },
     "ld_set_in": {
       "label": "LD Set In",
-      "rate": 100,
+      "pricing_type": "flat",
+      "dropdown_rank": 11,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": false,
+        "weather": true
+      },
+      "base_rate": 100.0,
       "mileage": 0,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     },
     "ld_gas_delivery": {
       "label": "LD Gas Delivery",
-      "rate": 85,
+      "pricing_type": "flat",
+      "dropdown_rank": 10,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": true,
+        "weather": true
+      },
+      "base_rate": 85.0,
       "mileage": 0,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     },
     "hd_fuel_delivery": {
       "label": "HD Fuel Delivery",
-      "rate": 300,
+      "pricing_type": "flat",
+      "dropdown_rank": 5,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": true,
+        "weather": true
+      },
+      "base_rate": 300.0,
       "mileage": 0,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     },
     "pti_irondale_to_irondale": {
       "label": "PTI - Irondale to Irondale",
-      "rate": 250,
+      "pricing_type": "flat",
+      "dropdown_rank": 18,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": false,
+        "truck_utilization": false,
+        "vehicle_location": false,
+        "weather": false
+      },
+      "base_rate": 250.0,
       "mileage": 0,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     },
     "forklift_pallet_jack_swap": {
       "label": "Forklift/Pallet Jack swap",
-      "rate": 175,
+      "pricing_type": "flat",
+      "dropdown_rank": 3,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": false,
+        "weather": true
+      },
+      "base_rate": 175.0,
       "mileage": 4,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     },
     "penske_ind_forklift_shop_to_shop_in_homewood": {
       "label": "Penske IND - Forklift Shop to Shop in Homewood",
-      "rate": 250,
+      "pricing_type": "flat",
+      "dropdown_rank": 16,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": false,
+        "truck_utilization": false,
+        "vehicle_location": false,
+        "weather": false
+      },
+      "base_rate": 250.0,
       "mileage": 0,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     },
     "penske_ind_to_stivers_ford": {
       "label": "Penske IND to Stivers Ford",
-      "rate": 175,
+      "pricing_type": "flat",
+      "dropdown_rank": 17,
+      "rules": [],
+      "modifiers": {
+        "make_model": false,
+        "time_of_day": false,
+        "truck_utilization": false,
+        "vehicle_location": false,
+        "weather": false
+      },
+      "base_rate": 175.0,
       "mileage": 0,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     }
   },
   "Medium Duty": {
     "tow": {
       "label": "Tow",
-      "rate": 175,
+      "pricing_type": "flat",
+      "dropdown_rank": 1,
+      "rules": [],
+      "modifiers": {
+        "make_model": true,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": true,
+        "weather": true
+      },
+      "base_rate": 175.0,
       "mileage": 0,
-      "includes": 0
+      "includes": 0,
+      "requires_inputs": []
     }
   },
   "Heavy Duty": {
     "tow": {
       "label": "Tow",
-      "rate": 175,
+      "pricing_type": "flat",
+      "dropdown_rank": 1,
+      "rules": [],
+      "modifiers": {
+        "make_model": true,
+        "time_of_day": true,
+        "truck_utilization": true,
+        "vehicle_location": true,
+        "weather": true
+      },
+      "base_rate": 175.0,
       "mileage": 15,
-      "includes": 5
+      "includes": 5,
+      "requires_inputs": []
     }
   }
 }

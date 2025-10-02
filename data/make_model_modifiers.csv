@@ -1,0 +1,1110 @@
+make,model,car_type,upcharge_percentage
+1955 Custom Belair,1955 Custom Belair,car_type,0.2
+Aas,Euro Edition,Standard,0
+Aas,Gt Malan,Standard,0
+Aas,Performance Edition,Standard,0
+Aas,Race Edition,Standard,0
+Aas,Sport Edition,Standard,0
+Aas,Trophy Edition,Standard,0
+Ac Propulsion,eBox,Standard,0
+Ac Propulsion,tZero,Standard,0
+Acura,CL,Standard,0
+Acura,ILX,Standard,0
+Acura,Integra,Standard,0
+Acura,NSX,Standard,0
+Acura,RL,Standard,0
+Acura,RLX,Standard,0
+Acura,RSX,Standard,0
+Acura,TL,Standard,0
+Acura,TLX,Standard,0
+Acura,TSX,Standard,0
+Alfa Romeo,4C,Standard,0
+Alfa Romeo,8C Competizione Spider,Standard,0
+Alfa Romeo,Giulia (952),Standard,0
+Alfa Romeo,Tonale,Standard,0
+Allard Motor Works,J2X,Standard,0
+Am General,MV-1,Standard,0
+Ameritech Corporation,F1,Standard,0
+Armbruster Stageway,Buick First Call,Standard,0
+Armbruster Stageway,Buick Funeral Car,Standard,0
+Armbruster Stageway,Buick Limousine,Standard,0
+Armbruster Stageway,Buick Ski Cruiser,Standard,0
+Armbruster Stageway,Cadillac First Call,Standard,0
+Armbruster Stageway,Cadillac Funeral Car,Standard,0
+Armbruster Stageway,Cadillac Limousine,Standard,0
+Armbruster Stageway,Cadillac Ski Cruiser,Standard,0
+Armbruster Stageway,Lincoln First Call,Standard,0
+Armbruster Stageway,Lincoln Funeral Car,Standard,0
+Armbruster Stageway,Lincoln Limousine,Standard,0
+Armbruster Stageway,Lincoln Ski Cruiser,Standard,0
+Armbruster Stageway,Mercedes First Call,Standard,0
+Armbruster Stageway,Mercedes Funeral Car,Standard,0
+Armbruster Stageway,Mercedes Limousine,Standard,0
+Armbruster Stageway,Mercedes Ski Cruiser,Standard,0
+Aston Martin,DB11,Standard,0.2
+Aston Martin,DB12,Standard,0.2
+Aston Martin,DB7,Standard,0.2
+Aston Martin,DB9,Standard,0.2
+Aston Martin,DBS,Standard,0.2
+Aston Martin,DBX,Standard,0.2
+Aston Martin,Rapide,Standard,0.2
+Aston Martin,V12 Vantage,Standard,0.2
+Aston Martin,V8 Vantage,Standard,0.2
+Aston Martin,Valiant,Standard,0.2
+Aston Martin,Valour,Standard,0.2
+Aston Martin,Vanquish,Standard,0.2
+Aston Martin,Vanquish Zagato,Standard,0.2
+Aston Martin,Vantage,Standard,0.2
+Aston Martin,Virage,Standard,0.2
+Audi,A3,Standard,0
+Audi,A4,Standard,0
+Audi,A5,Standard,0
+Audi,A6,Standard,0
+Audi,A6 allroad,Standard,0
+Audi,A7,Standard,0
+Audi,A7 e,Standard,0
+Audi,A8,Standard,0
+Audi,A8 e,Standard,0
+Audi,A8 L,Standard,0
+Audi,A8 L e,Standard,0
+Audi,allroad,Standard,0
+Audi,Cabriolet,Standard,0
+Audi,e-tron GT,Standard,0
+Audi,Q7,Standard,0
+Audi,R8,Standard,0
+Audi,RS 3,Standard,0
+Audi,RS 4,Standard,0
+Audi,RS 5,Standard,0
+Audi,RS 6,Standard,0
+Audi,RS 6 Avant,Standard,0
+Audi,RS 7,Standard,0
+Audi,RS e-tron GT,Standard,0
+Audi,S e-tron GT,Standard,0
+Audi,S3,Standard,0
+Audi,S4,Standard,0
+Audi,S5,Standard,0
+Audi,S6,Standard,0
+Audi,S7,Standard,0
+Audi,S8,Standard,0
+Audi,TT,Standard,0
+Audi,TT RS,Standard,0
+Audi,TTS,Standard,0
+Autocar Ltd,Autocar Ltd,Standard,0
+Autodelta Usa Inc,Autodelta USA Inc,Standard,0
+Automobili Pininfarina,Battista,Standard,0
+Avera Motors,Coupe,Standard,0
+Avera Motors,Crossover,Standard,0
+Avera Motors,Open Top,Standard,0
+Avera Motors,Roadster,Standard,0
+Backdraft,Roadster,Standard,0.15
+Bakkura Mobility,Bakkura Mobility,Standard,0
+Ballistic,FR1,Standard,0
+Ballistic,FR2,Standard,0
+Bbc,BBC Passenger Car,Standard,0
+Bentley,ARMOURED ARNAGE,Standard,0.2
+Bentley,Arnage,Standard,0.2
+Bentley,Azure,Standard,0.2
+Bentley,Brooklands,Standard,0.2
+Bentley,Continental,Standard,0.2
+Bentley,Flying Spur,Standard,0.2
+Bentley,Mulsanne,Standard,0.2
+Bentley,Roll Royce Silver Seraph,Standard,0.2
+Bentley,Rolls-Royce Park Ward,Standard,0.2
+Bentley,Turbo,Standard,0.2
+Blackwater,Classic,Standard,0
+Blackwater,Cordova,Standard,0
+Blackwater,Malibu,Standard,0
+Bluecar,"Bluecar, SAS",Standard,0
+Bmw,335,Standard,0
+Bmw,128i,Standard,0
+Bmw,135i,Standard,0
+Bmw,1M,Standard,0
+Bmw,228i,Standard,0
+Bmw,230i,Standard,0
+Bmw,318i,Standard,0
+Bmw,318iC,Standard,0
+Bmw,318iS,Standard,0
+Bmw,318ti,Standard,0
+Bmw,320i,Standard,0
+Bmw,323i,Standard,0
+Bmw,323iC,Standard,0
+Bmw,323is,Standard,0
+Bmw,325Ci,Standard,0
+Bmw,325i,Standard,0
+Bmw,325xi,Standard,0
+Bmw,328Ci,Standard,0
+Bmw,328d,Standard,0
+Bmw,328i,Standard,0
+Bmw,328iC,Standard,0
+Bmw,328iS,Standard,0
+Bmw,328xi,Standard,0
+Bmw,330Ci,Standard,0
+Bmw,330e,Standard,0
+Bmw,330i,Standard,0
+Bmw,330xi,Standard,0
+Bmw,335d,Standard,0
+Bmw,335i,Standard,0
+Bmw,335is,Standard,0
+Bmw,335xi,Standard,0
+Bmw,340i,Standard,0
+Bmw,428i,Standard,0
+Bmw,430i,Standard,0
+Bmw,435i,Standard,0
+Bmw,440i,Standard,0
+Bmw,525i,Standard,0
+Bmw,525iA,Standard,0
+Bmw,525xi,Standard,0
+Bmw,528i,Standard,0
+Bmw,528xi,Standard,0
+Bmw,530e,Standard,0
+Bmw,530i,Standard,0
+Bmw,530iA,Standard,0
+Bmw,530xi,Standard,0
+Bmw,535d,Standard,0
+Bmw,535i,Standard,0
+Bmw,535xi,Standard,0
+Bmw,540d,Standard,0
+Bmw,540i,Standard,0
+Bmw,540iA,Standard,0
+Bmw,545i,Standard,0
+Bmw,550e,Standard,0
+Bmw,550i,Standard,0
+Bmw,640i,Standard,0
+Bmw,640xi,Standard,0
+Bmw,645Ci,Standard,0
+Bmw,645i,Standard,0
+Bmw,650i,Standard,0
+Bmw,650i / ALPINA B6,Standard,0
+Bmw,650i / B6,Standard,0
+Bmw,650xi,Standard,0
+Bmw,740e,Standard,0
+Bmw,740i,Standard,0
+Bmw,740iL,Standard,0
+Bmw,740Li,Standard,0
+Bmw,745e,Standard,0
+Bmw,745i,Standard,0
+Bmw,745Le,Standard,0
+Bmw,745Li,Standard,0
+Bmw,750e,Standard,0
+Bmw,750i,Standard,0
+Bmw,750i / ALPINA B7,Standard,0
+Bmw,750i / B7,Standard,0
+Bmw,750iL,Standard,0
+Bmw,750Li,Standard,0
+Bmw,750Li / ALPINA B7,Standard,0
+Bmw,750Lxi,Standard,0
+Bmw,750Lxi / ALPINA B7,Standard,0
+Bmw,750xi,Standard,0
+Bmw,750xi / ALPINA B7,Standard,0
+Bmw,760i,Standard,0
+Bmw,760Li,Standard,0
+Bmw,840Ci,Standard,0
+Bmw,840i,Standard,0
+Bmw,850Ci,Standard,0
+Bmw,850i,Standard,0
+Bmw,ActiveE,Standard,0
+Bmw,ActiveHybrid 3,Standard,0
+Bmw,ActiveHybrid 5,Standard,0
+Bmw,ActiveHybrid 7,Standard,0
+Bmw,Alpina,Standard,0
+Bmw,ALPINA B8,Standard,0
+Bmw,B7,Standard,0
+Bmw,i3,Standard,0
+Bmw,i4,Standard,0
+Bmw,i5,Standard,0
+Bmw,i7,Standard,0
+Bmw,i8,Standard,0
+Bmw,M2,Standard,0
+Bmw,M235,Standard,0
+Bmw,M235i,Standard,0
+Bmw,M240i,Standard,0
+Bmw,M3,Standard,0
+Bmw,M340i,Standard,0
+Bmw,M3Ci,Standard,0
+Bmw,M4,Standard,0
+Bmw,M440i,Standard,0
+Bmw,M5,Standard,0
+Bmw,M550i,Standard,0
+Bmw,M6,Standard,0
+Bmw,M760i,Standard,0
+Bmw,M760Li,Standard,0
+Bmw,M8,Standard,0
+Bmw,M850i,Standard,0
+Bmw,X1,Standard,0
+Bmw,X3,Standard,0
+Bmw,X5,Standard,0
+Bmw,Z3,Standard,0
+Bmw,Z4,Standard,0
+Bmw,Z8,Standard,0
+Bug Motors,Bug,Standard,0
+Bugatti,Chiron,Standard,0.2
+Bugatti,Chiron Pur Sport,Standard,0.2
+Bugatti,Chiron Supersport,Standard,0.2
+Bugatti,EB110,Standard,0.2
+Bugatti,Mistral,Standard,0.2
+Bugatti,Veyron,Standard,0.2
+Buick,Allure,Standard,0
+Buick,Cascada,Standard,0
+Buick,Century,Standard,0
+Buick,Coachbuilder,Standard,0
+Buick,LaCrosse,Standard,0
+Buick,LeSabre,Standard,0
+Buick,Lucerne,Standard,0
+Buick,Park Avenue,Standard,0
+Buick,Regal,Standard,0
+Buick,Regal TourX,Standard,0
+Buick,Riviera,Standard,0
+Buick,Roadmaster,Standard,0
+Buick,Skylark,Standard,0
+Buick,Verano,Standard,0
+Bxr,Blade,Standard,0
+Byd,e6,Standard,0
+Cadillac,ATS,Standard,0
+Cadillac,Catera,Standard,0
+Cadillac,Celestiq,Standard,0
+Cadillac,Commercial Chassis,Standard,0
+Cadillac,CT4,Standard,0
+Cadillac,CT5,Standard,0
+Cadillac,CT6,Standard,0
+Cadillac,CTS,Standard,0
+Cadillac,Deville,Standard,0
+Cadillac,DTS,Standard,0
+Cadillac,Eldorado,Standard,0
+Cadillac,ELR,Standard,0
+Cadillac,Fleetwood,Standard,0
+Cadillac,Hearse,Standard,0
+Cadillac,Limousine,Standard,0
+Cadillac,Seville,Standard,0
+Cadillac,STS,Standard,0
+Cadillac,XLR,Standard,0
+Cadillac,XTS,Standard,0
+Calmotors,CA1,Standard,0
+Carbodies,London Taxi,Standard,0
+Chevrolet,Alero,Standard,0
+Chevrolet,Aveo,Standard,0
+Chevrolet,Beretta,Standard,0
+Chevrolet,Bolt EUV,Standard,0
+Chevrolet,Bolt EV,Standard,0
+Chevrolet,Camaro,Standard,0
+Chevrolet,Caprice,Standard,0
+Chevrolet,Caprice Police Vehicle,Standard,0
+Chevrolet,Cavalier,Standard,0
+Chevrolet,Cobalt,Standard,0
+Chevrolet,Corsica,Standard,0
+Chevrolet,Corvette,Standard,0
+Chevrolet,Cruze,Standard,0
+Chevrolet,Cruze Limited,Standard,0
+Chevrolet,Epica,Standard,0
+Chevrolet,Geo Prizm,Standard,0
+Chevrolet,Impala,Standard,0
+Chevrolet,Impala Limited,Standard,0
+Chevrolet,Kalos,Standard,0
+Chevrolet,Lumina,Standard,0
+Chevrolet,Malibu,Standard,0
+Chevrolet,Malibu Classic,Standard,0
+Chevrolet,Malibu Limited,Standard,0
+Chevrolet,Matiz,Standard,0
+Chevrolet,Metro,Standard,0
+Chevrolet,Monte Carlo,Standard,0
+Chevrolet,Onix,Standard,0
+Chevrolet,Optra,Standard,0
+Chevrolet,Sonic,Standard,0
+Chevrolet,Spark,Standard,0
+Chevrolet,SS,Standard,0
+Chevrolet,U100,Standard,0
+Chevrolet,Volt,Standard,0
+Chrysler,200,Standard,0
+Chrysler,300,Standard,0
+Chrysler,300C,Standard,0
+Chrysler,Cirrus,Standard,0
+Chrysler,Concorde,Standard,0
+Chrysler,Crossfire,Standard,0
+Chrysler,Intrepid,Standard,0
+Chrysler,LHS,Standard,0
+Chrysler,Neon,Standard,0
+Chrysler,New Yorker,Standard,0
+Chrysler,Prowler,Standard,0
+Chrysler,PT Cruiser,Standard,0
+Chrysler,Sebring,Standard,0
+Chrysler,Stratus,Standard,0
+Chrysler,Viper,Standard,0
+Chrysler,Vision,Standard,0
+Classic Roadsters,Cobra,Standard,0.2
+Classic Roadsters,Duchess,Standard,0.2
+Classic Roadsters,Duke,Standard,0.2
+Classic Roadsters,Marlene,Standard,0.2
+Classic Roadsters,MX,Standard,0.2
+Classic Roadsters,Saxon,Standard,0.2
+Classic Roadsters,Sebring,Standard,0.2
+Classic Sports Cars,MIGI,Standard,0.2
+Classic Sports Cars,OTHER,Standard,0.2
+Classic Sports Cars,XC-53,Standard,0.2
+Clenet,Chrysler Base,Standard,0
+Clenet,Ford Base,Standard,0
+Clenet,General Motors Base,Standard,0
+Cobra Cars,Cobra Daytona,Standard,0
+Cobra Cars,Others,Standard,0
+Coda,CODA,Standard,0
+Consulier Gtp,GTP,Standard,0
+Contemporary Classic Cars (Ccc),Ravenhawk,Standard,0
+Costin Sports Car,Racing Car,Standard,0
+Costin Sports Car,Sports car,Standard,0
+C-R Cheetah Race Cars,CHEETAH,Standard,0.2
+C-R Cheetah Race Cars,SUPER CHEETAH,Standard,0.2
+Creative Coachworks,Creative Coachworks,Standard,0
+Creative Coachworks Inc.,Baron Automobile Line,Standard,0
+Cruise,Cruise AV,Standard,0
+Cx Automotive,CX Automotive,Standard,0
+Czinger,21C,Standard,0
+Daewoo,G2X,Standard,0
+Daewoo,Laganza V-car,Standard,0
+Daewoo,LANOS,Standard,0
+Daewoo,LEGANZA,Standard,0
+Daewoo,Leganza V-200 & variants/derivatives,Standard,0
+Daewoo,NUBIRA,Standard,0
+Daihatsu,Charade,Standard,0
+Daytona Coach Builders,Daytona Midgie-2,Standard,0
+Dodge,Avenger,Standard,0
+Dodge,Caliber,Standard,0
+Dodge,Challenger,Standard,0
+Dodge,Charger,Standard,0
+Dodge,Dart,Standard,0
+Dodge,Intrepid,Standard,0
+Dodge,Neon,Standard,0
+Dodge,Ram,Standard,0
+Dodge,Stealth,Standard,0
+Dodge,Stratus,Standard,0
+Dodge,Viper,Standard,0
+Dongfeng,Front drive motor,Standard,0
+Dongfeng,Rear drive motor,Standard,0
+Dongfeng,Sport,Standard,0
+Eagle,MEDALLION,Standard,0
+Eagle,Summit,Standard,0
+Eagle,Talon,Standard,0
+Eagle,Vision,Standard,0
+Ecocar,X,Standard,0
+Ecocar,X2,Standard,0
+Electric Car Company,MI-6,Standard,0
+Electric Mobile Cars,Electric Mobile Cars,Standard,0
+Elkington,Original,Standard,0
+Ema,Limo,Standard,0
+Engine Connection,1932 Ford Highboy replica,Standard,0
+Engine Connection,1934 Ford 5-Window Coupe replica,Standard,0
+Engine Connection,1934 Ford Roadster,Standard,0
+Engine Connection,Cobra 427 replica,Standard,0
+Engine Connection,Daytona Coupe replica,Standard,0
+Engine Connection,GT40 replica,Standard,0
+Equus Automotive,Equus Passenger Car,Standard,0
+Ev Innovations,2 Door Inizio Sports Car,Standard,0
+Ev Innovations,2 Door Wave,Standard,0
+Ev Innovations,2 Door Wave Truck,Standard,0
+Ev Innovations,4 Door Wave,Standard,0
+Ev Innovations,4 Door Wave Truck,Standard,0
+Ev Innovations,Chopper,Standard,0
+Ev Innovations,Custom Vehicle,Standard,0
+Ev Innovations,Liv Wise,Standard,0
+Ev Innovations,Motorcycle Wave,Standard,0
+Excalibur Automobile Corporation,Limousine,Standard,0
+Excalibur Automobile Corporation,Phaeton,Standard,0
+Excalibur Automobile Corporation,Roadster,Standard,0
+Excalibur Automobile Corporation,Sedan,Standard,0
+Falcon,F-7,Standard,0.2
+Falcon Motors,Model 1,Standard,0.2
+Falcon Motors,Model 3,Standard,0.2
+Falcon Motors,Model 6,Standard,0.2
+Falcon Motors,Model 9,Standard,0.2
+Faw Jiaxing Happy Messenger,Faw Jianxing Happy Messenger,Standard,0
+Ferrari,12Cilindri,Standard,0.25
+Ferrari,12Cilindri Spider,Standard,0.25
+Ferrari,296 GTB,Standard,0.25
+Ferrari,296 GTS,Standard,0.25
+Ferrari,355 Berlinetta,Standard,0.25
+Ferrari,355 GTS,Standard,0.25
+Ferrari,355 Spider,Standard,0.25
+Ferrari,360 Modena,Standard,0.25
+Ferrari,360 Spider,Standard,0.25
+Ferrari,430 Scuderia,Standard,0.25
+Ferrari,430 Scuderia Spider,Standard,0.25
+Ferrari,456 GT,Standard,0.25
+Ferrari,456 MGT,Standard,0.25
+Ferrari,456 MGTA,Standard,0.25
+Ferrari,458 Italia,Standard,0.25
+Ferrari,458 Speciale,Standard,0.25
+Ferrari,458 Speciale Spider,Standard,0.25
+Ferrari,458 Spider,Standard,0.25
+Ferrari,488 GTB,Standard,0.25
+Ferrari,488 GTS,Standard,0.25
+Ferrari,488 Pista,Standard,0.25
+Ferrari,488 Pista Spider,Standard,0.25
+Ferrari,488 Spider,Standard,0.25
+Ferrari,550 Barchetta,Standard,0.25
+Ferrari,550 Maranello,Standard,0.25
+Ferrari,575 M Maranello,Standard,0.25
+Ferrari,599 GTB,Standard,0.25
+Ferrari,599 GTB Fiorano,Standard,0.25
+Ferrari,599 GTO,Standard,0.25
+Ferrari,612 Scaglietti,Standard,0.25
+Ferrari,812 Competizione,Standard,0.25
+Ferrari,812 Competizione A,Standard,0.25
+Ferrari,812 GTS,Standard,0.25
+Ferrari,812 Superfast,Standard,0.25
+Ferrari,California,Standard,0.25
+Ferrari,California T,Standard,0.25
+Ferrari,Challenge Stradale,Standard,0.25
+Ferrari,Daytona SP3,Standard,0.25
+Ferrari,Enzo,Standard,0.25
+Ferrari,F12 Berlinetta,Standard,0.25
+Ferrari,F12 Special Series,Standard,0.25
+Ferrari,F12 tdf (Tour de France),Standard,0.25
+Ferrari,F164BCB,Standard,0.25
+Ferrari,F355,Standard,0.25
+Ferrari,F430,Standard,0.25
+Ferrari,F430 Coupe,Standard,0.25
+Ferrari,F430 Spider,Standard,0.25
+Ferrari,F50,Standard,0.25
+Ferrari,F60 America,Standard,0.25
+Ferrari,F8 Spider,Standard,0.25
+Ferrari,F8 Tributo,Standard,0.25
+Ferrari,FF,Standard,0.25
+Ferrari,GTC4Lusso,Standard,0.25
+Ferrari,La Ferrari,Standard,0.25
+Ferrari,Monza SP1/SP2,Standard,0.25
+Ferrari,Portofino,Standard,0.25
+Ferrari,Portofino M,Standard,0.25
+Ferrari,Roma,Standard,0.25
+Ferrari,Roma Spider,Standard,0.25
+Ferrari,SF90 Spider,Standard,0.25
+Ferrari,SF90 Stradale,Standard,0.25
+Ferrari,SF90 XX Spider,Standard,0.25
+Ferrari,SF90 XX Stradale,Standard,0.25
+Fiat,500,Standard,0
+Fiat,124 Spider,Standard,0
+Fiat,500e,Standard,0
+Fisker,Karma,Standard,0
+Fisker,Nina,Standard,0
+Ford,'34,Standard,0
+Ford,Aspire,Standard,0
+Ford,C-Max,Standard,0
+Ford,Contour,Standard,0
+Ford,Crown Victoria,Standard,0
+Ford,Escort,Standard,0
+Ford,Fiesta,Standard,0
+Ford,Five Hundred,Standard,0
+Ford,Focus,Standard,0
+Ford,Fusion,Standard,0
+Ford,GT,Standard,0
+Ford,GT MKII,Standard,0
+Ford,Mustang,Standard,0
+Ford,Mustang GTD,Standard,0
+Ford,Probe,Standard,0
+Ford,Taurus,Standard,0
+Ford,Thunderbird,Standard,0
+Ford,ZX2,Standard,0
+Formula 1 Street Com,F1S,Standard,0.25
+Formula 1 Street Com,FXS,Standard,0.25
+Fortunesport Ves,Rk.S,Standard,0
+Fortunesport Ves,Rt.C,Standard,0
+Fortunesport Ves,Rt.S,Standard,0
+Fortunesport Ves,Rt.V,Standard,0
+Fortunesport Ves,Rt.X,Standard,0
+Genesis,G70,Standard,0
+Genesis,G80,Standard,0
+Genesis,G90,Standard,0
+Geo,Metro,Standard,0
+Geo,Prizm,Standard,0
+Glickenhaus,4,Standard,0
+Glickenhaus,7,Standard,0
+Gmc,Electric Vehicle,Standard,0
+Gruppe B,Gruppe B,Standard,0
+"Gullwing International Motors, Ltd.",GULLWING 300SL(MERCEDES REPLICA),Standard,0
+"Gullwing International Motors, Ltd.",ROADSTER 300SL(MERCEDES REPLICA),Standard,0
+Heritage,500K,Standard,0
+Heritage,Camaro,Standard,0
+Heritage,Chevelle,Standard,0
+Heritage,Mustang,Standard,0
+Holden,Volt,Standard,0
+Honda,Accord,Standard,0
+Honda,Civic,Standard,0
+Honda,Civic Si,Standard,0
+Honda,Civic Type R,Standard,0
+Honda,Clarity,Standard,0
+Honda,CR-Z,Standard,0
+Honda,del Sol,Standard,0
+Honda,EV Plus,Standard,0
+Honda,FCX Clarity,Standard,0
+Honda,Fit,Standard,0
+Honda,Insight,Standard,0
+Honda,Odyssey,Standard,0
+Honda,Prelude,Standard,0
+Honda,S2000,Standard,0
+"Hunter Design Group, Llc","HUNTER DESIGN GROUP, LLC",Standard,0
+Hyundai,Accent,Standard,0
+Hyundai,Azera,Standard,0
+Hyundai,Elantra,Standard,0
+Hyundai,Elantra GT,Standard,0
+Hyundai,Elantra N,Standard,0
+Hyundai,Elantra Touring,Standard,0
+Hyundai,Equus,Standard,0
+Hyundai,Genesis,Standard,0
+Hyundai,Genesis Coupe,Standard,0
+Hyundai,Ioniq,Standard,0
+Hyundai,Ioniq 6,Standard,0
+Hyundai,Santa Fe,Standard,0
+Hyundai,Sonata,Standard,0
+Hyundai,Tiburon,Standard,0
+Hyundai,Tucson,Standard,0
+Hyundai,Veloster,Standard,0
+Hyundai,Veloster N,Standard,0
+Hyundai,Venue,Standard,0
+Hyundai,Veracruz,Standard,0
+Hyundai,XG300,Standard,0
+Hyundai,XG350,Standard,0
+Infiniti,EX35,Standard,0
+Infiniti,G20,Standard,0
+Infiniti,G25,Standard,0
+Infiniti,G35,Standard,0
+Infiniti,G37,Standard,0
+Infiniti,I30,Standard,0
+Infiniti,I35,Standard,0
+Infiniti,J30,Standard,0
+Infiniti,M35,Standard,0
+Infiniti,M35h,Standard,0
+Infiniti,M37,Standard,0
+Infiniti,M45,Standard,0
+Infiniti,M56,Standard,0
+Infiniti,Q40,Standard,0
+Infiniti,Q45,Standard,0
+Infiniti,Q50,Standard,0
+Infiniti,Q60,Standard,0
+Infiniti,Q70,Standard,0
+Infiniti,Q70L,Standard,0
+Infiniti,QX30,Standard,0
+Infiniti,QX50,Standard,0
+Ives Motors Corporation (Imc),Calypso,Standard,0
+Ives Motors Corporation (Imc),M151,Standard,0
+Ives Motors Corporation (Imc),M2000,Standard,0
+Ives Motors Corporation (Imc),Super Hunter,Standard,0
+Ives Motors Corporation (Imc),The Hunter/El Cazador,Standard,0
+Jac 427,Cobra,Standard,0
+Jaguar,F-TYPE,Standard,0
+Jaguar,S-Type,Standard,0
+Jaguar,Vanden Plas,Standard,0
+Jaguar,XE,Standard,0
+Jaguar,XF,Standard,0
+Jaguar,XJ,Standard,0
+Jaguar,XJ12,Standard,0
+Jaguar,XJ6,Standard,0
+Jaguar,XJ8,Standard,0
+Jaguar,XJR,Standard,0
+Jaguar,XJS,Standard,0
+Jaguar,XK,Standard,0
+Jaguar,XK8,Standard,0
+Jaguar,X-Type,Standard,0
+Kandi,K10 Roadster,Standard,0.2
+Kandi,K11 Panda,Standard,0.2
+Kandi,K12 City Beauty,Standard,0.2
+Kandi,K13 Urban Cowboy,Standard,0.2
+Kandi,K17A,Standard,0.2
+Kandi,K22,Standard,0.2
+Kandi,K23-300,Standard,0.2
+Kandi,K27-300,Standard,0.2
+Kandi,K28,Standard,0.2
+Kandi,K28-300,Standard,0.2
+Kandi,K30,Standard,0.2
+Karma,Atlantic,Standard,0
+Karma,GS-6,Standard,0
+Karma,Gyesera,Standard,0
+Karma,Karma,Standard,0
+Karma,Kaveya,Standard,0
+Karma,Revero,Standard,0
+Karma,Revero GT,Standard,0
+Kepler Motors,Motion,Standard,0
+Kia,Amanti,Standard,0
+Kia,Borrego,Standard,0
+Kia,Cadenza,Standard,0
+Kia,Forte,Standard,0
+Kia,Forte Koup,Standard,0
+Kia,K4,Standard,0
+Kia,K5,Standard,0
+Kia,K900,Standard,0
+Kia,Optima,Standard,0
+Kia,Rio,Standard,0
+Kia,Rondo,Standard,0
+Kia,Sedona,Standard,0
+Kia,Sephia,Standard,0
+Kia,Sorento,Standard,0
+Kia,Spectra,Standard,0
+Kia,Sportage,Standard,0
+Kia,Stinger,Standard,0
+Kindig,CF1,Standard,0
+Koenigsegg,Agera,Standard,0.15
+Koenigsegg,CC850,Standard,0.15
+Koenigsegg,Jesko,Standard,0.15
+Koenigsegg,Koenigsegg Automotive,Standard,0.15
+Koenigsegg,One:1,Standard,0.15
+Koenigsegg,Regera,Standard,0.15
+La Exotics,LA Exotics,Standard,0
+Lamborghini,147,Standard,0.25
+Lamborghini,Aventador,Standard,0.25
+Lamborghini,Diablo,Standard,0.25
+Lamborghini,Gallardo,Standard,0.25
+Lamborghini,Huracan,Standard,0.25
+Lamborghini,Murcielago,Standard,0.25
+Lamborghini,Revuelto,Standard,0.25
+Lamborghini,Roadster,Standard,0.25
+Lancia,Flavia,Standard,0
+Lancia,Thema,Standard,0
+Lexus,CT,Standard,0
+Lexus,ES,Standard,0
+Lexus,GS,Standard,0
+Lexus,HS,Standard,0
+Lexus,IS,Standard,0
+Lexus,LC,Standard,0
+Lexus,LFA,Standard,0
+Lexus,LS,Standard,0
+Lexus,RC,Standard,0
+Lexus,SC,Standard,0
+Lexus,UX,Standard,0
+Lincoln,Continental,Standard,0
+Lincoln,LS,Standard,0
+Lincoln,Mark,Standard,0
+Lincoln,MKS,Standard,0
+Lincoln,MKZ,Standard,0
+Lincoln,Town Car,Standard,0
+Lincoln,Zephyr,Standard,0
+Lite Car,Lite Car,Standard,0
+Londoncoach Inc,London Taxi,Standard,0
+Lotus,2-Eleven,Standard,0.25
+Lotus,340R,Standard,0.25
+Lotus,Eagle,Standard,0.25
+Lotus,Eclat,Standard,0.25
+Lotus,Elan,Standard,0.25
+Lotus,Eleven,Standard,0.25
+Lotus,Elise,Standard,0.25
+Lotus,Elite,Standard,0.25
+Lotus,Emira,Standard,0.25
+Lotus,Esprit,Standard,0.25
+Lotus,Europa,Standard,0.25
+Lotus,Evora,Standard,0.25
+Lotus,Exige,Standard,0.25
+Lotus,MEL,Standard,0.25
+Lotus,Monaco,Standard,0.25
+Lotus,Monza,Standard,0.25
+Lotus,Spa,Standard,0.25
+Lotus,Turbo Esprit,Standard,0.25
+Lucid,Air,Standard,0
+Lumen,Impero,Standard,0
+Making You Mobile,Mizer G4,Standard,0
+Maserati,Coupe,Standard,0.2
+Maserati,Ghibli,Standard,0.2
+Maserati,Grancabrio,Standard,0.2
+Maserati,Granturismo,Standard,0.2
+Maserati,MC20,Standard,0.2
+Maserati,Quattroporte,Standard,0.2
+Maserati,Spyder,Standard,0.2
+Matrix Motor Company,Matrix Motor Company,Standard,0
+Maybach,57,Standard,0.25
+Maybach,62,Standard,0.25
+Mayhem Autoworkz,Alter-C,Standard,0
+Mayhem Autoworkz,Alter-S,Standard,0
+Mayhem Autoworkz,Bullet,Standard,0
+Mayhem Autoworkz,Chaos,Standard,0
+Mayhem Autoworkz,Comet,Standard,0
+Mayhem Autoworkz,Fury,Standard,0
+Mayhem Autoworkz,Lynx,Standard,0
+Mayhem Autoworkz,Pegasus,Standard,0
+Mayhem Autoworkz,Phantom,Standard,0
+Mayhem Autoworkz,Prowler,Standard,0
+Mayhem Autoworkz,Rogue,Standard,0
+Mayhem Autoworkz,Stallion,Standard,0
+Mayhem Autoworkz,Wraith,Standard,0
+Mazda,626,Standard,0
+Mazda,929,Standard,0
+Mazda,CX-3,Standard,0
+Mazda,Mazda2,Standard,0
+Mazda,Mazda3,Standard,0
+Mazda,Mazda5,Standard,0
+Mazda,Mazda6,Standard,0
+Mazda,Millenia,Standard,0
+Mazda,MPV,Standard,0
+Mazda,MX-3,Standard,0
+Mazda,MX-30,Standard,0
+Mazda,MX-5,Standard,0
+Mazda,MX-6,Standard,0
+Mazda,Protege,Standard,0
+Mazda,RX-7,Standard,0
+Mazda,RX-8,Standard,0
+Mclaren,540C,Standard,0.25
+Mclaren,570GT,Standard,0.25
+Mclaren,570S,Standard,0.25
+Mclaren,600LT,Standard,0.25
+Mclaren,620R,Standard,0.25
+Mclaren,625C,Standard,0.25
+Mclaren,650S,Standard,0.25
+Mclaren,675LT,Standard,0.25
+Mclaren,720S,Standard,0.25
+Mclaren,750S,Standard,0.25
+Mclaren,765LT,Standard,0.25
+Mclaren,ARTURA,Standard,0.25
+Mclaren,ELVA,Standard,0.25
+Mclaren,GT,Standard,0.25
+Mclaren,GTS,Standard,0.25
+Mclaren,MP4-12C,Standard,0.25
+Mclaren,P1,Standard,0.25
+Mclaren,SENNA,Standard,0.25
+Mclaren,SENNA GTR,Standard,0.25
+Mercedes-Benz,A-Class,Standard,0
+Mercedes-Benz,AMG GT,Standard,0
+Mercedes-Benz,B-Class,Standard,0
+Mercedes-Benz,C-Class,Standard,0
+Mercedes-Benz,CLA-Class,Standard,0
+Mercedes-Benz,CL-Class,Standard,0
+Mercedes-Benz,CLE,Standard,0
+Mercedes-Benz,CLK-Class,Standard,0
+Mercedes-Benz,CLS-Class,Standard,0
+Mercedes-Benz,E-Class,Standard,0
+Mercedes-Benz,EQE-Class Sedan,Standard,0
+Mercedes-Benz,EQS-Class Sedan,Standard,0
+Mercedes-Benz,G-Class,Standard,0
+Mercedes-Benz,GLA-Class,Standard,0
+Mercedes-Benz,S-Class,Standard,0
+Mercedes-Benz,SLC-Class,Standard,0
+Mercedes-Benz,SL-Class,Standard,0
+Mercedes-Benz,SLK-Class,Standard,0
+Mercedes-Benz,SLR McLaren,Standard,0
+Mercedes-Benz,SLS-Class,Standard,0
+Mercury,Cougar,Standard,0
+Mercury,Grand Marquis,Standard,0
+Mercury,Marauder,Standard,0
+Mercury,Milan,Standard,0
+Mercury,Montego,Standard,0
+Mercury,Mystique,Standard,0
+Mercury,Sable,Standard,0
+Mercury,Tracer,Standard,0
+Meyers Manx,Manx 2.0,Standard,0
+Meyers Manx,Resorter,Standard,0
+Mgs Grand Sport (Mardikian),Miami,Standard,0
+Mini,Clubman,Standard,0
+Mini,Cooper,Standard,0
+Mini,Cooper Convertible,Standard,0
+Mini,Cooper Coupe,Standard,0
+Mini,Cooper Roadster,Standard,0
+Mini,Countryman,Standard,0
+Mini,Hardtop,Standard,0
+Mini,Paceman,Standard,0
+Mitsubishi,3000GT,Standard,0
+Mitsubishi,Diamante,Standard,0
+Mitsubishi,Eclipse,Standard,0
+Mitsubishi,Expo,Standard,0
+Mitsubishi,Galant,Standard,0
+Mitsubishi,i-MiEV,Standard,0
+Mitsubishi,Lancer,Standard,0
+Mitsubishi,Lancer Evolution,Standard,0
+Mitsubishi,Lancer SportBack,Standard,0
+Mitsubishi,Mirage,Standard,0
+Mitsubishi,Mirage G4,Standard,0
+Mk Sportscars,RX5,Standard,0
+Mk Sportscars,Sport,Standard,0
+Moke,Gen 1 EV,Standard,0
+Mosler,MT900s,Standard,0
+Mosler,Raptor,Standard,0
+Mycar,CV .2,Standard,0
+Nissan,200SX,Standard,0
+Nissan,240SX,Standard,0
+Nissan,300ZX,Standard,0
+Nissan,350Z,Standard,0
+Nissan,370Z,Standard,0
+Nissan,Altima,Standard,0
+Nissan,Altra,Standard,0
+Nissan,Altra-EV,Standard,0
+Nissan,Ariya Hatchback,Standard,0
+Nissan,GT-R,Standard,0
+Nissan,Kicks,Standard,0
+Nissan,Kicks Play,Standard,0
+Nissan,Leaf,Standard,0
+Nissan,Maxima,Standard,0
+Nissan,NISSAN Z,Standard,0
+Nissan,Rogue Sport,Standard,0
+Nissan,Sentra,Standard,0
+Nissan,Versa,Standard,0
+Nissan,Versa Note,Standard,0
+Njd Automotive Llc,R32,Standard,0
+Oldsmobile,Achieva,Standard,0
+Oldsmobile,Alero,Standard,0
+Oldsmobile,Aurora,Standard,0
+Oldsmobile,Cutlass,Standard,0
+Oldsmobile,Cutlass Ciera,Standard,0
+Oldsmobile,Cutlass Supreme,Standard,0
+Oldsmobile,Eighty Eight (88),Standard,0
+Oldsmobile,Intrigue,Standard,0
+Oldsmobile,LSS,Standard,0
+Oldsmobile,Ninety Eight (98),Standard,0
+Oldsmobile,Regency,Standard,0
+Opel,Ampera,Standard,0.15
+Opel,Ampera-e,Standard,0.15
+Opel,Ampera-e EV,Standard,0.15
+Opel,Opel,Standard,0.15
+Opel,Roadster,Standard,0.15
+Pagani,Huayra,Standard,0
+Panoz,Panoz Roadster,Standard,0.15
+Panther,Kallista,Standard,0
+Pas,AMG,Standard,0
+Pas,GLD,Standard,0
+Pas,GLS,Standard,0
+Pas,HSE,Standard,0
+Pas,LSX,Standard,0
+Peugeot,405,Standard,0
+Peugeot,505,Standard,0
+Phoenix Motorcars,Phoenix Motorcars,Standard,0
+"Phoenix Sports Cars, Inc.","Phoenix Sports Cars, Inc.",Standard,0
+Plymouth,Breeze,Standard,0
+Plymouth,Neon,Standard,0
+Plymouth,Prowler,Standard,0
+Polestar,PS1,Standard,0
+Polestar,PS2,Standard,0
+Pontiac,Bonneville,Standard,0
+Pontiac,Firebird,Standard,0
+Pontiac,G3,Standard,0
+Pontiac,G5,Standard,0
+Pontiac,G6,Standard,0
+Pontiac,G8,Standard,0
+Pontiac,Grand AM,Standard,0
+Pontiac,Grand Prix,Standard,0
+Pontiac,GTO,Standard,0
+Pontiac,Matiz,Standard,0
+Pontiac,Pursuit,Standard,0
+Pontiac,Solstice,Standard,0
+Pontiac,Sunfire,Standard,0
+Pontiac,Vibe,Standard,0
+Pontiac,Wave,Standard,0
+Porsche,911,Standard,0.15
+Porsche,918,Standard,0.15
+Porsche,718 Boxster,Standard,0.15
+Porsche,718 Cayman,Standard,0.15
+Porsche,718 Spyder,Standard,0.15
+Porsche,Boxster,Standard,0.15
+Porsche,Cayenne,Standard,0.15
+Porsche,Cayman,Standard,0.15
+Porsche,Panamera,Standard,0.15
+Porsche,Taycan,Standard,0.15
+Rally Sport,RS 200,Standard,0
+Rally Sport,RS Cosworth,Standard,0
+Renaissance,Tropica,Standard,0
+Revology,M6466,Standard,0
+Rimac,Nevera,Standard,0
+Rocket Sled Motors,GTM Coupe,Standard,0.2
+Rocket Sled Motors,Roadster ZR,Standard,0.2
+Rolls-Royce,Corniche,Standard,0.2
+Rolls-Royce,Dawn,Standard,0.2
+Rolls-Royce,Ghost,Standard,0.2
+Rolls-Royce,Park Ward,Standard,0.2
+Rolls-Royce,Phantom,Standard,0.2
+Rolls-Royce,Silver Dawn,Standard,0.2
+Rolls-Royce,Silver Seraph,Standard,0.2
+Rolls-Royce,Silver Spirit,Standard,0.2
+Rolls-Royce,Silver Spur,Standard,0.2
+Rolls-Royce,Spectre,Standard,0.2
+Rolls-Royce,Touring Limousine,Standard,0.2
+Rolls-Royce,Wraith,Standard,0.2
+Rs Spider,E,Standard,0
+Rs Spider,Sport Spider,Standard,0
+Ruf,CTR Anniversary / CTR2 / Turbo R / BTR / RCT,Standard,0
+Ruf,CTR1,Standard,0
+Ruf,CTR3 / RtR / Rt12,Standard,0
+Ruf,SCR / R Spyder / Speedster,Standard,0
+Saab,900,Standard,0
+Saab,9000,Standard,0
+Saab,9-2X,Standard,0
+Saab,45903,Standard,0
+Saab,45905,Standard,0
+Saleen,S7,Standard,0
+Saturn,Astra,Standard,0
+Saturn,Aura,Standard,0
+Saturn,Ion,Standard,0
+Saturn,L200,Standard,0
+Saturn,L300,Standard,0
+Saturn,LS,Standard,0
+Saturn,LS1,Standard,0
+Saturn,LS2,Standard,0
+Saturn,LW1,Standard,0
+Saturn,LW2,Standard,0
+Saturn,LW200,Standard,0
+Saturn,LW300,Standard,0
+Saturn,SC1,Standard,0
+Saturn,SC2,Standard,0
+Saturn,Sky,Standard,0
+Saturn,SL,Standard,0
+Saturn,SL1,Standard,0
+Saturn,SL2,Standard,0
+Saturn,SW1,Standard,0
+Saturn,SW2,Standard,0
+Scuderia Cameron Glickenhaus (Scg),002CS,Standard,0
+Scuderia Cameron Glickenhaus (Scg),002S,Standard,0
+Scuderia Cameron Glickenhaus (Scg),003C,Standard,0
+Scuderia Cameron Glickenhaus (Scg),003CS,Standard,0
+Scuderia Cameron Glickenhaus (Scg),003S,Standard,0
+Scuderia Cameron Glickenhaus (Scg),004C,Standard,0
+Scuderia Cameron Glickenhaus (Scg),004CS,Standard,0
+Scuderia Cameron Glickenhaus (Scg),004S,Standard,0
+Scuderia Cameron Glickenhaus (Scg),005C,Standard,0
+Scuderia Cameron Glickenhaus (Scg),005CS,Standard,0
+Scuderia Cameron Glickenhaus (Scg),005S,Standard,0
+Scuderia Cameron Glickenhaus (Scg),006C,Standard,0
+Scuderia Cameron Glickenhaus (Scg),006CS,Standard,0
+Scuderia Cameron Glickenhaus (Scg),006S,Standard,0
+Scuderia Cameron Glickenhaus (Scg),007CS,Standard,0
+Scuderia Cameron Glickenhaus (Scg),008S,Standard,0
+Sf Motors Inc.,SF5,Standard,0
+Shay Reproduction,Model A,Standard,0
+Shay Reproduction,Thunderbird,Standard,0
+Shelby,Cobra,Standard,0.15
+Shelby,GT,Standard,0.15
+Smart,EQ Fortwo,Standard,0
+Smart,Fortwo,Standard,0
+Smart,Fortwo Electric Drive,Standard,0
+Smart,smart,Standard,0
+Solectria,Force,Standard,0
+Solectria,Sunrise,Standard,0
+Spyker,C12,Standard,0
+Spyker,C8,Standard,0
+Spyker,D8/D12,Standard,0
+Ssc North America,Aggressor,Standard,0
+Ssc North America,Striker,Standard,0
+Ssc North America,Tuatara,Standard,0
+Stanford Customs,Classic Sedan,Standard,0
+Stanford Customs,Cordova Sedan,Standard,0
+Stanford Customs,Malibu Sedan,Standard,0
+Subaru,BRZ,Standard,0
+Subaru,Forester,Standard,0
+Subaru,Impreza,Standard,0
+Subaru,Legacy,Standard,0
+Subaru,Outback,Standard,0
+Subaru,SVX,Standard,0
+Subaru,WRX,Standard,0
+Supercar System,B2,Standard,0.25
+Suzuki,Aerio,Standard,0
+Suzuki,Esteem,Standard,0
+Suzuki,Forenza,Standard,0
+Suzuki,Kizashi,Standard,0
+Suzuki,Reno,Standard,0
+Suzuki,Swift,Standard,0
+Suzuki,SX4,Standard,0
+Suzuki,Verona,Standard,0
+Tesla,Model 3,Standard,0.15
+Tesla,Model S,Standard,0.15
+Tesla,Model X,Standard,0.15
+Tesla,Model Y,Standard,0.15
+Tesla,Roadster,Standard,0.15
+Th!Nk,City,Standard,0
+Th!Nk,Neighbor,Standard,0
+Total Electric Vehicles,Electric Stinger,Standard,0
+Total Electric Vehicles,Trilectra XR,Standard,0
+Toyota,86,Standard,0
+Toyota,Avalon,Standard,0
+Toyota,Camry,Standard,0
+Toyota,Camry Solara,Standard,0
+Toyota,Celica,Standard,0
+Toyota,C-HR,Standard,0
+Toyota,Corolla,Standard,0
+Toyota,COROLLA iM,Standard,0
+Toyota,Corolla Matrix,Standard,0
+Toyota,Crown,Standard,0
+Toyota,Crown Signia,Standard,0
+Toyota,Echo,Standard,0
+Toyota,FCHV-adv,Standard,0
+Toyota,GR Corolla,Standard,0
+Toyota,GR86,Standard,0
+Toyota,Mirai,Standard,0
+Toyota,MR2,Standard,0
+Toyota,Paseo,Standard,0
+Toyota,Prius,Standard,0
+Toyota,Prius C,Standard,0
+Toyota,Prius Prime (PHEV),Standard,0
+Toyota,Prius V,Standard,0
+Toyota,Scion FR-S,Standard,0
+Toyota,Scion iA,Standard,0
+Toyota,Scion iM,Standard,0
+Toyota,Scion iQ,Standard,0
+Toyota,Scion tC,Standard,0
+Toyota,Scion xA,Standard,0
+Toyota,Scion xD,Standard,0
+Toyota,Supra,Standard,0
+Toyota,Tercel,Standard,0
+Toyota,Yaris,Standard,0
+Toyota,Yaris iA,Standard,0
+Ucc,32,Standard,0
+Ucc,53,Standard,0
+Ucc,427,Standard,0
+Ukeycheyma,MONOM,Standard,0
+Ukeycheyma,ONO,Standard,0
+Vector Aeromotive Corporation,Vector,Standard,0
+Vintage Auto,SS100,Standard,0.15
+Vintage Auto,XK120,Standard,0.15
+Vintage Cruiser,LC40-R,Standard,0.15
+Vintage Cruiser,LC44-R,Standard,0.15
+Vintage Cruiser,LC45-R,Standard,0.15
+Vintage Cruiser,LC47-R,Standard,0.15
+Vintage Cruiser,LC78-R,Standard,0.15
+Vintage Cruiser,LC79-R,Standard,0.15
+Vintage Microbus,KOMBI CAMPER T2-R,Standard,0.15
+Vintage Microbus,KOMBI TRANSPORTER T2-R,Standard,0.15
+Vintage Rover,LRD110-R,Standard,0.15
+Vintage Rover,LRD90-R,Standard,0.15
+Vision Industries,SZR,Standard,0.15
+Volkswagen,Arteon,Standard,0
+Volkswagen,Beetle,Standard,0
+Volkswagen,Cabrio,Standard,0
+Volkswagen,CC,Standard,0
+Volkswagen,e-Golf,Standard,0
+Volkswagen,Eos,Standard,0
+Volkswagen,EuroVan,Standard,0
+Volkswagen,GLI,Standard,0
+Volkswagen,Golf,Standard,0
+Volkswagen,Golf Alltrack,Standard,0
+Volkswagen,Golf GTI,Standard,0
+Volkswagen,Golf R,Standard,0
+Volkswagen,Golf SportWagen,Standard,0
+Volkswagen,GTI,Standard,0
+Volkswagen,Jetta,Standard,0
+Volkswagen,Jetta GLI,Standard,0
+Volkswagen,Jetta SportWagen,Standard,0
+Volkswagen,Jetta Wagon,Standard,0
+Volkswagen,Passat,Standard,0
+Volkswagen,Phaeton,Standard,0
+Volkswagen,R32,Standard,0
+Volkswagen,Rabbit,Standard,0
+Volkswagen,Touareg,Standard,0
+Volvo,850 Series,Standard,0
+Volvo,960 Series,Standard,0
+Volvo,C30,Standard,0
+Volvo,C70,Standard,0
+Volvo,C70 / C30,Standard,0
+Volvo,S40,Standard,0
+Volvo,S60,Standard,0
+Volvo,S60 Cross Country,Standard,0
+Volvo,S70,Standard,0
+Volvo,S80,Standard,0
+Volvo,S90,Standard,0
+Volvo,V40,Standard,0
+Volvo,V50,Standard,0
+Volvo,V60,Standard,0
+Volvo,V60CC,Standard,0
+Volvo,V70,Standard,0
+Volvo,V90,Standard,0
+Volvo,V90CC,Standard,0
+Volvo,XC60,Standard,0
+Volvo,XC70,Standard,0
+Volvo,XC90,Standard,0
+Warhawk Performance,Willys Coupe,Standard,0
+Westfall Motors Corp.,GT Model,Standard,0
+Yester Year Auto,Bucket,Standard,0
+Yester Year Auto,Cabriolet,Standard,0
+Yester Year Auto,Club Pickup,Standard,0
+Yester Year Auto,Cobra,Standard,0
+Yester Year Auto,Coupe,Standard,0
+Yester Year Auto,Delivery,Standard,0
+Yester Year Auto,Vicky,Standard,0
+Yester Year Auto,Willys,Standard,0
+Yugo,"102, GV",Standard,0
+Zeekr,RT,Standard,0
+Zoox,Zoox,Standard,0

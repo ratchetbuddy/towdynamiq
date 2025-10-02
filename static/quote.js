@@ -146,13 +146,22 @@ function populateServices(selectEl, towType) {
 
   // Clear old options
   selectEl.innerHTML = "";
-  // Add <option> for each service
-  Object.keys(services).forEach((key) => {
-    const option = document.createElement("option");
-    option.value = key;
-    option.textContent = services[key].label;
-    selectEl.appendChild(option);
+
+  // Convert dict -> array [key, value] and sort by dropdown_rank
+  const sortedServices = Object.entries(services).sort((a, b) => {
+    const rankA = a[1].dropdown_rank ?? 9999; // if missing, push to bottom
+    const rankB = b[1].dropdown_rank ?? 9999;
+    return rankA - rankB;
   });
+
+// Add <option> for each service in sorted order
+sortedServices.forEach(([key, service]) => {
+  const option = document.createElement("option");
+  option.value = key;
+  option.textContent = service.label;
+  selectEl.appendChild(option);
+});
+
 
   // Default: select the first option
   if (selectEl.options.length > 0) {
@@ -274,6 +283,20 @@ function createServiceBlock(isFirst = false, defaultValue = null) {
   // Assemble the block
   wrapper.appendChild(label);
   wrapper.appendChild(select);
+
+  // 👉 NEW: add per-block container for extra questions
+  const extraQDiv = document.createElement("div");
+  extraQDiv.classList.add("extra-service-questions");
+  wrapper.appendChild(extraQDiv);
+
+  // 👉 NEW: attach listener for this select
+  select.addEventListener("change", () => {
+    updateBlockQuestions(select, extraQDiv);
+  });
+
+  // run once in case defaultValue matches special services
+  updateBlockQuestions(select, extraQDiv);
+
   wrapper.appendChild(addContainer);
 
   return wrapper;
@@ -309,6 +332,50 @@ towTypeSelect.addEventListener("change", updateServices);
 // Initialize dropdowns on page load
 updateServices();
 
+function updateBlockQuestions(selectEl, container) {
+  container.innerHTML = ""; // clear old
+
+  if (selectEl.value === "window_film") {
+    // Question 1: side windows
+    const sideLabel = document.createElement("label");
+    sideLabel.textContent = "How many side window films?";
+    const sideInput = document.createElement("input");
+    sideInput.type = "number";
+    sideInput.name = "window_film_side";
+    sideInput.min = 0;
+    sideInput.step = 1;   // whole numbers only
+
+    // Question 2: front/back windows
+    const fbLabel = document.createElement("label");
+    fbLabel.textContent = "How many front or back window films?";
+    const fbInput = document.createElement("input");
+    fbInput.type = "number";
+    fbInput.name = "window_film_frontback";
+    fbInput.min = 0;
+    fbInput.step = 1;   // whole numbers only
+
+    // Append to container
+    container.appendChild(sideLabel);
+    container.appendChild(sideInput);
+    container.appendChild(document.createElement("br"));
+    container.appendChild(fbLabel);
+    container.appendChild(fbInput);
+  }
+
+
+  if (selectEl.value === "skid_steer_winch_box_off_road") {
+    const qLabel = document.createElement("label");
+    qLabel.textContent = "Total hours?";
+    const qInput = document.createElement("input");
+    qInput.type = "number";
+    qInput.name = "skid_steer_extra_hours";
+    qInput.min = 0;
+    qInput.step = 0.5;   // 👈 allows 0.5, 1.0, 1.5, etc.
+
+    container.appendChild(qLabel);
+    container.appendChild(qInput);
+  }
+}
 
 // ---------------- Form Submission ----------------
 form.addEventListener("submit", async (e) => {
@@ -319,6 +386,7 @@ form.addEventListener("submit", async (e) => {
   document.querySelectorAll("select[name='service_type']").forEach((sel) => {
     if (sel.value) services.push(sel.value);
   });
+
 
   // ✅ Get vehicle lane position
   
@@ -353,6 +421,29 @@ const payload = {
   // ✅ add here
   local_time: submitTime.toISOString(),
   timezone_offset: submitTime.getTimezoneOffset()
+};
+
+// ✅ Collect extra fields as dicts (not arrays)
+let side = 0, frontback = 0, skidHours = 0;
+
+document.querySelectorAll(".service-block").forEach(block => {
+  const sideVal = block.querySelector("input[name='window_film_side']")?.value;
+  const fbVal = block.querySelector("input[name='window_film_frontback']")?.value;
+  const hoursVal = block.querySelector("input[name='skid_steer_extra_hours']")?.value;
+
+  if (sideVal) side += parseInt(sideVal, 10);
+  if (fbVal) frontback += parseInt(fbVal, 10);
+  if (hoursVal) skidHours += parseFloat(hoursVal);
+});
+
+// Always send a dict (consistent like unsafe_location)
+payload.window_film = {
+  side_window: side,
+  front_or_back_window: frontback
+};
+
+payload.skid_steer = {
+  hours: skidHours
 };
 
 

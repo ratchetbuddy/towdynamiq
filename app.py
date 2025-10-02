@@ -1,143 +1,19 @@
 from flask import Flask, render_template, request, jsonify, Response
-import os
-import json
-import requests
+import os, math, json
 from collections import OrderedDict
-from datetime import datetime, timedelta   # ✅ add timedelta here
+from datetime import datetime, timezone, timedelta   # ✅ add timedelta here
+
+from helper.functions import (
+    get_distance,
+    load_json,
+    get_billable_miles,
+    evaluate_condition,
+    format_breakdown,
+    get_max_upcharge_cap,
+    PRICING_CALCULATORS
+)
 
 app = Flask(__name__)
-
-
-API_KEY = os.environ.get("GOOGLE_MAPS_API_KEY", "YOUR_API_KEY_HERE")
-
-# print("Google Maps API Key loaded:", bool(API_KEY))   # ✅ True if loaded
-# print("Value (first 10 chars):", API_KEY[:10] if API_KEY else "NOT SET")
-
-def get_distance(origin, destination):
-    url = "https://maps.googleapis.com/maps/api/distancematrix/json"
-    params = {
-        "origins": origin,
-        "destinations": destination,
-        "key": API_KEY,
-        "units": "imperial"  # miles
-    }
-    response = requests.get(url, params=params)
-    data = response.json()
-
-    if data["status"] != "OK":
-        raise Exception(f"Error from API: {data}")
-
-    element = data["rows"][0]["elements"][0]
-    if element["status"] != "OK":
-        raise Exception(f"Error in element: {element}")
-
-    # Distance
-    distance_value = element["distance"]["value"]  # meters
-    g_miles = distance_value / 1609.34
-
-    # Round consistently to 1 decimal place
-    miles_rounded = round(g_miles, 1)                # numeric
-    distance_text = f"{miles_rounded:.1f} mi"      # string with 1 decimal
-
-    # Normalized addresses (Google's best guess)
-    resolved_origin = data.get("origin_addresses", [""])[0]
-    resolved_destination = data.get("destination_addresses", [""])[0]
-
-    return {
-        "g_miles": miles_rounded,                # e.g. 21.2
-        "distance_text": distance_text,        # e.g. "21.2 mi"
-        "resolved_origin": resolved_origin,
-        "resolved_destination": resolved_destination
-    }
-
-
-def format_breakdown(response_json):
-    col_width = 25
-    lines = []
-
-    # Header
-    lines.append(f"{'Tow Type:'.ljust(col_width)}{response_json['tow_type']}")
-    lines.append(f"{'Original Pickup:'.ljust(col_width)}{response_json.get('source', '')}")
-    lines.append(f"{'Pickup - TowDynamiq AI:'.ljust(col_width)}{response_json.get('source_resolved', '')}")
-    lines.append(f"{'Original Drop:'.ljust(col_width)}{response_json.get('destination', '')}")
-    lines.append(f"{'Drop - TowDynamiq AI:'.ljust(col_width)}{response_json.get('destination_resolved', '')}")
-    lines.append(f"{'Distance:'.ljust(col_width)}{response_json['distance_text']}")
-    lines.append("-" * (col_width * 2))
-
-    # Services (numbered)
-    for i, service in enumerate(response_json["services"], start=1):
-        lines.append(f"Service {i}:".ljust(col_width) + f"{service['service']}")
-        lines.append(f"{'Hook Fee:'.ljust(col_width)}${service['hook']}")
-        lines.append(
-            f"{'Miles Charged:'.ljust(col_width)}"
-            f"{service['mileage']} @ ${service['per_mile']}/mile = ${service['mileage_cost']}"
-        )
-        lines.append(f"{'Included Miles:'.ljust(col_width)}{service['includes']}")
-        lines.append("-" * (col_width * 2))
-
-    # Upcharges (only show if any > 0)
-    non_zero_upcharges = {k: v for k, v in response_json["upcharges"].items() if v > 0}
-    if non_zero_upcharges:
-        lines.append("")
-        lines.append("Upcharges:")
-        for k, v in non_zero_upcharges.items():
-            pct = f"{round(v * 100, 1)}%"
-            label = k.replace("_", " ").title() + ":"
-            lines.append(f"{label.ljust(col_width)}{pct}")
-        lines.append("-" * (col_width * 2))
-
-    # Totals
-    lines.append(f"{'Time Used:'.ljust(col_width)}{response_json.get('calculation_time', '')}")
-
-    lines.append(f"{'Standard Quote:'.ljust(col_width)}${response_json['standard_quote']}")
-    lines.append(f"{'Combined Upcharge %:'.ljust(col_width)}{response_json['combined_upcharge_percentage']*100}%")
-    lines.append(f"{'Upcharge Amount:'.ljust(col_width)}${response_json['upcharge_amount']}")
-    lines.append(f"{'TowDynamiq Quote:'.ljust(col_width)}${response_json['todynamiq_quote']}")
-
-    return "\n".join(lines)
-
-
-
-
-def load_json(filename):
-    with open(os.path.join("data", filename), "r") as f:
-        return json.load(f)
-
-
-def get_billable_miles(actual_miles: int, dynamic_modifiers: dict) -> int:
-    """
-    Calculate billable miles using either 'pattern' or 'tiers' mode.
-    """
-    mode = dynamic_modifiers["bucket_mileage_pricing"]["mode"]
-
-    if mode == "tiers":
-        for rng, values in dynamic_modifiers["bucket_mileage_pricing"]["tiers"].items():
-            start, end = map(int, rng.split("-"))
-            if start <= actual_miles <= end:
-                return values["billable_miles"]
-        return actual_miles  # fallback if not in any tier
-
-    elif mode == "pattern":
-        rules = dynamic_modifiers["bucket_mileage_pricing"]["pattern"]
-        # Free range (0–5 miles no charge)
-        if actual_miles <= 5:
-            return 0
-
-        start = rules["start"]
-        step = rules["first_step"]
-        cap = start + step - 1
-
-        while cap < rules["max_miles"]:
-            if actual_miles <= cap:
-                return cap
-            step += rules["step_growth"]   # widen the interval
-            start = cap + 1
-            cap = start + step - 1
-
-        return rules["max_miles"]
-
-    else:
-        raise ValueError(f"Unknown mileage mode: {mode}")
 
 @app.route("/")
 def home():
@@ -148,14 +24,13 @@ def home():
 def testquote007():
     pricing = load_json("pricing.json")
     dynamic_modifiers = load_json("dynamic_modifiers.json")
-    cars = load_json("cars.json")
+    cars = load_json("make_model_modifiers.json")
     return render_template("testquote007.html",
                            pricing=pricing,
                            dynamic_modifiers=dynamic_modifiers,
                            cars=cars)
 
 
-from datetime import datetime
 
 @app.route("/calculate", methods=["POST"])
 def calculate():
@@ -166,14 +41,22 @@ def calculate():
     is_accident = data.get("is_accident") == "yes"
     source = data.get("source")
     destination = data.get("destination")
+    # Extra service-specific inputs from frontend
+    window_film_entries = data.get("window_film", {})  # default to {} if missing
+    side_window = window_film_entries.get("side_window", 0)
+    front_or_back_window = window_film_entries.get("front_or_back_window", 0)
+    skid_steer_entries = data.get("skid_steer")
+    skid_steer_hours = skid_steer_entries.get("hours",0)
 
     if not source or not destination:
         return jsonify({"error": "Source and destination are required"}), 400
 
     try:
         distance_info = get_distance(source, destination)
-        g_miles = distance_info["g_miles"]
-        distance_text = distance_info["distance_text"]
+        g_miles_actual = distance_info["g_miles"]
+        g_miles = math.ceil(g_miles_actual)
+        distance_text = f"{g_miles} mi"
+        distance_text_actual = f"{g_miles_actual} mi"
         # Overwrite with Google's resolved addresses
         resolved_source = distance_info["resolved_origin"]
         resolved_destination = distance_info["resolved_destination"]
@@ -187,136 +70,188 @@ def calculate():
 
     pricing = load_json("pricing.json")
     dynamic_modifiers = load_json("dynamic_modifiers.json")
-    cars = load_json("cars.json")
+    cars = load_json("make_model_modifiers.json")
 
     if tow_type not in pricing:
         return jsonify({"error": f"Invalid tow type: {tow_type}"}), 400
 
     breakdowns = []
-    total = 0
+    standard_total = 0   # before upcharges
+    todynamiq_total = 0  # after upcharges
+
 
     for service in services:
         if service not in pricing[tow_type]:
             return jsonify({"error": f"Invalid service: {service}"}), 400
 
         config = pricing[tow_type][service]
+        pricing_type = config.get("pricing_type", "flat")
 
-        hook = config["rate"]
-        per_mile = config["mileage"]
-        included = config.get("includes", 0)
-        print(f"included: {included}")
+        # -------------------------
+        # 1. Apply addon/accident overrides
+        # -------------------------
+        base_rate = config.get("base_rate", 0)
+
+        # addon rules (override base_rate if condition is true)
+        for rule in config.get("rules", []):
+            if evaluate_condition(rule["condition"], services):
+                base_rate = rule["addon_rate"]
+                break
+
+        # accident override
         if is_accident and "accident" in config:
-            hook = config["accident"].get("hook", hook)
-            per_mile = config["accident"].get("mileage", per_mile)
-            included = config["accident"].get("includes", included)
+            base_rate = config["accident"].get("hook", base_rate)
 
-        # mileage = max(0, get_billable_miles(miles, dynamic_modifiers) - included)
-        # mileage_cost = mileage * per_mile
-        # subtotal = hook + mileage_cost
+        # -------------------------
+        # 2. Build inputs for calculators
+        # -------------------------
+        bucket_miles = get_billable_miles(g_miles, dynamic_modifiers)
+        inputs = {"miles": bucket_miles}
 
-        # breakdowns.append({
-        #     "service": config["label"],
-        #     "hook": hook,
-        #     "mileage": mileage,
-        #     "per_mile": per_mile,
-        #     "mileage_cost": round(mileage_cost, 2),
-        #     "includes": included,
-        #     # "subtotal": round(subtotal, 2),
-        #     "accident_applied": is_accident and "accident" in config
-        # })
-        # get the global billable miles once (outside loop)
-        billable_miles = get_billable_miles(g_miles, dynamic_modifiers)
+        # Window Film → capture both side and front/back counts
+        if service == "window_film":
+            inputs["side_window"] = side_window
+            inputs["front_or_back_window"] = front_or_back_window
 
-        # then inside loop use this:
-        extra_miles = max(0, billable_miles - included)
-        print(extra_miles)
-        mileage_cost = round(extra_miles * per_mile, 2)
-        subtotal = hook + mileage_cost
+
+        # Skid Steer → capture hours (convert to minutes for time-based calc)
+        elif service.startswith("skid_steer"):
+            inputs["unit_type"] = "hours"
+            inputs["count"] = skid_steer_hours
+            inputs["duration_minutes"] = int(skid_steer_hours) * 60
+
+
+        # -------------------------
+        # 3. Dispatch to calculator (bucket miles calc)
+        # -------------------------
+        if pricing_type in PRICING_CALCULATORS:
+            service_cfg = dict(config)
+            service_cfg["base_rate"] = base_rate
+            calc_result = PRICING_CALCULATORS[pricing_type](service_cfg, inputs)
+            bucket_subtotal = calc_result["subtotal"]
+        else:
+            calc_result = {"subtotal": base_rate}
+            bucket_subtotal = base_rate
+
+        # -------------------------
+        # 3b. Calculate "standard" subtotal (rounded miles)
+        # -------------------------
+        if pricing_type == "flat":
+            actual_rounded = g_miles  # already ceil’d above
+            includes = config.get("includes", 0)
+            per_mile = config.get("mileage", 0)
+
+            rounded_miles_charged = max(0, actual_rounded - includes)
+            mileage_cost_rounded = rounded_miles_charged * per_mile
+            standard_subtotal = base_rate + mileage_cost_rounded
+        else:
+            standard_subtotal = bucket_subtotal
+
+
+        # -------------------------
+        # 4. Apply per-service modifiers
+        # -------------------------
+        service_upcharges = {}
+        combined_mod_pct = 0.0
+
+        for mod_name, enabled in config.get("modifiers", {}).items():
+            if not enabled:
+                continue
+
+            value = 0.0
+            if mod_name == "make_model" and make and model:
+                make_entry = cars.get(make)
+                if make_entry:
+                    model_entry = make_entry["models"].get(model)
+                    if model_entry:
+                        value = model_entry.get("upcharge_percentage", 0.0)
+
+            elif mod_name == "vehicle_location" and unsafe_location:
+                road_type = unsafe_location.get("road_type")
+                lane = unsafe_location.get("lane")
+                if road_type in dynamic_modifiers["vehicle_location"]:
+                    road_data = dynamic_modifiers["vehicle_location"][road_type]
+                    if lane in road_data["lanes"]:
+                        value = road_data["lanes"][lane].get("upcharge", 0.0)
+
+            elif mod_name == "weather" and weather:
+                if weather in dynamic_modifiers["weather"]:
+                    value = dynamic_modifiers["weather"][weather].get("upcharge", 0.0)
+
+            elif mod_name == "time_of_day":
+                now = datetime.now(timezone.utc).time()
+                local_time_str = data.get("local_time")
+                tz_offset = data.get("timezone_offset")
+                if local_time_str and tz_offset is not None:
+                    try:
+                        client_time = datetime.fromisoformat(local_time_str.replace("Z", "+00:00"))
+                        offset = timedelta(minutes=-int(tz_offset))
+                        now = (client_time + offset).time()
+                    except:
+                        pass
+
+                for slot, slot_data in dynamic_modifiers.get("time_of_day", {}).items():
+                    start = datetime.strptime(slot_data["start"], "%H:%M").time()
+                    end = datetime.strptime(slot_data["end"], "%H:%M").time()
+                    if start <= now <= end:
+                        value = slot_data.get("upcharge", 0.0)
+                        break
+
+            elif mod_name == "truck_utilization":
+                value = dynamic_modifiers.get("truck_utilization", {}).get("upcharge", 0.0)
+
+            # accumulate
+            service_upcharges[mod_name] = value
+            combined_mod_pct += value
+
+        # -------------------------
+        # Dynamic cap based on subtotal bands
+        # -------------------------
+        max_cap = get_max_upcharge_cap(standard_subtotal, dynamic_modifiers["subtotal_upcharge_bands"])
+        combined_mod_pct = min(combined_mod_pct, max_cap)
+
+        upcharge_amount = round(standard_subtotal * combined_mod_pct, 2)
+
+        # -------------------------
+        # 5. Final amounts
+        # -------------------------
+        mileage_upcharge = bucket_subtotal - standard_subtotal
+        service_total = round(standard_subtotal + mileage_upcharge + upcharge_amount, 2)
 
         breakdowns.append({
             "service": config["label"],
-            "hook": hook,
-            "mileage": extra_miles,   # 👈 now reflects per-service miles after included
-            "per_mile": per_mile,
-            "mileage_cost": mileage_cost,
-            "includes": included,
-            "accident_applied": is_accident and "accident" in config
+            "pricing_type": pricing_type,
+            "standard_quote": round(standard_subtotal, 2),
+            "calc_details": calc_result,
+            "upcharges": service_upcharges,
+            "combined_upcharge_pct": round(combined_mod_pct, 3),
+            "upcharge_amount": upcharge_amount,
+            "mileage_upcharge": mileage_upcharge,
+            "todynamiq_quote": service_total
         })
 
+        standard_total += standard_subtotal
+        todynamiq_total += service_total
+        overall_pct_chng = (todynamiq_total-standard_total)/todynamiq_total * 100
 
-        total += subtotal
 
     # -------------------------
-    # ✅ COLLECT ALL UPCHARGES
+    # Time of calculation (client local time if provided)
     # -------------------------
-    upcharges = {
-        "make_model": 0.0,
-        "vehicle_location": 0.0,
-        "weather": 0.0,
-        "truck_utilization": 0.0,
-        "time_of_day": 0.0,
-    }
-
-    # --- Car make/model ---
-    if make and model:
-        make_entry = cars.get(make)
-        if make_entry:
-            model_entry = make_entry["models"].get(model)
-            if model_entry:
-                upcharges["make_model"] = model_entry.get("upcharge_percentage", 0.0)
-
-    # --- Vehicle location ---
-    if unsafe_location:
-        road_type = unsafe_location.get("road_type")
-        lane = unsafe_location.get("lane")
-        if road_type in dynamic_modifiers["vehicle_location"]:
-            road_data = dynamic_modifiers["vehicle_location"][road_type]
-            if lane in road_data["lanes"]:
-                upcharges["vehicle_location"] = road_data["lanes"][lane].get("upcharge", 0.0)
-
-    # --- Weather ---
-    if weather and weather in dynamic_modifiers["weather"]:
-        upcharges["weather"] = dynamic_modifiers["weather"][weather].get("upcharge", 0.0)
-
-    # --- Time of day ---
     local_time_str = data.get("local_time")
     tz_offset = data.get("timezone_offset")
 
-    if local_time_str and tz_offset is not None:
-        try:
-            # Parse as UTC first
+    try:
+        if local_time_str and tz_offset is not None:
             client_time = datetime.fromisoformat(local_time_str.replace("Z", "+00:00"))
-
-            # Adjust using browser's offset (JS getTimezoneOffset gives minutes *behind* UTC)
-            offset = timedelta(minutes=-int(tz_offset))
+            offset = timedelta(minutes=-int(tz_offset))  # JS offset is minutes *behind* UTC
             local_time = client_time + offset
-
-            # keep full datetime for display
-            calculation_datetime = local_time # Just for display
-            calculation_time = calculation_datetime.strftime("%Y-%m-%d %H:%M:%S")  # Just for display
-
-            now = local_time.time() # for calculation
-        except Exception as e:
-            print("⚠️ Failed to parse local_time:", local_time_str, tz_offset, e)
-            now = datetime.utcnow().time()
-    else:
-        # Fallback: if frontend didn’t send local time
-        now = datetime.utcnow().time()
-
-    for slot, slot_data in dynamic_modifiers.get("time_of_day", {}).items():
-        start = datetime.strptime(slot_data["start"], "%H:%M").time()
-        end = datetime.strptime(slot_data["end"], "%H:%M").time()
-        if start <= now <= end:
-            upcharges["time_of_day"] = slot_data.get("upcharge", 0.0)
-            break
-
-
-    # --- Final combined percentage (capped at 0.25) ---
-    combined_upcharge = sum(upcharges.values())
-    combined_upcharge = min(combined_upcharge, 0.25)
-
-    upcharge_amount = round(total * combined_upcharge, 2)
-    final_total = round(total + upcharge_amount, 2)
+            calculation_time = local_time.strftime("%Y-%m-%d %H:%M:%S")
+        else:
+            calculation_time = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+    except Exception as e:
+        print("⚠️ Failed to set calculation_time:", local_time_str, tz_offset, e)
+        calculation_time = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
 
     # -------------------------
     # ✅ RESPONSE
@@ -330,23 +265,29 @@ def calculate():
     response["destination_resolved"] = resolved_destination
 
     # Distance
-    response["distance_miles"] = g_miles
+    response["distance_miles"] = g_miles          # Rounded miles
+    response["bucket_miles"] = bucket_miles       # True billable miles
     response["distance_text"] = distance_text
 
     # Tow info
     response["tow_type"] = tow_type
     response["services"] = breakdowns
     response["calculation_time"] = calculation_time
+    response["distance_text_actual"] = distance_text_actual
+    
 
     # Pricing
-    response["standard_quote"] = round(total, 2)
-    response["upcharges"] = {k: round(v, 3) for k, v in upcharges.items()}
-    response["combined_upcharge_percentage"] = round(combined_upcharge, 3)
-    response["upcharge_amount"] = upcharge_amount
-    response["todynamiq_quote"] = final_total
+    response["standard_quote"] = round(standard_total, 2)   # 👈 before modifiers
+    response["overall_pct_chng"] = round(overall_pct_chng, 2)   # 👈 before modifiers
+    response["todynamiq_quote"] = round(todynamiq_total, 2) # 👈 after modifiers
+
 
     # Breakdown string
     response["breakdown"] = format_breakdown(response)
+
+    response["window_film"] = window_film_entries
+    response["skid_steer"] = skid_steer_entries
+
 
 
     return Response(json.dumps(response), mimetype="application/json")
