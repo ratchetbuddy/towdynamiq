@@ -1,446 +1,438 @@
 make,model,car_type,upcharge_percentage
-1955 Custom Belair,1955 Custom Belair,car_type,0.2
-Aas,Euro Edition,Standard,0
-Aas,Gt Malan,Standard,0
-Aas,Performance Edition,Standard,0
-Aas,Race Edition,Standard,0
-Aas,Sport Edition,Standard,0
-Aas,Trophy Edition,Standard,0
-Ac Propulsion,eBox,Standard,0
-Ac Propulsion,tZero,Standard,0
 Acura,CL,Standard,0
 Acura,ILX,Standard,0
 Acura,Integra,Standard,0
+Acura,Legend,Standard,0
+Acura,MDX,Standard,0
+Acura,MDX Sport Hybrid,Standard,0
 Acura,NSX,Standard,0
+Acura,RDX,Standard,0
 Acura,RL,Standard,0
 Acura,RLX,Standard,0
+Acura,RLX Sport Hybrid,Standard,0
 Acura,RSX,Standard,0
+Acura,SLX,Standard,0
 Acura,TL,Standard,0
 Acura,TLX,Standard,0
 Acura,TSX,Standard,0
+Acura,Vigor,Standard,0
+Acura,ZDX,Standard,0
+Alfa Romeo,164,Standard,0
 Alfa Romeo,4C,Standard,0
-Alfa Romeo,8C Competizione Spider,Standard,0
-Alfa Romeo,Giulia (952),Standard,0
+Alfa Romeo,4C Spider,Standard,0
+Alfa Romeo,Giulia,Standard,0
+Alfa Romeo,Spider,Standard,0
+Alfa Romeo,Stelvio,Standard,0
 Alfa Romeo,Tonale,Standard,0
-Allard Motor Works,J2X,Standard,0
-Am General,MV-1,Standard,0
-Ameritech Corporation,F1,Standard,0
-Armbruster Stageway,Buick First Call,Standard,0
-Armbruster Stageway,Buick Funeral Car,Standard,0
-Armbruster Stageway,Buick Limousine,Standard,0
-Armbruster Stageway,Buick Ski Cruiser,Standard,0
-Armbruster Stageway,Cadillac First Call,Standard,0
-Armbruster Stageway,Cadillac Funeral Car,Standard,0
-Armbruster Stageway,Cadillac Limousine,Standard,0
-Armbruster Stageway,Cadillac Ski Cruiser,Standard,0
-Armbruster Stageway,Lincoln First Call,Standard,0
-Armbruster Stageway,Lincoln Funeral Car,Standard,0
-Armbruster Stageway,Lincoln Limousine,Standard,0
-Armbruster Stageway,Lincoln Ski Cruiser,Standard,0
-Armbruster Stageway,Mercedes First Call,Standard,0
-Armbruster Stageway,Mercedes Funeral Car,Standard,0
-Armbruster Stageway,Mercedes Limousine,Standard,0
-Armbruster Stageway,Mercedes Ski Cruiser,Standard,0
 Aston Martin,DB11,Standard,0.2
-Aston Martin,DB12,Standard,0.2
-Aston Martin,DB7,Standard,0.2
 Aston Martin,DB9,Standard,0.2
+Aston Martin,DB9 GT,Standard,0.2
 Aston Martin,DBS,Standard,0.2
+Aston Martin,DBS Superleggera,Standard,0.2
 Aston Martin,DBX,Standard,0.2
 Aston Martin,Rapide,Standard,0.2
-Aston Martin,V12 Vantage,Standard,0.2
-Aston Martin,V8 Vantage,Standard,0.2
-Aston Martin,Valiant,Standard,0.2
-Aston Martin,Valour,Standard,0.2
+Aston Martin,Rapide S,Standard,0.2
 Aston Martin,Vanquish,Standard,0.2
-Aston Martin,Vanquish Zagato,Standard,0.2
+Aston Martin,Vanquish S,Standard,0.2
 Aston Martin,Vantage,Standard,0.2
 Aston Martin,Virage,Standard,0.2
+Audi,100,Standard,0
+Audi,80,Standard,0
+Audi,90,Standard,0
 Audi,A3,Standard,0
+Audi,A3 Sportback e-tron,Standard,0
 Audi,A4,Standard,0
+Audi,A4 (2005.5),Standard,0
+Audi,A4 allroad,Standard,0
 Audi,A5,Standard,0
+Audi,A5 Sport,Standard,0
 Audi,A6,Standard,0
 Audi,A6 allroad,Standard,0
 Audi,A7,Standard,0
-Audi,A7 e,Standard,0
 Audi,A8,Standard,0
-Audi,A8 e,Standard,0
-Audi,A8 L,Standard,0
-Audi,A8 L e,Standard,0
-Audi,allroad,Standard,0
 Audi,Cabriolet,Standard,0
-Audi,e-tron GT,Standard,0
+Audi,Q3,Standard,0
+Audi,Q4 Sportback e-tron,Standard,0
+Audi,Q4 e-tron,Standard,0
+Audi,Q5,Standard,0
+Audi,Q5 Sportback,Standard,0
+Audi,Q6 e-tron,Standard,0
 Audi,Q7,Standard,0
+Audi,Q8,Standard,0
+Audi,Q8 Sportback e-tron,Standard,0
+Audi,Q8 e-tron,Standard,0
+Audi,Quattro,Standard,0
 Audi,R8,Standard,0
 Audi,RS 3,Standard,0
 Audi,RS 4,Standard,0
 Audi,RS 5,Standard,0
 Audi,RS 6,Standard,0
-Audi,RS 6 Avant,Standard,0
 Audi,RS 7,Standard,0
+Audi,RS Q8,Standard,0
 Audi,RS e-tron GT,Standard,0
-Audi,S e-tron GT,Standard,0
 Audi,S3,Standard,0
 Audi,S4,Standard,0
+Audi,S4 (2005.5),Standard,0
 Audi,S5,Standard,0
 Audi,S6,Standard,0
 Audi,S7,Standard,0
 Audi,S8,Standard,0
+Audi,SQ5,Standard,0
+Audi,SQ5 Sportback,Standard,0
+Audi,SQ7,Standard,0
+Audi,SQ8,Standard,0
+Audi,SQ8 Sportback e-tron,Standard,0
+Audi,SQ8 e-tron,Standard,0
 Audi,TT,Standard,0
-Audi,TT RS,Standard,0
-Audi,TTS,Standard,0
-Autocar Ltd,Autocar Ltd,Standard,0
-Autodelta Usa Inc,Autodelta USA Inc,Standard,0
-Automobili Pininfarina,Battista,Standard,0
-Avera Motors,Coupe,Standard,0
-Avera Motors,Crossover,Standard,0
-Avera Motors,Open Top,Standard,0
-Avera Motors,Roadster,Standard,0
-Backdraft,Roadster,Standard,0.15
-Bakkura Mobility,Bakkura Mobility,Standard,0
-Ballistic,FR1,Standard,0
-Ballistic,FR2,Standard,0
-Bbc,BBC Passenger Car,Standard,0
-Bentley,ARMOURED ARNAGE,Standard,0.2
+Audi,allroad,Standard,0
+Audi,e-tron,Standard,0
+Audi,e-tron GT,Standard,0
+Audi,e-tron S,Standard,0
+Audi,e-tron S Sportback,Standard,0
+Audi,e-tron Sportback,Standard,0
+BMW,1 Series,Standard,0
+BMW,2 Series,Standard,0
+BMW,3 Series,Standard,0
+BMW,4 Series,Standard,0
+BMW,5 Series,Standard,0
+BMW,6 Series,Standard,0
+BMW,7 Series,Standard,0
+BMW,8 Series,Standard,0
+BMW,Alpina B7,Standard,0
+BMW,M,Standard,0
+BMW,M2,Standard,0
+BMW,M3,Standard,0
+BMW,M4,Standard,0
+BMW,M5,Standard,0
+BMW,M6,Standard,0
+BMW,M8,Standard,0
+BMW,X1,Standard,0
+BMW,X2,Standard,0
+BMW,X3,Standard,0
+BMW,X3 M,Standard,0
+BMW,X4,Standard,0
+BMW,X4 M,Standard,0
+BMW,X5,Standard,0
+BMW,X5 M,Standard,0
+BMW,X6,Standard,0
+BMW,X6 M,Standard,0
+BMW,X7,Standard,0
+BMW,XM,Standard,0
+BMW,Z3,Standard,0
+BMW,Z4,Standard,0
+BMW,Z4 M,Standard,0
+BMW,Z8,Standard,0
+BMW,i3,Standard,0
+BMW,i4,Standard,0
+BMW,i5,Standard,0
+BMW,i7,Standard,0
+BMW,i8,Standard,0
+BMW,iX,Standard,0
 Bentley,Arnage,Standard,0.2
 Bentley,Azure,Standard,0.2
+Bentley,Azure T,Standard,0.2
+Bentley,Bentayga,Standard,0.2
 Bentley,Brooklands,Standard,0.2
 Bentley,Continental,Standard,0.2
+Bentley,Continental GT,Standard,0.2
 Bentley,Flying Spur,Standard,0.2
 Bentley,Mulsanne,Standard,0.2
-Bentley,Roll Royce Silver Seraph,Standard,0.2
-Bentley,Rolls-Royce Park Ward,Standard,0.2
-Bentley,Turbo,Standard,0.2
-Blackwater,Classic,Standard,0
-Blackwater,Cordova,Standard,0
-Blackwater,Malibu,Standard,0
-Bluecar,"Bluecar, SAS",Standard,0
-Bmw,335,Standard,0
-Bmw,128i,Standard,0
-Bmw,135i,Standard,0
-Bmw,1M,Standard,0
-Bmw,228i,Standard,0
-Bmw,230i,Standard,0
-Bmw,318i,Standard,0
-Bmw,318iC,Standard,0
-Bmw,318iS,Standard,0
-Bmw,318ti,Standard,0
-Bmw,320i,Standard,0
-Bmw,323i,Standard,0
-Bmw,323iC,Standard,0
-Bmw,323is,Standard,0
-Bmw,325Ci,Standard,0
-Bmw,325i,Standard,0
-Bmw,325xi,Standard,0
-Bmw,328Ci,Standard,0
-Bmw,328d,Standard,0
-Bmw,328i,Standard,0
-Bmw,328iC,Standard,0
-Bmw,328iS,Standard,0
-Bmw,328xi,Standard,0
-Bmw,330Ci,Standard,0
-Bmw,330e,Standard,0
-Bmw,330i,Standard,0
-Bmw,330xi,Standard,0
-Bmw,335d,Standard,0
-Bmw,335i,Standard,0
-Bmw,335is,Standard,0
-Bmw,335xi,Standard,0
-Bmw,340i,Standard,0
-Bmw,428i,Standard,0
-Bmw,430i,Standard,0
-Bmw,435i,Standard,0
-Bmw,440i,Standard,0
-Bmw,525i,Standard,0
-Bmw,525iA,Standard,0
-Bmw,525xi,Standard,0
-Bmw,528i,Standard,0
-Bmw,528xi,Standard,0
-Bmw,530e,Standard,0
-Bmw,530i,Standard,0
-Bmw,530iA,Standard,0
-Bmw,530xi,Standard,0
-Bmw,535d,Standard,0
-Bmw,535i,Standard,0
-Bmw,535xi,Standard,0
-Bmw,540d,Standard,0
-Bmw,540i,Standard,0
-Bmw,540iA,Standard,0
-Bmw,545i,Standard,0
-Bmw,550e,Standard,0
-Bmw,550i,Standard,0
-Bmw,640i,Standard,0
-Bmw,640xi,Standard,0
-Bmw,645Ci,Standard,0
-Bmw,645i,Standard,0
-Bmw,650i,Standard,0
-Bmw,650i / ALPINA B6,Standard,0
-Bmw,650i / B6,Standard,0
-Bmw,650xi,Standard,0
-Bmw,740e,Standard,0
-Bmw,740i,Standard,0
-Bmw,740iL,Standard,0
-Bmw,740Li,Standard,0
-Bmw,745e,Standard,0
-Bmw,745i,Standard,0
-Bmw,745Le,Standard,0
-Bmw,745Li,Standard,0
-Bmw,750e,Standard,0
-Bmw,750i,Standard,0
-Bmw,750i / ALPINA B7,Standard,0
-Bmw,750i / B7,Standard,0
-Bmw,750iL,Standard,0
-Bmw,750Li,Standard,0
-Bmw,750Li / ALPINA B7,Standard,0
-Bmw,750Lxi,Standard,0
-Bmw,750Lxi / ALPINA B7,Standard,0
-Bmw,750xi,Standard,0
-Bmw,750xi / ALPINA B7,Standard,0
-Bmw,760i,Standard,0
-Bmw,760Li,Standard,0
-Bmw,840Ci,Standard,0
-Bmw,840i,Standard,0
-Bmw,850Ci,Standard,0
-Bmw,850i,Standard,0
-Bmw,ActiveE,Standard,0
-Bmw,ActiveHybrid 3,Standard,0
-Bmw,ActiveHybrid 5,Standard,0
-Bmw,ActiveHybrid 7,Standard,0
-Bmw,Alpina,Standard,0
-Bmw,ALPINA B8,Standard,0
-Bmw,B7,Standard,0
-Bmw,i3,Standard,0
-Bmw,i4,Standard,0
-Bmw,i5,Standard,0
-Bmw,i7,Standard,0
-Bmw,i8,Standard,0
-Bmw,M2,Standard,0
-Bmw,M235,Standard,0
-Bmw,M235i,Standard,0
-Bmw,M240i,Standard,0
-Bmw,M3,Standard,0
-Bmw,M340i,Standard,0
-Bmw,M3Ci,Standard,0
-Bmw,M4,Standard,0
-Bmw,M440i,Standard,0
-Bmw,M5,Standard,0
-Bmw,M550i,Standard,0
-Bmw,M6,Standard,0
-Bmw,M760i,Standard,0
-Bmw,M760Li,Standard,0
-Bmw,M8,Standard,0
-Bmw,M850i,Standard,0
-Bmw,X1,Standard,0
-Bmw,X3,Standard,0
-Bmw,X5,Standard,0
-Bmw,Z3,Standard,0
-Bmw,Z4,Standard,0
-Bmw,Z8,Standard,0
-Bug Motors,Bug,Standard,0
-Bugatti,Chiron,Standard,0.2
-Bugatti,Chiron Pur Sport,Standard,0.2
-Bugatti,Chiron Supersport,Standard,0.2
-Bugatti,EB110,Standard,0.2
-Bugatti,Mistral,Standard,0.2
-Bugatti,Veyron,Standard,0.2
-Buick,Allure,Standard,0
 Buick,Cascada,Standard,0
 Buick,Century,Standard,0
-Buick,Coachbuilder,Standard,0
+Buick,Enclave,Standard,0
+Buick,Encore,Standard,0
+Buick,Encore GX,Standard,0
+Buick,Envision,Standard,0
+Buick,Envista,Standard,0
 Buick,LaCrosse,Standard,0
 Buick,LeSabre,Standard,0
 Buick,Lucerne,Standard,0
 Buick,Park Avenue,Standard,0
+Buick,Rainier,Standard,0
 Buick,Regal,Standard,0
+Buick,Regal Sportback,Standard,0
 Buick,Regal TourX,Standard,0
+Buick,Rendezvous,Standard,0
 Buick,Riviera,Standard,0
 Buick,Roadmaster,Standard,0
 Buick,Skylark,Standard,0
+Buick,Terraza,Standard,0
 Buick,Verano,Standard,0
-Bxr,Blade,Standard,0
-Byd,e6,Standard,0
 Cadillac,ATS,Standard,0
-Cadillac,Catera,Standard,0
-Cadillac,Celestiq,Standard,0
-Cadillac,Commercial Chassis,Standard,0
+Cadillac,ATS-V,Standard,0
+Cadillac,Allante,Standard,0
+Cadillac,Brougham,Standard,0
 Cadillac,CT4,Standard,0
 Cadillac,CT5,Standard,0
 Cadillac,CT6,Standard,0
+Cadillac,CT6-V,Standard,0
 Cadillac,CTS,Standard,0
-Cadillac,Deville,Standard,0
+Cadillac,CTS-V,Standard,0
+Cadillac,Catera,Standard,0
+Cadillac,Celestiq,Standard,0
 Cadillac,DTS,Standard,0
-Cadillac,Eldorado,Standard,0
+Cadillac,DeVille,Standard,0
 Cadillac,ELR,Standard,0
+Cadillac,Eldorado,Standard,0
+Cadillac,Escalade,Standard,0
+Cadillac,Escalade ESV,Standard,0
+Cadillac,Escalade EXT,Standard,0
+Cadillac,Escalade IQ,Standard,0
 Cadillac,Fleetwood,Standard,0
-Cadillac,Hearse,Standard,0
-Cadillac,Limousine,Standard,0
-Cadillac,Seville,Standard,0
+Cadillac,LYRIQ,Standard,0
+Cadillac,OPTIQ,Standard,0
+Cadillac,SRX,Standard,0
 Cadillac,STS,Standard,0
+Cadillac,Seville,Standard,0
+Cadillac,Sixty Special,Standard,0
+Cadillac,Vistiq,Standard,0
 Cadillac,XLR,Standard,0
+Cadillac,XT4,Standard,0
+Cadillac,XT5,Standard,0
+Cadillac,XT6,Standard,0
 Cadillac,XTS,Standard,0
-Calmotors,CA1,Standard,0
-Carbodies,London Taxi,Standard,0
-Chevrolet,Alero,Standard,0
+Chevrolet,1500 Extended Cab,Standard,0
+Chevrolet,1500 Regular Cab,Standard,0
+Chevrolet,2500 Crew Cab,Standard,0
+Chevrolet,2500 Extended Cab,Standard,0
+Chevrolet,2500 HD Extended Cab,Standard,0
+Chevrolet,2500 HD Regular Cab,Standard,0
+Chevrolet,2500 Regular Cab,Standard,0
+Chevrolet,3500 Crew Cab,Standard,0
+Chevrolet,3500 Extended Cab,Standard,0
+Chevrolet,3500 HD Extended Cab,Standard,0
+Chevrolet,3500 HD Regular Cab,Standard,0
+Chevrolet,3500 Regular Cab,Standard,0
+Chevrolet,APV Cargo,Standard,0
+Chevrolet,Astro Cargo,Standard,0
+Chevrolet,Astro Passenger,Standard,0
+Chevrolet,Avalanche,Standard,0
+Chevrolet,Avalanche 1500,Standard,0
+Chevrolet,Avalanche 2500,Standard,0
 Chevrolet,Aveo,Standard,0
 Chevrolet,Beretta,Standard,0
+Chevrolet,Blazer,Standard,0
+Chevrolet,Blazer EV,Standard,0
 Chevrolet,Bolt EUV,Standard,0
 Chevrolet,Bolt EV,Standard,0
 Chevrolet,Camaro,Standard,0
 Chevrolet,Caprice,Standard,0
-Chevrolet,Caprice Police Vehicle,Standard,0
+Chevrolet,Caprice Classic,Standard,0
+Chevrolet,Captiva Sport,Standard,0
 Chevrolet,Cavalier,Standard,0
+Chevrolet,City Express,Standard,0
+Chevrolet,Classic,Standard,0
 Chevrolet,Cobalt,Standard,0
+Chevrolet,Colorado Crew Cab,Standard,0
+Chevrolet,Colorado Extended Cab,Standard,0
+Chevrolet,Colorado Regular Cab,Standard,0
 Chevrolet,Corsica,Standard,0
 Chevrolet,Corvette,Standard,0
 Chevrolet,Cruze,Standard,0
 Chevrolet,Cruze Limited,Standard,0
-Chevrolet,Epica,Standard,0
-Chevrolet,Geo Prizm,Standard,0
+Chevrolet,Equinox,Standard,0
+Chevrolet,Equinox EV,Standard,0
+Chevrolet,Express 1500 Cargo,Standard,0
+Chevrolet,Express 1500 Passenger,Standard,0
+Chevrolet,Express 2500 Cargo,Standard,0
+Chevrolet,Express 2500 Passenger,Standard,0
+Chevrolet,Express 3500 Cargo,Standard,0
+Chevrolet,Express 3500 Passenger,Standard,0
+Chevrolet,G-Series 1500,Standard,0
+Chevrolet,G-Series 2500,Standard,0
+Chevrolet,G-Series 3500,Standard,0
+Chevrolet,G-Series G10,Standard,0
+Chevrolet,G-Series G20,Standard,0
+Chevrolet,G-Series G30,Standard,0
+Chevrolet,HHR,Standard,0
 Chevrolet,Impala,Standard,0
 Chevrolet,Impala Limited,Standard,0
-Chevrolet,Kalos,Standard,0
 Chevrolet,Lumina,Standard,0
+Chevrolet,Lumina APV,Standard,0
+Chevrolet,Lumina Cargo,Standard,0
+Chevrolet,Lumina Passenger,Standard,0
 Chevrolet,Malibu,Standard,0
-Chevrolet,Malibu Classic,Standard,0
+Chevrolet,Malibu (Classic),Standard,0
 Chevrolet,Malibu Limited,Standard,0
-Chevrolet,Matiz,Standard,0
 Chevrolet,Metro,Standard,0
 Chevrolet,Monte Carlo,Standard,0
-Chevrolet,Onix,Standard,0
-Chevrolet,Optra,Standard,0
+Chevrolet,Prizm,Standard,0
+Chevrolet,S10 Blazer,Standard,0
+Chevrolet,S10 Crew Cab,Standard,0
+Chevrolet,S10 Extended Cab,Standard,0
+Chevrolet,S10 Regular Cab,Standard,0
+Chevrolet,SS,Standard,0
+Chevrolet,SSR,Standard,0
+Chevrolet,Silverado (Classic) 1500 Crew Cab,Standard,0
+Chevrolet,Silverado (Classic) 1500 Extended Cab,Standard,0
+Chevrolet,Silverado (Classic) 1500 HD Crew Cab,Standard,0
+Chevrolet,Silverado (Classic) 1500 Regular Cab,Standard,0
+Chevrolet,Silverado (Classic) 2500 HD Crew Cab,Standard,0
+Chevrolet,Silverado (Classic) 2500 HD Extended Cab,Standard,0
+Chevrolet,Silverado (Classic) 2500 HD Regular Cab,Standard,0
+Chevrolet,Silverado (Classic) 3500 Crew Cab,Standard,0
+Chevrolet,Silverado (Classic) 3500 Extended Cab,Standard,0
+Chevrolet,Silverado (Classic) 3500 Regular Cab,Standard,0
+Chevrolet,Silverado 1500 Crew Cab,Standard,0
+Chevrolet,Silverado 1500 Double Cab,Standard,0
+Chevrolet,Silverado 1500 Extended Cab,Standard,0
+Chevrolet,Silverado 1500 HD Crew Cab,Standard,0
+Chevrolet,Silverado 1500 LD Double Cab,Standard,0
+Chevrolet,Silverado 1500 Limited Crew Cab,Standard,0
+Chevrolet,Silverado 1500 Limited Double Cab,Standard,0
+Chevrolet,Silverado 1500 Limited Regular Cab,Standard,0
+Chevrolet,Silverado 1500 Regular Cab,Standard,0
+Chevrolet,Silverado 2500 Crew Cab,Standard,0
+Chevrolet,Silverado 2500 Extended Cab,Standard,0
+Chevrolet,Silverado 2500 HD Crew Cab,Standard,0
+Chevrolet,Silverado 2500 HD Double Cab,Standard,0
+Chevrolet,Silverado 2500 HD Extended Cab,Standard,0
+Chevrolet,Silverado 2500 HD Regular Cab,Standard,0
+Chevrolet,Silverado 2500 Regular Cab,Standard,0
+Chevrolet,Silverado 3500 Crew Cab,Standard,0
+Chevrolet,Silverado 3500 Extended Cab,Standard,0
+Chevrolet,Silverado 3500 HD Crew Cab,Standard,0
+Chevrolet,Silverado 3500 HD Double Cab,Standard,0
+Chevrolet,Silverado 3500 HD Extended Cab,Standard,0
+Chevrolet,Silverado 3500 HD Regular Cab,Standard,0
+Chevrolet,Silverado 3500 Regular Cab,Standard,0
+Chevrolet,Silverado EV,Standard,0
 Chevrolet,Sonic,Standard,0
 Chevrolet,Spark,Standard,0
-Chevrolet,SS,Standard,0
-Chevrolet,U100,Standard,0
+Chevrolet,Spark EV,Standard,0
+Chevrolet,Sportvan G10,Standard,0
+Chevrolet,Sportvan G20,Standard,0
+Chevrolet,Sportvan G30,Standard,0
+Chevrolet,Suburban,Standard,0
+Chevrolet,Suburban 1500,Standard,0
+Chevrolet,Suburban 2500,Standard,0
+Chevrolet,Suburban 3500HD,Standard,0
+Chevrolet,Tahoe,Standard,0
+Chevrolet,Tahoe (New),Standard,0
+Chevrolet,Tracker,Standard,0
+Chevrolet,TrailBlazer,Standard,0
+Chevrolet,Trailblazer,Standard,0
+Chevrolet,Traverse,Standard,0
+Chevrolet,Traverse Limited,Standard,0
+Chevrolet,Trax,Standard,0
+Chevrolet,Uplander Cargo,Standard,0
+Chevrolet,Uplander Passenger,Standard,0
+Chevrolet,Venture Cargo,Standard,0
+Chevrolet,Venture Passenger,Standard,0
 Chevrolet,Volt,Standard,0
 Chrysler,200,Standard,0
 Chrysler,300,Standard,0
-Chrysler,300C,Standard,0
+Chrysler,300M,Standard,0
+Chrysler,Aspen,Standard,0
 Chrysler,Cirrus,Standard,0
 Chrysler,Concorde,Standard,0
 Chrysler,Crossfire,Standard,0
-Chrysler,Intrepid,Standard,0
+Chrysler,Fifth Ave,Standard,0
+Chrysler,Grand Voyager,Standard,0
+Chrysler,Imperial,Standard,0
 Chrysler,LHS,Standard,0
-Chrysler,Neon,Standard,0
+Chrysler,LeBaron,Standard,0
 Chrysler,New Yorker,Standard,0
-Chrysler,Prowler,Standard,0
 Chrysler,PT Cruiser,Standard,0
+Chrysler,Pacifica,Standard,0
+Chrysler,Pacifica Hybrid,Standard,0
+Chrysler,Prowler,Standard,0
 Chrysler,Sebring,Standard,0
-Chrysler,Stratus,Standard,0
-Chrysler,Viper,Standard,0
-Chrysler,Vision,Standard,0
-Classic Roadsters,Cobra,Standard,0.2
-Classic Roadsters,Duchess,Standard,0.2
-Classic Roadsters,Duke,Standard,0.2
-Classic Roadsters,Marlene,Standard,0.2
-Classic Roadsters,MX,Standard,0.2
-Classic Roadsters,Saxon,Standard,0.2
-Classic Roadsters,Sebring,Standard,0.2
-Classic Sports Cars,MIGI,Standard,0.2
-Classic Sports Cars,OTHER,Standard,0.2
-Classic Sports Cars,XC-53,Standard,0.2
-Clenet,Chrysler Base,Standard,0
-Clenet,Ford Base,Standard,0
-Clenet,General Motors Base,Standard,0
-Cobra Cars,Cobra Daytona,Standard,0
-Cobra Cars,Others,Standard,0
-Coda,CODA,Standard,0
-Consulier Gtp,GTP,Standard,0
-Contemporary Classic Cars (Ccc),Ravenhawk,Standard,0
-Costin Sports Car,Racing Car,Standard,0
-Costin Sports Car,Sports car,Standard,0
-C-R Cheetah Race Cars,CHEETAH,Standard,0.2
-C-R Cheetah Race Cars,SUPER CHEETAH,Standard,0.2
-Creative Coachworks,Creative Coachworks,Standard,0
-Creative Coachworks Inc.,Baron Automobile Line,Standard,0
-Cruise,Cruise AV,Standard,0
-Cx Automotive,CX Automotive,Standard,0
-Czinger,21C,Standard,0
-Daewoo,G2X,Standard,0
-Daewoo,Laganza V-car,Standard,0
-Daewoo,LANOS,Standard,0
-Daewoo,LEGANZA,Standard,0
-Daewoo,Leganza V-200 & variants/derivatives,Standard,0
-Daewoo,NUBIRA,Standard,0
+Chrysler,Town & Country,Standard,0
+Chrysler,Voyager,Standard,0
+Daewoo,Lanos,Standard,0
+Daewoo,Leganza,Standard,0
+Daewoo,Nubira,Standard,0
 Daihatsu,Charade,Standard,0
-Daytona Coach Builders,Daytona Midgie-2,Standard,0
+Daihatsu,Rocky,Standard,0
 Dodge,Avenger,Standard,0
 Dodge,Caliber,Standard,0
+Dodge,Caravan Cargo,Standard,0
+Dodge,Caravan Passenger,Standard,0
 Dodge,Challenger,Standard,0
 Dodge,Charger,Standard,0
+Dodge,Colt,Standard,0
+Dodge,D150 Club Cab,Standard,0
+Dodge,D150 Regular Cab,Standard,0
+Dodge,D250 Club Cab,Standard,0
+Dodge,D250 Regular Cab,Standard,0
+Dodge,D350 Club Cab,Standard,0
+Dodge,D350 Regular Cab,Standard,0
+Dodge,Dakota Club Cab,Standard,0
+Dodge,Dakota Crew Cab,Standard,0
+Dodge,Dakota Extended Cab,Standard,0
+Dodge,Dakota Quad Cab,Standard,0
+Dodge,Dakota Regular Cab,Standard,0
 Dodge,Dart,Standard,0
+Dodge,Daytona,Standard,0
+Dodge,Durango,Standard,0
+Dodge,Dynasty,Standard,0
+Dodge,Grand Caravan Cargo,Standard,0
+Dodge,Grand Caravan Passenger,Standard,0
+Dodge,Hornet,Standard,0
 Dodge,Intrepid,Standard,0
+Dodge,Journey,Standard,0
+Dodge,Magnum,Standard,0
+Dodge,Monaco,Standard,0
 Dodge,Neon,Standard,0
-Dodge,Ram,Standard,0
+Dodge,Nitro,Standard,0
+Dodge,Ram 1500 Club Cab,Standard,0
+Dodge,Ram 1500 Crew Cab,Standard,0
+Dodge,Ram 1500 Mega Cab,Standard,0
+Dodge,Ram 1500 Quad Cab,Standard,0
+Dodge,Ram 1500 Regular Cab,Standard,0
+Dodge,Ram 2500 Club Cab,Standard,0
+Dodge,Ram 2500 Crew Cab,Standard,0
+Dodge,Ram 2500 Mega Cab,Standard,0
+Dodge,Ram 2500 Quad Cab,Standard,0
+Dodge,Ram 2500 Regular Cab,Standard,0
+Dodge,Ram 3500 Club Cab,Standard,0
+Dodge,Ram 3500 Crew Cab,Standard,0
+Dodge,Ram 3500 Mega Cab,Standard,0
+Dodge,Ram 3500 Quad Cab,Standard,0
+Dodge,Ram 3500 Regular Cab,Standard,0
+Dodge,Ram 50 Regular Cab,Standard,0
+Dodge,Ram Van 1500,Standard,0
+Dodge,Ram Van 2500,Standard,0
+Dodge,Ram Van 3500,Standard,0
+Dodge,Ram Van B150,Standard,0
+Dodge,Ram Van B250,Standard,0
+Dodge,Ram Van B350,Standard,0
+Dodge,Ram Wagon 1500,Standard,0
+Dodge,Ram Wagon 2500,Standard,0
+Dodge,Ram Wagon 3500,Standard,0
+Dodge,Ram Wagon B150,Standard,0
+Dodge,Ram Wagon B250,Standard,0
+Dodge,Ram Wagon B350,Standard,0
+Dodge,Ramcharger,Standard,0
+Dodge,Shadow,Standard,0
+Dodge,Spirit,Standard,0
+Dodge,Sprinter 2500 Cargo,Standard,0
+Dodge,Sprinter 2500 Passenger,Standard,0
+Dodge,Sprinter 3500 Cargo,Standard,0
 Dodge,Stealth,Standard,0
 Dodge,Stratus,Standard,0
 Dodge,Viper,Standard,0
-Dongfeng,Front drive motor,Standard,0
-Dongfeng,Rear drive motor,Standard,0
-Dongfeng,Sport,Standard,0
-Eagle,MEDALLION,Standard,0
+Eagle,Premier,Standard,0
 Eagle,Summit,Standard,0
 Eagle,Talon,Standard,0
 Eagle,Vision,Standard,0
-Ecocar,X,Standard,0
-Ecocar,X2,Standard,0
-Electric Car Company,MI-6,Standard,0
-Electric Mobile Cars,Electric Mobile Cars,Standard,0
-Elkington,Original,Standard,0
-Ema,Limo,Standard,0
-Engine Connection,1932 Ford Highboy replica,Standard,0
-Engine Connection,1934 Ford 5-Window Coupe replica,Standard,0
-Engine Connection,1934 Ford Roadster,Standard,0
-Engine Connection,Cobra 427 replica,Standard,0
-Engine Connection,Daytona Coupe replica,Standard,0
-Engine Connection,GT40 replica,Standard,0
-Equus Automotive,Equus Passenger Car,Standard,0
-Ev Innovations,2 Door Inizio Sports Car,Standard,0
-Ev Innovations,2 Door Wave,Standard,0
-Ev Innovations,2 Door Wave Truck,Standard,0
-Ev Innovations,4 Door Wave,Standard,0
-Ev Innovations,4 Door Wave Truck,Standard,0
-Ev Innovations,Chopper,Standard,0
-Ev Innovations,Custom Vehicle,Standard,0
-Ev Innovations,Liv Wise,Standard,0
-Ev Innovations,Motorcycle Wave,Standard,0
-Excalibur Automobile Corporation,Limousine,Standard,0
-Excalibur Automobile Corporation,Phaeton,Standard,0
-Excalibur Automobile Corporation,Roadster,Standard,0
-Excalibur Automobile Corporation,Sedan,Standard,0
-Falcon,F-7,Standard,0.2
-Falcon Motors,Model 1,Standard,0.2
-Falcon Motors,Model 3,Standard,0.2
-Falcon Motors,Model 6,Standard,0.2
-Falcon Motors,Model 9,Standard,0.2
-Faw Jiaxing Happy Messenger,Faw Jianxing Happy Messenger,Standard,0
-Ferrari,12Cilindri,Standard,0.25
-Ferrari,12Cilindri Spider,Standard,0.25
+FIAT,124 Spider,Standard,0
+FIAT,500,Standard,0
+FIAT,500 Abarth,Standard,0
+FIAT,500L,Standard,0
+FIAT,500X,Standard,0
+FIAT,500c,Standard,0
+FIAT,500c Abarth,Standard,0
+FIAT,500e,Standard,0
 Ferrari,296 GTB,Standard,0.25
-Ferrari,296 GTS,Standard,0.25
-Ferrari,355 Berlinetta,Standard,0.25
-Ferrari,355 GTS,Standard,0.25
-Ferrari,355 Spider,Standard,0.25
-Ferrari,360 Modena,Standard,0.25
-Ferrari,360 Spider,Standard,0.25
 Ferrari,430 Scuderia,Standard,0.25
-Ferrari,430 Scuderia Spider,Standard,0.25
-Ferrari,456 GT,Standard,0.25
-Ferrari,456 MGT,Standard,0.25
-Ferrari,456 MGTA,Standard,0.25
 Ferrari,458 Italia,Standard,0.25
 Ferrari,458 Speciale,Standard,0.25
-Ferrari,458 Speciale Spider,Standard,0.25
 Ferrari,458 Spider,Standard,0.25
 Ferrari,488 GTB,Standard,0.25
-Ferrari,488 GTS,Standard,0.25
 Ferrari,488 Pista,Standard,0.25
-Ferrari,488 Pista Spider,Standard,0.25
 Ferrari,488 Spider,Standard,0.25
-Ferrari,550 Barchetta,Standard,0.25
-Ferrari,550 Maranello,Standard,0.25
-Ferrari,575 M Maranello,Standard,0.25
-Ferrari,599 GTB,Standard,0.25
 Ferrari,599 GTB Fiorano,Standard,0.25
 Ferrari,599 GTO,Standard,0.25
 Ferrari,612 Scaglietti,Standard,0.25
@@ -449,662 +441,1020 @@ Ferrari,812 Competizione A,Standard,0.25
 Ferrari,812 GTS,Standard,0.25
 Ferrari,812 Superfast,Standard,0.25
 Ferrari,California,Standard,0.25
-Ferrari,California T,Standard,0.25
-Ferrari,Challenge Stradale,Standard,0.25
-Ferrari,Daytona SP3,Standard,0.25
-Ferrari,Enzo,Standard,0.25
-Ferrari,F12 Berlinetta,Standard,0.25
-Ferrari,F12 Special Series,Standard,0.25
-Ferrari,F12 tdf (Tour de France),Standard,0.25
-Ferrari,F164BCB,Standard,0.25
-Ferrari,F355,Standard,0.25
+Ferrari,F12berlinetta,Standard,0.25
 Ferrari,F430,Standard,0.25
-Ferrari,F430 Coupe,Standard,0.25
-Ferrari,F430 Spider,Standard,0.25
-Ferrari,F50,Standard,0.25
-Ferrari,F60 America,Standard,0.25
-Ferrari,F8 Spider,Standard,0.25
-Ferrari,F8 Tributo,Standard,0.25
+Ferrari,F8,Standard,0.25
 Ferrari,FF,Standard,0.25
 Ferrari,GTC4Lusso,Standard,0.25
-Ferrari,La Ferrari,Standard,0.25
-Ferrari,Monza SP1/SP2,Standard,0.25
 Ferrari,Portofino,Standard,0.25
-Ferrari,Portofino M,Standard,0.25
 Ferrari,Roma,Standard,0.25
-Ferrari,Roma Spider,Standard,0.25
-Ferrari,SF90 Spider,Standard,0.25
-Ferrari,SF90 Stradale,Standard,0.25
-Ferrari,SF90 XX Spider,Standard,0.25
-Ferrari,SF90 XX Stradale,Standard,0.25
-Fiat,500,Standard,0
-Fiat,124 Spider,Standard,0
-Fiat,500e,Standard,0
+Ferrari,SF90,Standard,0.25
+Fisker,Alaska,Standard,0
 Fisker,Karma,Standard,0
-Fisker,Nina,Standard,0
-Ford,'34,Standard,0
+Fisker,Ocean,Standard,0
+Fisker,Pear,Standard,0
+Fisker,Ronin,Standard,0
+Ford,Aerostar Cargo,Standard,0
+Ford,Aerostar Passenger,Standard,0
 Ford,Aspire,Standard,0
-Ford,C-Max,Standard,0
+Ford,Bronco,Standard,0
+Ford,Bronco Sport,Standard,0
+Ford,C-MAX Energi,Standard,0
+Ford,C-MAX Hybrid,Standard,0
+Ford,Club Wagon,Standard,0
 Ford,Contour,Standard,0
 Ford,Crown Victoria,Standard,0
+Ford,E-Transit 350 Cargo Van,Standard,0
+Ford,E150 Cargo,Standard,0
+Ford,E150 Passenger,Standard,0
+Ford,E150 Super Duty Cargo,Standard,0
+Ford,E150 Super Duty Passenger,Standard,0
+Ford,E250 Cargo,Standard,0
+Ford,E250 Super Duty Cargo,Standard,0
+Ford,E350 Super Duty Cargo,Standard,0
+Ford,E350 Super Duty Passenger,Standard,0
+Ford,EcoSport,Standard,0
+Ford,Econoline E150 Cargo,Standard,0
+Ford,Econoline E150 Passenger,Standard,0
+Ford,Econoline E250 Cargo,Standard,0
+Ford,Econoline E350 Cargo,Standard,0
+Ford,Econoline E350 Super Duty Cargo,Standard,0
+Ford,Econoline E350 Super Duty Passenger,Standard,0
+Ford,Edge,Standard,0
+Ford,Escape,Standard,0
+Ford,Escape Plug-in Hybrid,Standard,0
 Ford,Escort,Standard,0
+Ford,Excursion,Standard,0
+Ford,Expedition,Standard,0
+Ford,Expedition EL,Standard,0
+Ford,Expedition MAX,Standard,0
+Ford,Explorer,Standard,0
+Ford,Explorer Sport,Standard,0
+Ford,Explorer Sport Trac,Standard,0
+Ford,F150 (Heritage) Regular Cab,Standard,0
+Ford,F150 (Heritage) Super Cab,Standard,0
+Ford,F150 Lightning,Standard,0
+Ford,F150 Regular Cab,Standard,0
+Ford,F150 Super Cab,Standard,0
+Ford,F150 SuperCrew Cab,Standard,0
+Ford,F250 Crew Cab,Standard,0
+Ford,F250 Regular Cab,Standard,0
+Ford,F250 Super Cab,Standard,0
+Ford,F250 Super Duty Crew Cab,Standard,0
+Ford,F250 Super Duty Regular Cab,Standard,0
+Ford,F250 Super Duty Super Cab,Standard,0
+Ford,F350 Crew Cab,Standard,0
+Ford,F350 Regular Cab,Standard,0
+Ford,F350 Super Cab,Standard,0
+Ford,F350 Super Duty Crew Cab,Standard,0
+Ford,F350 Super Duty Regular Cab,Standard,0
+Ford,F350 Super Duty Super Cab,Standard,0
+Ford,F450 Super Duty Crew Cab,Standard,0
+Ford,F450 Super Duty Regular Cab,Standard,0
+Ford,Festiva,Standard,0
 Ford,Fiesta,Standard,0
 Ford,Five Hundred,Standard,0
+Ford,Flex,Standard,0
 Ford,Focus,Standard,0
+Ford,Focus ST,Standard,0
+Ford,Freestar Cargo,Standard,0
+Ford,Freestar Passenger,Standard,0
+Ford,Freestyle,Standard,0
 Ford,Fusion,Standard,0
+Ford,Fusion Energi,Standard,0
+Ford,Fusion Plug-in Hybrid,Standard,0
 Ford,GT,Standard,0
-Ford,GT MKII,Standard,0
+Ford,Maverick,Standard,0
 Ford,Mustang,Standard,0
-Ford,Mustang GTD,Standard,0
+Ford,Mustang MACH-E,Standard,0
 Ford,Probe,Standard,0
+Ford,Ranger Regular Cab,Standard,0
+Ford,Ranger Super Cab,Standard,0
+Ford,Ranger SuperCab,Standard,0
+Ford,Ranger SuperCrew,Standard,0
 Ford,Taurus,Standard,0
+Ford,Taurus X,Standard,0
+Ford,Tempo,Standard,0
 Ford,Thunderbird,Standard,0
+Ford,Transit 150 Cargo Van,Standard,0
+Ford,Transit 150 Crew Van,Standard,0
+Ford,Transit 150 Passenger Van,Standard,0
+Ford,Transit 150 Van,Standard,0
+Ford,Transit 150 Wagon,Standard,0
+Ford,Transit 250 Cargo Van,Standard,0
+Ford,Transit 250 Crew Van,Standard,0
+Ford,Transit 250 Van,Standard,0
+Ford,Transit 350 Cargo Van,Standard,0
+Ford,Transit 350 Crew Van,Standard,0
+Ford,Transit 350 HD Cargo Van,Standard,0
+Ford,Transit 350 HD Crew Van,Standard,0
+Ford,Transit 350 HD Van,Standard,0
+Ford,Transit 350 Passenger Van,Standard,0
+Ford,Transit 350 Van,Standard,0
+Ford,Transit 350 Wagon,Standard,0
+Ford,Transit Connect Cargo,Standard,0
+Ford,Transit Connect Cargo Van,Standard,0
+Ford,Transit Connect Passenger,Standard,0
+Ford,Transit Connect Passenger Wagon,Standard,0
+Ford,Windstar Cargo,Standard,0
+Ford,Windstar Passenger,Standard,0
 Ford,ZX2,Standard,0
-Formula 1 Street Com,F1S,Standard,0.25
-Formula 1 Street Com,FXS,Standard,0.25
-Fortunesport Ves,Rk.S,Standard,0
-Fortunesport Ves,Rt.C,Standard,0
-Fortunesport Ves,Rt.S,Standard,0
-Fortunesport Ves,Rt.V,Standard,0
-Fortunesport Ves,Rt.X,Standard,0
+Freightliner,Sprinter 1500 Cargo,Standard,0
+Freightliner,Sprinter 1500 Passenger,Standard,0
+Freightliner,Sprinter 2500 Cargo,Standard,0
+Freightliner,Sprinter 2500 Crew,Standard,0
+Freightliner,Sprinter 2500 Passenger,Standard,0
+Freightliner,Sprinter 3500 Cargo,Standard,0
+Freightliner,Sprinter 3500 Crew,Standard,0
+Freightliner,Sprinter 3500 XD Crew,Standard,0
+Freightliner,Sprinter 3500XD Cargo,Standard,0
+Freightliner,Sprinter 4500 Cargo,Standard,0
+Freightliner,Sprinter 4500 Crew,Standard,0
+Freightliner,Sprinter WORKER Cargo,Standard,0
+Freightliner,Sprinter WORKER Passenger,Standard,0
+GMC,1500 Club Coupe,Standard,0
+GMC,1500 Regular Cab,Standard,0
+GMC,2500 Club Coupe,Standard,0
+GMC,2500 Crew Cab,Standard,0
+GMC,2500 HD Club Coupe,Standard,0
+GMC,2500 HD Extended Cab,Standard,0
+GMC,2500 HD Regular Cab,Standard,0
+GMC,2500 Regular Cab,Standard,0
+GMC,3500 Club Coupe,Standard,0
+GMC,3500 Crew Cab,Standard,0
+GMC,3500 Extended Cab,Standard,0
+GMC,3500 Regular Cab,Standard,0
+GMC,Acadia,Standard,0
+GMC,Acadia Limited,Standard,0
+GMC,Canyon Crew Cab,Standard,0
+GMC,Canyon Extended Cab,Standard,0
+GMC,Canyon Regular Cab,Standard,0
+GMC,Envoy,Standard,0
+GMC,Envoy XL,Standard,0
+GMC,Envoy XUV,Standard,0
+GMC,HUMMER EV Pickup,Standard,0
+GMC,HUMMER EV SUV,Standard,0
+GMC,Hummer EV Pickup,Standard,0
+GMC,Jimmy,Standard,0
+GMC,Rally Wagon 1500,Standard,0
+GMC,Rally Wagon 2500,Standard,0
+GMC,Rally Wagon 3500,Standard,0
+GMC,Rally Wagon G2500,Standard,0
+GMC,Rally Wagon G3500,Standard,0
+GMC,Safari Cargo,Standard,0
+GMC,Safari Passenger,Standard,0
+GMC,Savana 1500 Cargo,Standard,0
+GMC,Savana 1500 Passenger,Standard,0
+GMC,Savana 2500 Cargo,Standard,0
+GMC,Savana 2500 Passenger,Standard,0
+GMC,Savana 3500 Cargo,Standard,0
+GMC,Savana 3500 Passenger,Standard,0
+GMC,Sierra (Classic) 1500 Crew Cab,Standard,0
+GMC,Sierra (Classic) 1500 Extended Cab,Standard,0
+GMC,Sierra (Classic) 1500 HD Crew Cab,Standard,0
+GMC,Sierra (Classic) 1500 Regular Cab,Standard,0
+GMC,Sierra (Classic) 2500 Crew Cab,Standard,0
+GMC,Sierra (Classic) 2500 HD Crew Cab,Standard,0
+GMC,Sierra (Classic) 2500 HD Extended Cab,Standard,0
+GMC,Sierra (Classic) 2500 HD Regular Cab,Standard,0
+GMC,Sierra (Classic) 3500 Crew Cab,Standard,0
+GMC,Sierra (Classic) 3500 Extended Cab,Standard,0
+GMC,Sierra (Classic) 3500 Regular Cab,Standard,0
+GMC,Sierra 1500 Crew Cab,Standard,0
+GMC,Sierra 1500 Double Cab,Standard,0
+GMC,Sierra 1500 Extended Cab,Standard,0
+GMC,Sierra 1500 HD Crew Cab,Standard,0
+GMC,Sierra 1500 Limited Crew Cab,Standard,0
+GMC,Sierra 1500 Limited Double Cab,Standard,0
+GMC,Sierra 1500 Limited Regular Cab,Standard,0
+GMC,Sierra 1500 Regular Cab,Standard,0
+GMC,Sierra 2500 Crew Cab,Standard,0
+GMC,Sierra 2500 Extended Cab,Standard,0
+GMC,Sierra 2500 HD Crew Cab,Standard,0
+GMC,Sierra 2500 HD Double Cab,Standard,0
+GMC,Sierra 2500 HD Extended Cab,Standard,0
+GMC,Sierra 2500 HD Regular Cab,Standard,0
+GMC,Sierra 2500 Regular Cab,Standard,0
+GMC,Sierra 3500 Crew Cab,Standard,0
+GMC,Sierra 3500 Extended Cab,Standard,0
+GMC,Sierra 3500 HD Crew Cab,Standard,0
+GMC,Sierra 3500 HD Double Cab,Standard,0
+GMC,Sierra 3500 HD Extended Cab,Standard,0
+GMC,Sierra 3500 HD Regular Cab,Standard,0
+GMC,Sierra 3500 Regular Cab,Standard,0
+GMC,Sierra EV,Standard,0
+GMC,Sonoma Club Cab,Standard,0
+GMC,Sonoma Club Coupe Cab,Standard,0
+GMC,Sonoma Crew Cab,Standard,0
+GMC,Sonoma Extended Cab,Standard,0
+GMC,Sonoma Regular Cab,Standard,0
+GMC,Suburban 1500,Standard,0
+GMC,Suburban 2500,Standard,0
+GMC,Terrain,Standard,0
+GMC,Vandura 1500,Standard,0
+GMC,Vandura 2500,Standard,0
+GMC,Vandura 3500,Standard,0
+GMC,Vandura G1500,Standard,0
+GMC,Vandura G2500,Standard,0
+GMC,Vandura G3500,Standard,0
+GMC,Yukon,Standard,0
+GMC,Yukon Denali,Standard,0
+GMC,Yukon XL,Standard,0
+GMC,Yukon XL 1500,Standard,0
+GMC,Yukon XL 2500,Standard,0
+Genesis,Electrified G80,Standard,0
+Genesis,Electrified GV70,Standard,0
 Genesis,G70,Standard,0
 Genesis,G80,Standard,0
 Genesis,G90,Standard,0
+Genesis,GV60,Standard,0
+Genesis,GV70,Standard,0
+Genesis,GV80,Standard,0
+Genesis,GV80 Coupe,Standard,0
 Geo,Metro,Standard,0
 Geo,Prizm,Standard,0
-Glickenhaus,4,Standard,0
-Glickenhaus,7,Standard,0
-Gmc,Electric Vehicle,Standard,0
-Gruppe B,Gruppe B,Standard,0
-"Gullwing International Motors, Ltd.",GULLWING 300SL(MERCEDES REPLICA),Standard,0
-"Gullwing International Motors, Ltd.",ROADSTER 300SL(MERCEDES REPLICA),Standard,0
-Heritage,500K,Standard,0
-Heritage,Camaro,Standard,0
-Heritage,Chevelle,Standard,0
-Heritage,Mustang,Standard,0
-Holden,Volt,Standard,0
+Geo,Storm,Standard,0
+Geo,Tracker,Standard,0
+HUMMER,H1,Standard,0
+HUMMER,H2,Standard,0
+HUMMER,H3,Standard,0
+HUMMER,H3T,Standard,0
 Honda,Accord,Standard,0
-Honda,Civic,Standard,0
-Honda,Civic Si,Standard,0
-Honda,Civic Type R,Standard,0
-Honda,Clarity,Standard,0
+Honda,Accord Crosstour,Standard,0
+Honda,Accord Hybrid,Standard,0
+Honda,CR-V,Standard,0
+Honda,CR-V Hybrid,Standard,0
 Honda,CR-Z,Standard,0
-Honda,del Sol,Standard,0
-Honda,EV Plus,Standard,0
-Honda,FCX Clarity,Standard,0
+Honda,Civic,Standard,0
+Honda,Civic Type R,Standard,0
+Honda,Clarity Electric,Standard,0
+Honda,Clarity Fuel Cell,Standard,0
+Honda,Clarity Plug-in Hybrid,Standard,0
+Honda,Crosstour,Standard,0
+Honda,Element,Standard,0
 Honda,Fit,Standard,0
+Honda,HR-V,Standard,0
 Honda,Insight,Standard,0
 Honda,Odyssey,Standard,0
+Honda,Passport,Standard,0
+Honda,Pilot,Standard,0
 Honda,Prelude,Standard,0
+Honda,Prologue,Standard,0
+Honda,Ridgeline,Standard,0
 Honda,S2000,Standard,0
-"Hunter Design Group, Llc","HUNTER DESIGN GROUP, LLC",Standard,0
+Honda,del Sol,Standard,0
 Hyundai,Accent,Standard,0
 Hyundai,Azera,Standard,0
 Hyundai,Elantra,Standard,0
 Hyundai,Elantra GT,Standard,0
+Hyundai,Elantra Hybrid,Standard,0
 Hyundai,Elantra N,Standard,0
-Hyundai,Elantra Touring,Standard,0
+Hyundai,Entourage,Standard,0
 Hyundai,Equus,Standard,0
+Hyundai,Excel,Standard,0
 Hyundai,Genesis,Standard,0
 Hyundai,Genesis Coupe,Standard,0
-Hyundai,Ioniq,Standard,0
-Hyundai,Ioniq 6,Standard,0
+Hyundai,IONIQ 5,Standard,0
+Hyundai,IONIQ 6,Standard,0
+Hyundai,IONIQ 7,Standard,0
+Hyundai,Ioniq Electric,Standard,0
+Hyundai,Ioniq Hybrid,Standard,0
+Hyundai,Ioniq Plug-in Hybrid,Standard,0
+Hyundai,Kona,Standard,0
+Hyundai,Kona Electric,Standard,0
+Hyundai,Kona N,Standard,0
+Hyundai,NEXO,Standard,0
+Hyundai,Palisade,Standard,0
+Hyundai,Santa Cruz,Standard,0
 Hyundai,Santa Fe,Standard,0
+Hyundai,Santa Fe Hybrid,Standard,0
+Hyundai,Santa Fe Plug-in Hybrid,Standard,0
+Hyundai,Santa Fe Sport,Standard,0
+Hyundai,Santa Fe XL,Standard,0
+Hyundai,Scoupe,Standard,0
 Hyundai,Sonata,Standard,0
+Hyundai,Sonata Hybrid,Standard,0
+Hyundai,Sonata Plug-in Hybrid,Standard,0
 Hyundai,Tiburon,Standard,0
 Hyundai,Tucson,Standard,0
+Hyundai,Tucson Fuel Cell,Standard,0
+Hyundai,Tucson Hybrid,Standard,0
+Hyundai,Tucson Plug-in Hybrid,Standard,0
 Hyundai,Veloster,Standard,0
-Hyundai,Veloster N,Standard,0
 Hyundai,Venue,Standard,0
 Hyundai,Veracruz,Standard,0
 Hyundai,XG300,Standard,0
 Hyundai,XG350,Standard,0
-Infiniti,EX35,Standard,0
-Infiniti,G20,Standard,0
-Infiniti,G25,Standard,0
-Infiniti,G35,Standard,0
-Infiniti,G37,Standard,0
-Infiniti,I30,Standard,0
-Infiniti,I35,Standard,0
-Infiniti,J30,Standard,0
-Infiniti,M35,Standard,0
-Infiniti,M35h,Standard,0
-Infiniti,M37,Standard,0
-Infiniti,M45,Standard,0
-Infiniti,M56,Standard,0
-Infiniti,Q40,Standard,0
-Infiniti,Q45,Standard,0
-Infiniti,Q50,Standard,0
-Infiniti,Q60,Standard,0
-Infiniti,Q70,Standard,0
-Infiniti,Q70L,Standard,0
-Infiniti,QX30,Standard,0
-Infiniti,QX50,Standard,0
-Ives Motors Corporation (Imc),Calypso,Standard,0
-Ives Motors Corporation (Imc),M151,Standard,0
-Ives Motors Corporation (Imc),M2000,Standard,0
-Ives Motors Corporation (Imc),Super Hunter,Standard,0
-Ives Motors Corporation (Imc),The Hunter/El Cazador,Standard,0
-Jac 427,Cobra,Standard,0
+INFINITI,EX,Standard,0
+INFINITI,FX,Standard,0
+INFINITI,G,Standard,0
+INFINITI,I,Standard,0
+INFINITI,J,Standard,0
+INFINITI,JX,Standard,0
+INFINITI,M,Standard,0
+INFINITI,Q,Standard,0
+INFINITI,Q40,Standard,0
+INFINITI,Q50,Standard,0
+INFINITI,Q60,Standard,0
+INFINITI,Q70,Standard,0
+INFINITI,QX,Standard,0
+INFINITI,QX30,Standard,0
+INFINITI,QX50,Standard,0
+INFINITI,QX55,Standard,0
+INFINITI,QX60,Standard,0
+INFINITI,QX70,Standard,0
+INFINITI,QX80,Standard,0
+Isuzu,Amigo,Standard,0
+Isuzu,Ascender,Standard,0
+Isuzu,Axiom,Standard,0
+Isuzu,Hombre Regular Cab,Standard,0
+Isuzu,Hombre Spacecab,Standard,0
+Isuzu,Impulse,Standard,0
+Isuzu,Oasis,Standard,0
+Isuzu,Regular Cab,Standard,0
+Isuzu,Rodeo,Standard,0
+Isuzu,Rodeo Sport,Standard,0
+Isuzu,Spacecab,Standard,0
+Isuzu,Stylus,Standard,0
+Isuzu,Trooper,Standard,0
+Isuzu,VehiCROSS,Standard,0
+Isuzu,i-280 Extended Cab,Standard,0
+Isuzu,i-290 Extended Cab,Standard,0
+Isuzu,i-350 Crew Cab,Standard,0
+Isuzu,i-370 Crew Cab,Standard,0
+Isuzu,i-370 Extended Cab,Standard,0
+Jaguar,E-PACE,Standard,0
+Jaguar,F-PACE,Standard,0
 Jaguar,F-TYPE,Standard,0
+Jaguar,I-PACE,Standard,0
 Jaguar,S-Type,Standard,0
-Jaguar,Vanden Plas,Standard,0
+Jaguar,X-Type,Standard,0
 Jaguar,XE,Standard,0
 Jaguar,XF,Standard,0
 Jaguar,XJ,Standard,0
-Jaguar,XJ12,Standard,0
-Jaguar,XJ6,Standard,0
-Jaguar,XJ8,Standard,0
-Jaguar,XJR,Standard,0
-Jaguar,XJS,Standard,0
 Jaguar,XK,Standard,0
-Jaguar,XK8,Standard,0
-Jaguar,X-Type,Standard,0
-Kandi,K10 Roadster,Standard,0.2
-Kandi,K11 Panda,Standard,0.2
-Kandi,K12 City Beauty,Standard,0.2
-Kandi,K13 Urban Cowboy,Standard,0.2
-Kandi,K17A,Standard,0.2
-Kandi,K22,Standard,0.2
-Kandi,K23-300,Standard,0.2
-Kandi,K27-300,Standard,0.2
-Kandi,K28,Standard,0.2
-Kandi,K28-300,Standard,0.2
-Kandi,K30,Standard,0.2
-Karma,Atlantic,Standard,0
-Karma,GS-6,Standard,0
-Karma,Gyesera,Standard,0
-Karma,Karma,Standard,0
-Karma,Kaveya,Standard,0
-Karma,Revero,Standard,0
-Karma,Revero GT,Standard,0
-Kepler Motors,Motion,Standard,0
+Jeep,Cherokee,Standard,0
+Jeep,Comanche Regular Cab,Standard,0
+Jeep,Commander,Standard,0
+Jeep,Compass,Standard,0
+Jeep,Gladiator,Standard,0
+Jeep,Grand Cherokee,Standard,0
+Jeep,Grand Cherokee 4xe,Standard,0
+Jeep,Grand Cherokee L,Standard,0
+Jeep,Grand Wagoneer,Standard,0
+Jeep,Grand Wagoneer L,Standard,0
+Jeep,Liberty,Standard,0
+Jeep,Patriot,Standard,0
+Jeep,Recon,Standard,0
+Jeep,Renegade,Standard,0
+Jeep,Wagoneer,Standard,0
+Jeep,Wagoneer L,Standard,0
+Jeep,Wrangler,Standard,0
+Jeep,Wrangler 2 Door,Standard,0
+Jeep,Wrangler 4 Door,Standard,0
+Jeep,Wrangler 4xe,Standard,0
+Jeep,Wrangler Unlimited,Standard,0
+Jeep,Wrangler Unlimited 4xe,Standard,0
 Kia,Amanti,Standard,0
 Kia,Borrego,Standard,0
 Kia,Cadenza,Standard,0
+Kia,Carnival,Standard,0
+Kia,EV6,Standard,0
+Kia,EV9,Standard,0
 Kia,Forte,Standard,0
 Kia,Forte Koup,Standard,0
-Kia,K4,Standard,0
+Kia,Forte5,Standard,0
 Kia,K5,Standard,0
 Kia,K900,Standard,0
+Kia,Niro,Standard,0
+Kia,Niro EV,Standard,0
+Kia,Niro Plug-in Hybrid,Standard,0
 Kia,Optima,Standard,0
+Kia,Optima (2006.5),Standard,0
+Kia,Optima Hybrid,Standard,0
+Kia,Optima Plug-in Hybrid,Standard,0
 Kia,Rio,Standard,0
 Kia,Rondo,Standard,0
 Kia,Sedona,Standard,0
+Kia,Seltos,Standard,0
 Kia,Sephia,Standard,0
 Kia,Sorento,Standard,0
+Kia,Sorento Hybrid,Standard,0
+Kia,Sorento Plug-in Hybrid,Standard,0
+Kia,Soul,Standard,0
+Kia,Soul EV,Standard,0
 Kia,Spectra,Standard,0
 Kia,Sportage,Standard,0
+Kia,Sportage Hybrid,Standard,0
+Kia,Sportage Plug-in Hybrid,Standard,0
 Kia,Stinger,Standard,0
-Kindig,CF1,Standard,0
-Koenigsegg,Agera,Standard,0.15
-Koenigsegg,CC850,Standard,0.15
-Koenigsegg,Jesko,Standard,0.15
-Koenigsegg,Koenigsegg Automotive,Standard,0.15
-Koenigsegg,One:1,Standard,0.15
-Koenigsegg,Regera,Standard,0.15
-La Exotics,LA Exotics,Standard,0
-Lamborghini,147,Standard,0.25
+Kia,Telluride,Standard,0
 Lamborghini,Aventador,Standard,0.25
-Lamborghini,Diablo,Standard,0.25
 Lamborghini,Gallardo,Standard,0.25
 Lamborghini,Huracan,Standard,0.25
 Lamborghini,Murcielago,Standard,0.25
-Lamborghini,Revuelto,Standard,0.25
-Lamborghini,Roadster,Standard,0.25
-Lancia,Flavia,Standard,0
-Lancia,Thema,Standard,0
+Lamborghini,Murcielago LP640,Standard,0.25
+Lamborghini,Urus,Standard,0.25
+Land Rover,Defender 110,Standard,0
+Land Rover,Defender 130,Standard,0
+Land Rover,Defender 90,Standard,0
+Land Rover,Discovery,Standard,0
+Land Rover,Discovery Series II,Standard,0
+Land Rover,Discovery Sport,Standard,0
+Land Rover,Freelander,Standard,0
+Land Rover,LR2,Standard,0
+Land Rover,LR3,Standard,0
+Land Rover,LR4,Standard,0
+Land Rover,Range Rover,Standard,0
+Land Rover,Range Rover Evoque,Standard,0
+Land Rover,Range Rover Sport,Standard,0
+Land Rover,Range Rover Velar,Standard,0
 Lexus,CT,Standard,0
 Lexus,ES,Standard,0
 Lexus,GS,Standard,0
+Lexus,GX,Standard,0
 Lexus,HS,Standard,0
 Lexus,IS,Standard,0
+Lexus,IS F,Standard,0
 Lexus,LC,Standard,0
 Lexus,LFA,Standard,0
 Lexus,LS,Standard,0
+Lexus,LX,Standard,0
+Lexus,NX,Standard,0
 Lexus,RC,Standard,0
+Lexus,RX,Standard,0
+Lexus,RZ,Standard,0
 Lexus,SC,Standard,0
+Lexus,TX,Standard,0
 Lexus,UX,Standard,0
+Lincoln,Aviator,Standard,0
+Lincoln,Blackwood,Standard,0
 Lincoln,Continental,Standard,0
+Lincoln,Corsair,Standard,0
 Lincoln,LS,Standard,0
-Lincoln,Mark,Standard,0
+Lincoln,MKC,Standard,0
 Lincoln,MKS,Standard,0
+Lincoln,MKT,Standard,0
+Lincoln,MKX,Standard,0
 Lincoln,MKZ,Standard,0
+Lincoln,Mark LT,Standard,0
+Lincoln,Mark VII,Standard,0
+Lincoln,Mark VIII,Standard,0
+Lincoln,Nautilus,Standard,0
+Lincoln,Navigator,Standard,0
+Lincoln,Navigator L,Standard,0
 Lincoln,Town Car,Standard,0
 Lincoln,Zephyr,Standard,0
-Lite Car,Lite Car,Standard,0
-Londoncoach Inc,London Taxi,Standard,0
-Lotus,2-Eleven,Standard,0.25
-Lotus,340R,Standard,0.25
-Lotus,Eagle,Standard,0.25
-Lotus,Eclat,Standard,0.25
-Lotus,Elan,Standard,0.25
-Lotus,Eleven,Standard,0.25
 Lotus,Elise,Standard,0.25
-Lotus,Elite,Standard,0.25
-Lotus,Emira,Standard,0.25
-Lotus,Esprit,Standard,0.25
-Lotus,Europa,Standard,0.25
 Lotus,Evora,Standard,0.25
+Lotus,Evora 400,Standard,0.25
+Lotus,Evora GT,Standard,0.25
 Lotus,Exige,Standard,0.25
-Lotus,MEL,Standard,0.25
-Lotus,Monaco,Standard,0.25
-Lotus,Monza,Standard,0.25
-Lotus,Spa,Standard,0.25
-Lotus,Turbo Esprit,Standard,0.25
+Lotus,Exige S,Standard,0.25
 Lucid,Air,Standard,0
-Lumen,Impero,Standard,0
-Making You Mobile,Mizer G4,Standard,0
+Lucid,Gravity,Standard,0
+MAZDA,323,Standard,0
+MAZDA,626,Standard,0
+MAZDA,929,Standard,0
+MAZDA,B-Series Cab Plus,Standard,0
+MAZDA,B-Series Extended Cab,Standard,0
+MAZDA,B-Series Regular Cab,Standard,0
+MAZDA,CX-3,Standard,0
+MAZDA,CX-30,Standard,0
+MAZDA,CX-5,Standard,0
+MAZDA,CX-50,Standard,0
+MAZDA,CX-7,Standard,0
+MAZDA,CX-70,Standard,0
+MAZDA,CX-9,Standard,0
+MAZDA,CX-90,Standard,0
+MAZDA,CX-90 PHEV,Standard,0
+MAZDA,MAZDA2,Standard,0
+MAZDA,MAZDA3,Standard,0
+MAZDA,MAZDA5,Standard,0
+MAZDA,MAZDA6,Standard,0
+MAZDA,MPV,Standard,0
+MAZDA,MX-3,Standard,0
+MAZDA,MX-30,Standard,0
+MAZDA,MX-5 Miata,Standard,0
+MAZDA,MX-5 Miata RF,Standard,0
+MAZDA,MX-6,Standard,0
+MAZDA,Millenia,Standard,0
+MAZDA,Navajo,Standard,0
+MAZDA,Protege,Standard,0
+MAZDA,Protege5,Standard,0
+MAZDA,RX-7,Standard,0
+MAZDA,RX-8,Standard,0
+MAZDA,Tribute,Standard,0
+MINI,Clubman,Standard,0
+MINI,Convertible,Standard,0
+MINI,Cooper,Standard,0
+MINI,Countryman,Standard,0
+MINI,Coupe,Standard,0
+MINI,Hardtop,Standard,0
+MINI,Hardtop 2 Door,Standard,0
+MINI,Hardtop 4 Door,Standard,0
+MINI,Paceman,Standard,0
+MINI,Roadster,Standard,0
 Maserati,Coupe,Standard,0.2
 Maserati,Ghibli,Standard,0.2
-Maserati,Grancabrio,Standard,0.2
-Maserati,Granturismo,Standard,0.2
+Maserati,GranSport,Standard,0.2
+Maserati,GranTurismo,Standard,0.2
+Maserati,Grecale,Standard,0.2
+Maserati,Levante,Standard,0.2
 Maserati,MC20,Standard,0.2
 Maserati,Quattroporte,Standard,0.2
-Maserati,Spyder,Standard,0.2
-Matrix Motor Company,Matrix Motor Company,Standard,0
 Maybach,57,Standard,0.25
 Maybach,62,Standard,0.25
-Mayhem Autoworkz,Alter-C,Standard,0
-Mayhem Autoworkz,Alter-S,Standard,0
-Mayhem Autoworkz,Bullet,Standard,0
-Mayhem Autoworkz,Chaos,Standard,0
-Mayhem Autoworkz,Comet,Standard,0
-Mayhem Autoworkz,Fury,Standard,0
-Mayhem Autoworkz,Lynx,Standard,0
-Mayhem Autoworkz,Pegasus,Standard,0
-Mayhem Autoworkz,Phantom,Standard,0
-Mayhem Autoworkz,Prowler,Standard,0
-Mayhem Autoworkz,Rogue,Standard,0
-Mayhem Autoworkz,Stallion,Standard,0
-Mayhem Autoworkz,Wraith,Standard,0
-Mazda,626,Standard,0
-Mazda,929,Standard,0
-Mazda,CX-3,Standard,0
-Mazda,Mazda2,Standard,0
-Mazda,Mazda3,Standard,0
-Mazda,Mazda5,Standard,0
-Mazda,Mazda6,Standard,0
-Mazda,Millenia,Standard,0
-Mazda,MPV,Standard,0
-Mazda,MX-3,Standard,0
-Mazda,MX-30,Standard,0
-Mazda,MX-5,Standard,0
-Mazda,MX-6,Standard,0
-Mazda,Protege,Standard,0
-Mazda,RX-7,Standard,0
-Mazda,RX-8,Standard,0
-Mclaren,540C,Standard,0.25
-Mclaren,570GT,Standard,0.25
-Mclaren,570S,Standard,0.25
-Mclaren,600LT,Standard,0.25
-Mclaren,620R,Standard,0.25
-Mclaren,625C,Standard,0.25
-Mclaren,650S,Standard,0.25
-Mclaren,675LT,Standard,0.25
-Mclaren,720S,Standard,0.25
-Mclaren,750S,Standard,0.25
-Mclaren,765LT,Standard,0.25
-Mclaren,ARTURA,Standard,0.25
-Mclaren,ELVA,Standard,0.25
-Mclaren,GT,Standard,0.25
-Mclaren,GTS,Standard,0.25
-Mclaren,MP4-12C,Standard,0.25
-Mclaren,P1,Standard,0.25
-Mclaren,SENNA,Standard,0.25
-Mclaren,SENNA GTR,Standard,0.25
+McLaren,570GT,Standard,0.25
+McLaren,570S,Standard,0.25
+McLaren,600LT,Standard,0.25
+McLaren,650S,Standard,0.25
+McLaren,675LT,Standard,0.25
+McLaren,720S,Standard,0.25
+McLaren,MP4-12C,Standard,0.25
+Mercedes-Benz,190 E,Standard,0
+Mercedes-Benz,300 CE,Standard,0
+Mercedes-Benz,300 D,Standard,0
+Mercedes-Benz,300 E,Standard,0
+Mercedes-Benz,300 SD,Standard,0
+Mercedes-Benz,300 SE,Standard,0
+Mercedes-Benz,300 SL,Standard,0
+Mercedes-Benz,300 TE,Standard,0
+Mercedes-Benz,400 E,Standard,0
+Mercedes-Benz,400 SE,Standard,0
+Mercedes-Benz,400 SEL,Standard,0
+Mercedes-Benz,500 E,Standard,0
+Mercedes-Benz,500 SEC,Standard,0
+Mercedes-Benz,500 SEL,Standard,0
+Mercedes-Benz,500 SL,Standard,0
+Mercedes-Benz,600 SEC,Standard,0
+Mercedes-Benz,600 SEL,Standard,0
+Mercedes-Benz,600 SL,Standard,0
 Mercedes-Benz,A-Class,Standard,0
-Mercedes-Benz,AMG GT,Standard,0
 Mercedes-Benz,B-Class,Standard,0
 Mercedes-Benz,C-Class,Standard,0
-Mercedes-Benz,CLA-Class,Standard,0
 Mercedes-Benz,CL-Class,Standard,0
+Mercedes-Benz,CLA,Standard,0
+Mercedes-Benz,CLA-Class,Standard,0
 Mercedes-Benz,CLE,Standard,0
 Mercedes-Benz,CLK-Class,Standard,0
+Mercedes-Benz,CLS,Standard,0
 Mercedes-Benz,CLS-Class,Standard,0
 Mercedes-Benz,E-Class,Standard,0
-Mercedes-Benz,EQE-Class Sedan,Standard,0
-Mercedes-Benz,EQS-Class Sedan,Standard,0
 Mercedes-Benz,G-Class,Standard,0
+Mercedes-Benz,GL-Class,Standard,0
+Mercedes-Benz,GLA,Standard,0
 Mercedes-Benz,GLA-Class,Standard,0
+Mercedes-Benz,GLB,Standard,0
+Mercedes-Benz,GLC,Standard,0
+Mercedes-Benz,GLC Coupe,Standard,0
+Mercedes-Benz,GLE,Standard,0
+Mercedes-Benz,GLE Coupe,Standard,0
+Mercedes-Benz,GLK-Class,Standard,0
+Mercedes-Benz,GLS,Standard,0
+Mercedes-Benz,M-Class,Standard,0
+Mercedes-Benz,Mercedes-AMG A-Class,Standard,0
+Mercedes-Benz,Mercedes-AMG C-Class,Standard,0
+Mercedes-Benz,Mercedes-AMG CLA,Standard,0
+Mercedes-Benz,Mercedes-AMG CLS,Standard,0
+Mercedes-Benz,Mercedes-AMG E-Class,Standard,0
+Mercedes-Benz,Mercedes-AMG EQE,Standard,0
+Mercedes-Benz,Mercedes-AMG EQE SUV,Standard,0
+Mercedes-Benz,Mercedes-AMG EQS,Standard,0
+Mercedes-Benz,Mercedes-AMG G-Class,Standard,0
+Mercedes-Benz,Mercedes-AMG GLA,Standard,0
+Mercedes-Benz,Mercedes-AMG GLB,Standard,0
+Mercedes-Benz,Mercedes-AMG GLC,Standard,0
+Mercedes-Benz,Mercedes-AMG GLC Coupe,Standard,0
+Mercedes-Benz,Mercedes-AMG GLE,Standard,0
+Mercedes-Benz,Mercedes-AMG GLE Coupe,Standard,0
+Mercedes-Benz,Mercedes-AMG GLS,Standard,0
+Mercedes-Benz,Mercedes-AMG GT,Standard,0
+Mercedes-Benz,Mercedes-AMG S-Class,Standard,0
+Mercedes-Benz,Mercedes-AMG SL,Standard,0
+Mercedes-Benz,Mercedes-AMG SLC,Standard,0
+Mercedes-Benz,Mercedes-AMG SLK,Standard,0
+Mercedes-Benz,Mercedes-EQ EQB,Standard,0
+Mercedes-Benz,Mercedes-EQ EQE,Standard,0
+Mercedes-Benz,Mercedes-EQ EQE SUV,Standard,0
+Mercedes-Benz,Mercedes-EQ EQS,Standard,0
+Mercedes-Benz,Mercedes-EQ EQS SUV,Standard,0
+Mercedes-Benz,Mercedes-Maybach EQS SUV,Standard,0
+Mercedes-Benz,Mercedes-Maybach GLS,Standard,0
+Mercedes-Benz,Mercedes-Maybach S 600,Standard,0
+Mercedes-Benz,Mercedes-Maybach S-Class,Standard,0
+Mercedes-Benz,Metris Cargo,Standard,0
+Mercedes-Benz,Metris Passenger,Standard,0
+Mercedes-Benz,Metris WORKER Cargo,Standard,0
+Mercedes-Benz,Metris WORKER Passenger,Standard,0
+Mercedes-Benz,R-Class,Standard,0
 Mercedes-Benz,S-Class,Standard,0
-Mercedes-Benz,SLC-Class,Standard,0
+Mercedes-Benz,SL,Standard,0
 Mercedes-Benz,SL-Class,Standard,0
+Mercedes-Benz,SLC,Standard,0
+Mercedes-Benz,SLK,Standard,0
 Mercedes-Benz,SLK-Class,Standard,0
 Mercedes-Benz,SLR McLaren,Standard,0
 Mercedes-Benz,SLS-Class,Standard,0
+Mercedes-Benz,Sprinter 1500 Cargo,Standard,0
+Mercedes-Benz,Sprinter 1500 Passenger,Standard,0
+Mercedes-Benz,Sprinter 2500 Cargo,Standard,0
+Mercedes-Benz,Sprinter 2500 Crew,Standard,0
+Mercedes-Benz,Sprinter 2500 Passenger,Standard,0
+Mercedes-Benz,Sprinter 3500 Cargo,Standard,0
+Mercedes-Benz,Sprinter 3500 Crew,Standard,0
+Mercedes-Benz,Sprinter 3500 XD Cargo,Standard,0
+Mercedes-Benz,Sprinter 3500 XD Crew,Standard,0
+Mercedes-Benz,Sprinter 4500 Cargo,Standard,0
+Mercedes-Benz,Sprinter 4500 Crew,Standard,0
+Mercedes-Benz,Sprinter WORKER Cargo,Standard,0
+Mercedes-Benz,Sprinter WORKER Passenger,Standard,0
+Mercedes-Benz,eSprinter,Standard,0
+Mercury,Capri,Standard,0
 Mercury,Cougar,Standard,0
 Mercury,Grand Marquis,Standard,0
 Mercury,Marauder,Standard,0
+Mercury,Mariner,Standard,0
 Mercury,Milan,Standard,0
 Mercury,Montego,Standard,0
+Mercury,Monterey,Standard,0
+Mercury,Mountaineer,Standard,0
 Mercury,Mystique,Standard,0
 Mercury,Sable,Standard,0
+Mercury,Topaz,Standard,0
 Mercury,Tracer,Standard,0
-Meyers Manx,Manx 2.0,Standard,0
-Meyers Manx,Resorter,Standard,0
-Mgs Grand Sport (Mardikian),Miami,Standard,0
-Mini,Clubman,Standard,0
-Mini,Cooper,Standard,0
-Mini,Cooper Convertible,Standard,0
-Mini,Cooper Coupe,Standard,0
-Mini,Cooper Roadster,Standard,0
-Mini,Countryman,Standard,0
-Mini,Hardtop,Standard,0
-Mini,Paceman,Standard,0
+Mercury,Villager,Standard,0
 Mitsubishi,3000GT,Standard,0
 Mitsubishi,Diamante,Standard,0
 Mitsubishi,Eclipse,Standard,0
+Mitsubishi,Eclipse Cross,Standard,0
+Mitsubishi,Endeavor,Standard,0
 Mitsubishi,Expo,Standard,0
 Mitsubishi,Galant,Standard,0
-Mitsubishi,i-MiEV,Standard,0
 Mitsubishi,Lancer,Standard,0
 Mitsubishi,Lancer Evolution,Standard,0
-Mitsubishi,Lancer SportBack,Standard,0
+Mitsubishi,Mighty Max Macro Cab,Standard,0
+Mitsubishi,Mighty Max Regular Cab,Standard,0
 Mitsubishi,Mirage,Standard,0
 Mitsubishi,Mirage G4,Standard,0
-Mk Sportscars,RX5,Standard,0
-Mk Sportscars,Sport,Standard,0
-Moke,Gen 1 EV,Standard,0
-Mosler,MT900s,Standard,0
-Mosler,Raptor,Standard,0
-Mycar,CV .2,Standard,0
+Mitsubishi,Montero,Standard,0
+Mitsubishi,Montero Sport,Standard,0
+Mitsubishi,Outlander,Standard,0
+Mitsubishi,Outlander PHEV,Standard,0
+Mitsubishi,Outlander Sport,Standard,0
+Mitsubishi,Precis,Standard,0
+Mitsubishi,Raider Double Cab,Standard,0
+Mitsubishi,Raider Extended Cab,Standard,0
+Mitsubishi,i-MiEV,Standard,0
 Nissan,200SX,Standard,0
 Nissan,240SX,Standard,0
 Nissan,300ZX,Standard,0
 Nissan,350Z,Standard,0
 Nissan,370Z,Standard,0
+Nissan,400Z,Standard,0
 Nissan,Altima,Standard,0
-Nissan,Altra,Standard,0
-Nissan,Altra-EV,Standard,0
-Nissan,Ariya Hatchback,Standard,0
+Nissan,Ariya,Standard,0
+Nissan,Armada,Standard,0
+Nissan,Frontier Crew Cab,Standard,0
+Nissan,Frontier King Cab,Standard,0
+Nissan,Frontier Regular Cab,Standard,0
 Nissan,GT-R,Standard,0
+Nissan,JUKE,Standard,0
 Nissan,Kicks,Standard,0
-Nissan,Kicks Play,Standard,0
-Nissan,Leaf,Standard,0
+Nissan,King Cab,Standard,0
+Nissan,LEAF,Standard,0
 Nissan,Maxima,Standard,0
-Nissan,NISSAN Z,Standard,0
+Nissan,Murano,Standard,0
+Nissan,NV1500 Cargo,Standard,0
+Nissan,NV200,Standard,0
+Nissan,NV200 Taxi,Standard,0
+Nissan,NV2500 HD Cargo,Standard,0
+Nissan,NV3500 HD Cargo,Standard,0
+Nissan,NV3500 HD Passenger,Standard,0
+Nissan,NX,Standard,0
+Nissan,Pathfinder,Standard,0
+Nissan,Pathfinder Armada,Standard,0
+Nissan,Quest,Standard,0
+Nissan,Regular Cab,Standard,0
+Nissan,Rogue,Standard,0
+Nissan,Rogue Select,Standard,0
 Nissan,Rogue Sport,Standard,0
 Nissan,Sentra,Standard,0
+Nissan,Stanza,Standard,0
+Nissan,TITAN Single Cab,Standard,0
+Nissan,TITAN XD Crew Cab,Standard,0
+Nissan,TITAN XD King Cab,Standard,0
+Nissan,TITAN XD Single Cab,Standard,0
+Nissan,Titan Crew Cab,Standard,0
+Nissan,Titan King Cab,Standard,0
 Nissan,Versa,Standard,0
 Nissan,Versa Note,Standard,0
-Njd Automotive Llc,R32,Standard,0
+Nissan,Xterra,Standard,0
+Nissan,Z,Standard,0
+Nissan,cube,Standard,0
+Oldsmobile,88,Standard,0
+Oldsmobile,98,Standard,0
 Oldsmobile,Achieva,Standard,0
 Oldsmobile,Alero,Standard,0
 Oldsmobile,Aurora,Standard,0
+Oldsmobile,Bravada,Standard,0
+Oldsmobile,Ciera,Standard,0
+Oldsmobile,Custom Cruiser,Standard,0
 Oldsmobile,Cutlass,Standard,0
 Oldsmobile,Cutlass Ciera,Standard,0
+Oldsmobile,Cutlass Cruiser,Standard,0
 Oldsmobile,Cutlass Supreme,Standard,0
-Oldsmobile,Eighty Eight (88),Standard,0
 Oldsmobile,Intrigue,Standard,0
 Oldsmobile,LSS,Standard,0
-Oldsmobile,Ninety Eight (98),Standard,0
 Oldsmobile,Regency,Standard,0
-Opel,Ampera,Standard,0.15
-Opel,Ampera-e,Standard,0.15
-Opel,Ampera-e EV,Standard,0.15
-Opel,Opel,Standard,0.15
-Opel,Roadster,Standard,0.15
-Pagani,Huayra,Standard,0
-Panoz,Panoz Roadster,Standard,0.15
-Panther,Kallista,Standard,0
-Pas,AMG,Standard,0
-Pas,GLD,Standard,0
-Pas,GLS,Standard,0
-Pas,HSE,Standard,0
-Pas,LSX,Standard,0
-Peugeot,405,Standard,0
-Peugeot,505,Standard,0
-Phoenix Motorcars,Phoenix Motorcars,Standard,0
-"Phoenix Sports Cars, Inc.","Phoenix Sports Cars, Inc.",Standard,0
+Oldsmobile,Silhouette,Standard,0
+Oldsmobile,Toronado,Standard,0
+Panoz,Esperante,Standard,0.15
+Plymouth,Acclaim,Standard,0
 Plymouth,Breeze,Standard,0
+Plymouth,Colt,Standard,0
+Plymouth,Colt Vista,Standard,0
+Plymouth,Grand Voyager,Standard,0
+Plymouth,Laser,Standard,0
 Plymouth,Neon,Standard,0
 Plymouth,Prowler,Standard,0
-Polestar,PS1,Standard,0
-Polestar,PS2,Standard,0
+Plymouth,Sundance,Standard,0
+Plymouth,Voyager,Standard,0
+Polestar,1,Standard,0
+Polestar,2,Standard,0
+Polestar,3,Standard,0
+Polestar,4,Standard,0
+Polestar,5,Standard,0
+Pontiac,Aztek,Standard,0
 Pontiac,Bonneville,Standard,0
 Pontiac,Firebird,Standard,0
 Pontiac,G3,Standard,0
 Pontiac,G5,Standard,0
 Pontiac,G6,Standard,0
+Pontiac,G6 (2009.5),Standard,0
 Pontiac,G8,Standard,0
-Pontiac,Grand AM,Standard,0
-Pontiac,Grand Prix,Standard,0
 Pontiac,GTO,Standard,0
-Pontiac,Matiz,Standard,0
-Pontiac,Pursuit,Standard,0
+Pontiac,Grand Am,Standard,0
+Pontiac,Grand Prix,Standard,0
+Pontiac,LeMans,Standard,0
+Pontiac,Montana,Standard,0
+Pontiac,Montana SV6,Standard,0
 Pontiac,Solstice,Standard,0
+Pontiac,Sunbird,Standard,0
 Pontiac,Sunfire,Standard,0
+Pontiac,Torrent,Standard,0
+Pontiac,Trans Sport,Standard,0
 Pontiac,Vibe,Standard,0
-Pontiac,Wave,Standard,0
-Porsche,911,Standard,0.15
-Porsche,918,Standard,0.15
 Porsche,718 Boxster,Standard,0.15
 Porsche,718 Cayman,Standard,0.15
 Porsche,718 Spyder,Standard,0.15
+Porsche,911,Standard,0.15
+Porsche,928,Standard,0.15
+Porsche,968,Standard,0.15
 Porsche,Boxster,Standard,0.15
+Porsche,Carrera GT,Standard,0.15
 Porsche,Cayenne,Standard,0.15
+Porsche,Cayenne Coupe,Standard,0.15
 Porsche,Cayman,Standard,0.15
+Porsche,Macan,Standard,0.15
 Porsche,Panamera,Standard,0.15
 Porsche,Taycan,Standard,0.15
-Rally Sport,RS 200,Standard,0
-Rally Sport,RS Cosworth,Standard,0
-Renaissance,Tropica,Standard,0
-Revology,M6466,Standard,0
-Rimac,Nevera,Standard,0
-Rocket Sled Motors,GTM Coupe,Standard,0.2
-Rocket Sled Motors,Roadster ZR,Standard,0.2
-Rolls-Royce,Corniche,Standard,0.2
+Porsche,Taycan Cross Turismo,Standard,0.15
+Porsche,Taycan Sport Turismo,Standard,0.15
+Ram,1500 Classic Crew Cab,Standard,0
+Ram,1500 Classic Quad Cab,Standard,0
+Ram,1500 Classic Regular Cab,Standard,0
+Ram,1500 Crew Cab,Standard,0
+Ram,1500 Quad Cab,Standard,0
+Ram,1500 REV,Standard,0
+Ram,1500 Ramcharger,Standard,0
+Ram,1500 Regular Cab,Standard,0
+Ram,2500 Crew Cab,Standard,0
+Ram,2500 Mega Cab,Standard,0
+Ram,2500 Regular Cab,Standard,0
+Ram,3500 Crew Cab,Standard,0
+Ram,3500 Mega Cab,Standard,0
+Ram,3500 Regular Cab,Standard,0
+Ram,C/V,Standard,0
+Ram,C/V Tradesman,Standard,0
+Ram,Dakota Crew Cab,Standard,0
+Ram,Dakota Extended Cab,Standard,0
+Ram,ProMaster 1500 Cargo,Standard,0
+Ram,ProMaster 2500 Cargo,Standard,0
+Ram,ProMaster 3500 Cargo,Standard,0
+Ram,ProMaster Cargo Van,Standard,0
+Ram,ProMaster City,Standard,0
+Ram,ProMaster Window Van,Standard,0
+Rivian,R1S,Standard,0
+Rivian,R1T,Standard,0
+Rolls-Royce,Cullinan,Standard,0.2
 Rolls-Royce,Dawn,Standard,0.2
 Rolls-Royce,Ghost,Standard,0.2
-Rolls-Royce,Park Ward,Standard,0.2
 Rolls-Royce,Phantom,Standard,0.2
-Rolls-Royce,Silver Dawn,Standard,0.2
-Rolls-Royce,Silver Seraph,Standard,0.2
-Rolls-Royce,Silver Spirit,Standard,0.2
-Rolls-Royce,Silver Spur,Standard,0.2
-Rolls-Royce,Spectre,Standard,0.2
-Rolls-Royce,Touring Limousine,Standard,0.2
 Rolls-Royce,Wraith,Standard,0.2
-Rs Spider,E,Standard,0
-Rs Spider,Sport Spider,Standard,0
-Ruf,CTR Anniversary / CTR2 / Turbo R / BTR / RCT,Standard,0
-Ruf,CTR1,Standard,0
-Ruf,CTR3 / RtR / Rt12,Standard,0
-Ruf,SCR / R Spyder / Speedster,Standard,0
-Saab,900,Standard,0
-Saab,9000,Standard,0
+SRT,Viper,Standard,0
 Saab,9-2X,Standard,0
 Saab,45903,Standard,0
+Saab,9-4X,Standard,0
 Saab,45905,Standard,0
-Saleen,S7,Standard,0
+Saab,9-7X,Standard,0
+Saab,900,Standard,0
+Saab,9000,Standard,0
 Saturn,Astra,Standard,0
 Saturn,Aura,Standard,0
 Saturn,Ion,Standard,0
-Saturn,L200,Standard,0
-Saturn,L300,Standard,0
-Saturn,LS,Standard,0
-Saturn,LS1,Standard,0
-Saturn,LS2,Standard,0
-Saturn,LW1,Standard,0
-Saturn,LW2,Standard,0
-Saturn,LW200,Standard,0
-Saturn,LW300,Standard,0
-Saturn,SC1,Standard,0
-Saturn,SC2,Standard,0
-Saturn,Sky,Standard,0
-Saturn,SL,Standard,0
-Saturn,SL1,Standard,0
-Saturn,SL2,Standard,0
-Saturn,SW1,Standard,0
-Saturn,SW2,Standard,0
-Scuderia Cameron Glickenhaus (Scg),002CS,Standard,0
-Scuderia Cameron Glickenhaus (Scg),002S,Standard,0
-Scuderia Cameron Glickenhaus (Scg),003C,Standard,0
-Scuderia Cameron Glickenhaus (Scg),003CS,Standard,0
-Scuderia Cameron Glickenhaus (Scg),003S,Standard,0
-Scuderia Cameron Glickenhaus (Scg),004C,Standard,0
-Scuderia Cameron Glickenhaus (Scg),004CS,Standard,0
-Scuderia Cameron Glickenhaus (Scg),004S,Standard,0
-Scuderia Cameron Glickenhaus (Scg),005C,Standard,0
-Scuderia Cameron Glickenhaus (Scg),005CS,Standard,0
-Scuderia Cameron Glickenhaus (Scg),005S,Standard,0
-Scuderia Cameron Glickenhaus (Scg),006C,Standard,0
-Scuderia Cameron Glickenhaus (Scg),006CS,Standard,0
-Scuderia Cameron Glickenhaus (Scg),006S,Standard,0
-Scuderia Cameron Glickenhaus (Scg),007CS,Standard,0
-Scuderia Cameron Glickenhaus (Scg),008S,Standard,0
-Sf Motors Inc.,SF5,Standard,0
-Shay Reproduction,Model A,Standard,0
-Shay Reproduction,Thunderbird,Standard,0
-Shelby,Cobra,Standard,0.15
-Shelby,GT,Standard,0.15
-Smart,EQ Fortwo,Standard,0
-Smart,Fortwo,Standard,0
-Smart,Fortwo Electric Drive,Standard,0
-Smart,smart,Standard,0
-Solectria,Force,Standard,0
-Solectria,Sunrise,Standard,0
-Spyker,C12,Standard,0
-Spyker,C8,Standard,0
-Spyker,D8/D12,Standard,0
-Ssc North America,Aggressor,Standard,0
-Ssc North America,Striker,Standard,0
-Ssc North America,Tuatara,Standard,0
-Stanford Customs,Classic Sedan,Standard,0
-Stanford Customs,Cordova Sedan,Standard,0
-Stanford Customs,Malibu Sedan,Standard,0
+Saturn,L-Series,Standard,0
+Saturn,Outlook,Standard,0
+Saturn,Relay,Standard,0
+Saturn,S-Series,Standard,0
+Saturn,SKY,Standard,0
+Saturn,VUE,Standard,0
+Scion,FR-S,Standard,0
+Scion,iA,Standard,0
+Scion,iM,Standard,0
+Scion,iQ,Standard,0
+Scion,tC,Standard,0
+Scion,xA,Standard,0
+Scion,xB,Standard,0
+Scion,xD,Standard,0
+Subaru,Ascent,Standard,0
+Subaru,B9 Tribeca,Standard,0
 Subaru,BRZ,Standard,0
+Subaru,Baja,Standard,0
+Subaru,Crosstrek,Standard,0
 Subaru,Forester,Standard,0
 Subaru,Impreza,Standard,0
+Subaru,Justy,Standard,0
 Subaru,Legacy,Standard,0
+Subaru,Loyale,Standard,0
 Subaru,Outback,Standard,0
 Subaru,SVX,Standard,0
+Subaru,Solterra,Standard,0
+Subaru,Tribeca,Standard,0
 Subaru,WRX,Standard,0
-Supercar System,B2,Standard,0.25
+Subaru,XV Crosstrek,Standard,0
 Suzuki,Aerio,Standard,0
+Suzuki,Equator Crew Cab,Standard,0
+Suzuki,Equator Extended Cab,Standard,0
 Suzuki,Esteem,Standard,0
 Suzuki,Forenza,Standard,0
+Suzuki,Grand Vitara,Standard,0
 Suzuki,Kizashi,Standard,0
 Suzuki,Reno,Standard,0
-Suzuki,Swift,Standard,0
 Suzuki,SX4,Standard,0
+Suzuki,Samurai,Standard,0
+Suzuki,Sidekick,Standard,0
+Suzuki,Swift,Standard,0
 Suzuki,Verona,Standard,0
+Suzuki,Vitara,Standard,0
+Suzuki,X-90,Standard,0
+Suzuki,XL-7,Standard,0
+Suzuki,XL7,Standard,0
+Tesla,Cybertruck,Standard,0.15
 Tesla,Model 3,Standard,0.15
 Tesla,Model S,Standard,0.15
 Tesla,Model X,Standard,0.15
 Tesla,Model Y,Standard,0.15
-Tesla,Roadster,Standard,0.15
-Th!Nk,City,Standard,0
-Th!Nk,Neighbor,Standard,0
-Total Electric Vehicles,Electric Stinger,Standard,0
-Total Electric Vehicles,Trilectra XR,Standard,0
+Toyota,4Runner,Standard,0
 Toyota,86,Standard,0
 Toyota,Avalon,Standard,0
-Toyota,Camry,Standard,0
-Toyota,Camry Solara,Standard,0
-Toyota,Celica,Standard,0
+Toyota,Avalon Hybrid,Standard,0
 Toyota,C-HR,Standard,0
+Toyota,Camry,Standard,0
+Toyota,Camry Hybrid,Standard,0
+Toyota,Celica,Standard,0
 Toyota,Corolla,Standard,0
-Toyota,COROLLA iM,Standard,0
-Toyota,Corolla Matrix,Standard,0
+Toyota,Corolla Cross,Standard,0
+Toyota,Corolla Cross Hybrid,Standard,0
+Toyota,Corolla Hatchback,Standard,0
+Toyota,Corolla Hybrid,Standard,0
+Toyota,Corolla iM,Standard,0
+Toyota,Cressida,Standard,0
 Toyota,Crown,Standard,0
 Toyota,Crown Signia,Standard,0
 Toyota,Echo,Standard,0
-Toyota,FCHV-adv,Standard,0
+Toyota,FJ Cruiser,Standard,0
 Toyota,GR Corolla,Standard,0
+Toyota,GR Supra,Standard,0
 Toyota,GR86,Standard,0
-Toyota,Mirai,Standard,0
+Toyota,Grand Highlander,Standard,0
+Toyota,Grand Highlander Hybrid,Standard,0
+Toyota,Highlander,Standard,0
+Toyota,Highlander Hybrid,Standard,0
+Toyota,Land Cruiser,Standard,0
 Toyota,MR2,Standard,0
+Toyota,Matrix,Standard,0
+Toyota,Mirai,Standard,0
 Toyota,Paseo,Standard,0
+Toyota,Previa,Standard,0
 Toyota,Prius,Standard,0
-Toyota,Prius C,Standard,0
-Toyota,Prius Prime (PHEV),Standard,0
-Toyota,Prius V,Standard,0
-Toyota,Scion FR-S,Standard,0
-Toyota,Scion iA,Standard,0
-Toyota,Scion iM,Standard,0
-Toyota,Scion iQ,Standard,0
-Toyota,Scion tC,Standard,0
-Toyota,Scion xA,Standard,0
-Toyota,Scion xD,Standard,0
+Toyota,Prius Plug-in Hybrid,Standard,0
+Toyota,Prius Prime,Standard,0
+Toyota,Prius c,Standard,0
+Toyota,Prius v,Standard,0
+Toyota,RAV4,Standard,0
+Toyota,RAV4 Hybrid,Standard,0
+Toyota,RAV4 Prime,Standard,0
+Toyota,Regular Cab,Standard,0
+Toyota,Sequoia,Standard,0
+Toyota,Sienna,Standard,0
+Toyota,Solara,Standard,0
 Toyota,Supra,Standard,0
+Toyota,T100 Regular Cab,Standard,0
+Toyota,T100 Xtracab,Standard,0
+Toyota,Tacoma Access Cab,Standard,0
+Toyota,Tacoma Double Cab,Standard,0
+Toyota,Tacoma Regular Cab,Standard,0
+Toyota,Tacoma XtraCab,Standard,0
+Toyota,Tacoma Xtracab,Standard,0
 Toyota,Tercel,Standard,0
+Toyota,Tundra Access Cab,Standard,0
+Toyota,Tundra CrewMax,Standard,0
+Toyota,Tundra Double Cab,Standard,0
+Toyota,Tundra Hybrid CrewMax,Standard,0
+Toyota,Tundra Regular Cab,Standard,0
+Toyota,Venza,Standard,0
+Toyota,Xtra Cab,Standard,0
 Toyota,Yaris,Standard,0
+Toyota,Yaris Hatchback,Standard,0
 Toyota,Yaris iA,Standard,0
-Ucc,32,Standard,0
-Ucc,53,Standard,0
-Ucc,427,Standard,0
-Ukeycheyma,MONOM,Standard,0
-Ukeycheyma,ONO,Standard,0
-Vector Aeromotive Corporation,Vector,Standard,0
-Vintage Auto,SS100,Standard,0.15
-Vintage Auto,XK120,Standard,0.15
-Vintage Cruiser,LC40-R,Standard,0.15
-Vintage Cruiser,LC44-R,Standard,0.15
-Vintage Cruiser,LC45-R,Standard,0.15
-Vintage Cruiser,LC47-R,Standard,0.15
-Vintage Cruiser,LC78-R,Standard,0.15
-Vintage Cruiser,LC79-R,Standard,0.15
-Vintage Microbus,KOMBI CAMPER T2-R,Standard,0.15
-Vintage Microbus,KOMBI TRANSPORTER T2-R,Standard,0.15
-Vintage Rover,LRD110-R,Standard,0.15
-Vintage Rover,LRD90-R,Standard,0.15
-Vision Industries,SZR,Standard,0.15
+Toyota,bZ4X,Standard,0
+VinFast,VF 6,Standard,0
+VinFast,VF 7,Standard,0
+VinFast,VF 8,Standard,0
+VinFast,VF 9,Standard,0
 Volkswagen,Arteon,Standard,0
+Volkswagen,Atlas,Standard,0
+Volkswagen,Atlas Cross Sport,Standard,0
 Volkswagen,Beetle,Standard,0
-Volkswagen,Cabrio,Standard,0
 Volkswagen,CC,Standard,0
-Volkswagen,e-Golf,Standard,0
+Volkswagen,Cabrio,Standard,0
+Volkswagen,Cabrio (New),Standard,0
+Volkswagen,Cabriolet,Standard,0
+Volkswagen,Corrado,Standard,0
 Volkswagen,Eos,Standard,0
-Volkswagen,EuroVan,Standard,0
+Volkswagen,Eurovan,Standard,0
+Volkswagen,Fox,Standard,0
 Volkswagen,GLI,Standard,0
+Volkswagen,GTI,Standard,0
+Volkswagen,GTI (New),Standard,0
 Volkswagen,Golf,Standard,0
+Volkswagen,Golf (New),Standard,0
 Volkswagen,Golf Alltrack,Standard,0
 Volkswagen,Golf GTI,Standard,0
+Volkswagen,Golf III,Standard,0
 Volkswagen,Golf R,Standard,0
 Volkswagen,Golf SportWagen,Standard,0
-Volkswagen,GTI,Standard,0
+Volkswagen,ID.4,Standard,0
+Volkswagen,ID.7,Standard,0
+Volkswagen,ID.Buzz,Standard,0
 Volkswagen,Jetta,Standard,0
+Volkswagen,Jetta (New),Standard,0
 Volkswagen,Jetta GLI,Standard,0
+Volkswagen,Jetta III,Standard,0
 Volkswagen,Jetta SportWagen,Standard,0
-Volkswagen,Jetta Wagon,Standard,0
+Volkswagen,New Beetle,Standard,0
 Volkswagen,Passat,Standard,0
+Volkswagen,Passat (New),Standard,0
 Volkswagen,Phaeton,Standard,0
 Volkswagen,R32,Standard,0
 Volkswagen,Rabbit,Standard,0
+Volkswagen,Routan,Standard,0
+Volkswagen,Taos,Standard,0
+Volkswagen,Tiguan,Standard,0
+Volkswagen,Tiguan Limited,Standard,0
 Volkswagen,Touareg,Standard,0
-Volvo,850 Series,Standard,0
-Volvo,960 Series,Standard,0
+Volkswagen,Touareg 2,Standard,0
+Volkswagen,e-Golf,Standard,0
+Volvo,240,Standard,0
+Volvo,740,Standard,0
+Volvo,850,Standard,0
+Volvo,940,Standard,0
+Volvo,960,Standard,0
 Volvo,C30,Standard,0
+Volvo,C40 Recharge,Standard,0
 Volvo,C70,Standard,0
-Volvo,C70 / C30,Standard,0
+Volvo,EX30,Standard,0
+Volvo,EX90,Standard,0
 Volvo,S40,Standard,0
+Volvo,S40 (New),Standard,0
 Volvo,S60,Standard,0
-Volvo,S60 Cross Country,Standard,0
 Volvo,S70,Standard,0
 Volvo,S80,Standard,0
 Volvo,S90,Standard,0
 Volvo,V40,Standard,0
 Volvo,V50,Standard,0
 Volvo,V60,Standard,0
-Volvo,V60CC,Standard,0
 Volvo,V70,Standard,0
 Volvo,V90,Standard,0
-Volvo,V90CC,Standard,0
+Volvo,XC40,Standard,0
+Volvo,XC40 Recharge,Standard,0
 Volvo,XC60,Standard,0
 Volvo,XC70,Standard,0
 Volvo,XC90,Standard,0
-Warhawk Performance,Willys Coupe,Standard,0
-Westfall Motors Corp.,GT Model,Standard,0
-Yester Year Auto,Bucket,Standard,0
-Yester Year Auto,Cabriolet,Standard,0
-Yester Year Auto,Club Pickup,Standard,0
-Yester Year Auto,Cobra,Standard,0
-Yester Year Auto,Coupe,Standard,0
-Yester Year Auto,Delivery,Standard,0
-Yester Year Auto,Vicky,Standard,0
-Yester Year Auto,Willys,Standard,0
-Yugo,"102, GV",Standard,0
-Zeekr,RT,Standard,0
-Zoox,Zoox,Standard,0
+smart,fortwo,Standard,0
+smart,fortwo EQ cabrio,Standard,0
+smart,fortwo EQ coupe,Standard,0
+smart,fortwo cabrio,Standard,0
+smart,fortwo electric drive,Standard,0
+smart,fortwo electric drive cabrio,Standard,0
