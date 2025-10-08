@@ -38,9 +38,8 @@ def login_required(f):
 # -------------------------
 # 2️⃣  Neon DB connection
 # -------------------------
-app.config["SQLALCHEMY_DATABASE_URI"] = (
-    'postgresql://neondb_owner:npg_IyJDeigR0Tu8@ep-restless-cake-aeww1s35-pooler.c-2.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require'
-)
+
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL")
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 db = SQLAlchemy(app)
