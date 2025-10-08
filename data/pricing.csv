@@ -8,15 +8,15 @@ Light Duty,elec_car_dollies,Elec Car Dollies,2,flat,,,375,5,0,,,,,,,,"weather, v
 Light Duty,ld_winch/working time,LD Winch/Working Time,14,flat,,,175,5,15,,,,,,,,"weather, vehicle_location, truck_utilization, time_of_day"
 Light Duty,ld_unlock,LD Unlock,13,flat,,,85,5,10,,,,,,,,"weather, vehicle_location, truck_utilization, time_of_day"
 Light Duty,jump_start,Jump Start,8,flat,,,85,5,10,,,,,,,,"weather, vehicle_location, truck_utilization, time_of_day"
-Light Duty,tire_change,Tire Change,21,flat,,,85,5,10,,,,,,100,tow & tool_box,"weather, vehicle_location, truck_utilization, time_of_day"
+Light Duty,tire_change,Tire Change,21,flat,,,85,5,10,,,,,,,,"weather, vehicle_location, truck_utilization, time_of_day"
 Light Duty,hd_unlock,HD Unlock,6,flat,,,175,5,15,,,,,,,,"weather, vehicle_location, truck_utilization, time_of_day"
 Light Duty,indemnity,Indemnity,7,flat,,,175,,,,,,,,,,"weather, vehicle_location, truck_utilization, time_of_day"
 Light Duty,ld_swap,LD Swap,12,flat,,,175,,,,,,,,,,"weather, truck_utilization, time_of_day"
 Light Duty,window_film,Window Film,25,per_unit,side_window,Side Windows,,,,,20,,,,,,
 Light Duty,window_film,Window Film,25,per_unit,front_or_back_window,Front or Back Windows,,,,,40,,,,,,
-Light Duty,skid_steer_winch_box_off_road,Skid Steer Winch Box (Off Road),20,time_based,,,750,,,,,30,30,250,50,tow,"weather, truck_utilization, time_of_day"
+Light Duty,skid_steer_winch_box_off_road,Skid Steer Winch Box (Off Road),20,time_based,,,750,,,,,30,30,250,,,"weather, truck_utilization, time_of_day"
 Light Duty,race_ramps,Race Ramps,19,flat,,,50,,,,,,,,,,"weather, truck_utilization, time_of_day"
-Light Duty,go_jacks,Go Jacks,4,flat,,,100,,,,,,,,7000,(tow | tool_box | connex),"weather, truck_utilization, time_of_day"
+Light Duty,go_jacks,Go Jacks,4,flat,,,100,,,,,,,,,,"weather, truck_utilization, time_of_day"
 Light Duty,wheel_skates_ball_joint_specialty_tire_tools,Wheel skates/Ball Joint/Specialty tire tools,24,flat,,,50,,,,,,,,,,"weather, truck_utilization, time_of_day"
 Light Duty,z_wings_w_forklift,Z wings w/ forklift,27,flat,,,250,,,,,,,,,,"weather, truck_utilization, time_of_day"
 Light Duty,ld_set_in,LD Set In,11,flat,,,100,,,,,,,,,,"weather, truck_utilization, time_of_day"

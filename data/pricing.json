@@ -170,28 +170,7 @@
       "label": "Tire Change",
       "pricing_type": "flat",
       "dropdown_rank": 21,
-      "rules": [
-        {
-          "addon_rate": 100.0,
-          "condition": {
-            "type": "AND",
-            "triggers": [
-              {
-                "type": "SINGLE",
-                "triggers": [
-                  "tow"
-                ]
-              },
-              {
-                "type": "SINGLE",
-                "triggers": [
-                  "tool_box"
-                ]
-              }
-            ]
-          }
-        }
-      ],
+      "rules": [],
       "modifiers": {
         "make_model": false,
         "time_of_day": true,
@@ -327,34 +306,7 @@
       "label": "Go Jacks",
       "pricing_type": "flat",
       "dropdown_rank": 4,
-      "rules": [
-        {
-          "addon_rate": 7000.0,
-          "condition": {
-            "type": "OR",
-            "triggers": [
-              {
-                "type": "SINGLE",
-                "triggers": [
-                  "tow"
-                ]
-              },
-              {
-                "type": "SINGLE",
-                "triggers": [
-                  "tool_box"
-                ]
-              },
-              {
-                "type": "SINGLE",
-                "triggers": [
-                  "connex"
-                ]
-              }
-            ]
-          }
-        }
-      ],
+      "rules": [],
       "modifiers": {
         "make_model": false,
         "time_of_day": true,
