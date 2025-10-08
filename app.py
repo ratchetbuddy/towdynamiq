@@ -22,7 +22,8 @@ from functools import wraps
 # -------------------------
 app = Flask(__name__)
 
-app.secret_key = "supersecret"  # will be used for session later
+
+app.secret_key = os.getenv("FLASK_SECRET_KEY", "dev_default_key")
 
 app.permanent_session_lifetime = timedelta(minutes=30)
 
@@ -96,34 +97,28 @@ class User(db.Model):
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    error = None
     if request.method == "POST":
         username = request.form["username"]
         password = request.form["password"]
 
         user = User.query.filter_by(username=username).first()
 
-        if user and check_password_hash(user.password_hash, password):
+        if not user or not check_password_hash(user.password_hash, password):
+            error = "❌ Invalid username or password."
+        else:
+            # ✅ Save user session
             session["user"] = user.username
             session["role"] = user.role
-            # ✅ redirect to protected page after login
             return redirect(url_for("testquote007"))
-        else:
-            return "❌ Invalid username or password."
 
-    return render_template_string("""
-        <h2>Login</h2>
-        <form method="post">
-            <input name="username" placeholder="Username" required><br>
-            <input type="password" name="password" placeholder="Password" required><br>
-            <button type="submit">Login</button>
-        </form>
-    """)
+    return render_template("login.html", year=datetime.now().year, error=error)
 
 @app.route("/logout")
 def logout():
     session.pop("user", None)
     session.pop("role", None)
-    return redirect(url_for("home"))  # or any existing route in your app
+    return redirect(url_for("login"))  # or any existing route in your app
 
 
 @app.route("/testquote007")
