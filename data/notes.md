@@ -1,3 +1,22 @@
+10/07/2025 - Stone<>Dixit
+
+What kind of the vehicle?
+- Do you have the keys? -- New question?
+    - No logic addition
+- How many people require transport?? Max people?
+    - Only specific truck can carry people back
+
+⚙️ Optional but Nice-to-Have Additions
+
+If you want to polish it further (later, not required now):
+
+Feature	Why add it	Example
+
+Login redirect	Send user to /dashboard or /home after login	return redirect(url_for("dashboard"))
+@login_required decorator	Protect routes from unauthenticated access	Checks if "user" in session
+@role_required decorator	Limit admin-only pages	Checks if session["role"] == "admin"
+Audit fields	Track last login	Update user.last_login = datetime.utcnow() in DB
+
 1. All Mileage is charged based on where our driver starts, only for repeat customers the pricing would be from pickup and drop.
 
 

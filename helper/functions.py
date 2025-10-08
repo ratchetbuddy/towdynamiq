@@ -1,5 +1,7 @@
 import os, json, requests, math
 from datetime import datetime, timedelta
+from functools import wraps
+from flask import session, redirect, url_for
 
 API_KEY = os.environ.get("GOOGLE_MAPS_API_KEY", "YOUR_API_KEY_HERE")
 
@@ -276,3 +278,11 @@ def get_max_upcharge_cap(subtotal: float, bands: dict) -> float:
         if band["min"] <= subtotal <= band["max"]:
             return band["max_upcharge"]
     return 0.25  # fallback default
+
+def login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if "user" not in session:
+            return redirect(url_for("login"))
+        return f(*args, **kwargs)
+    return decorated_function

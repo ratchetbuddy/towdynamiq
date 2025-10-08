@@ -1,8 +1,8 @@
-from flask import Flask, render_template, request, jsonify, Response
+from flask import Flask, render_template, request, jsonify, Response, session, redirect, url_for, render_template_string, flash
 import os, math, json
 from collections import OrderedDict
 from datetime import datetime, timezone, timedelta   # ✅ add timedelta here
-
+from flask_sqlalchemy import SQLAlchemy
 from helper.functions import (
     get_distance,
     load_json,
@@ -10,17 +10,125 @@ from helper.functions import (
     evaluate_condition,
     format_breakdown,
     get_max_upcharge_cap,
-    PRICING_CALCULATORS
+    PRICING_CALCULATORS,
+    login_required,
 )
+from werkzeug.security import generate_password_hash, check_password_hash
+from functools import wraps
 
+
+# -------------------------
+# 1️⃣  Initialize Flask app
+# -------------------------
 app = Flask(__name__)
+
+app.secret_key = "supersecret"  # will be used for session later
+
+app.permanent_session_lifetime = timedelta(minutes=30)
+
+def login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if "user" not in session:
+            # redirect to login if user not logged in
+            return redirect(url_for("login"))
+        return f(*args, **kwargs)
+    return decorated_function
+
+# -------------------------
+# 2️⃣  Neon DB connection
+# -------------------------
+app.config["SQLALCHEMY_DATABASE_URI"] = (
+    'postgresql://neondb_owner:npg_IyJDeigR0Tu8@ep-restless-cake-aeww1s35-pooler.c-2.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require'
+)
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+
+db = SQLAlchemy(app)
+
+# -------------------------
+# ✅ Session timeout (auto logout)
+# -------------------------
+@app.before_request
+def session_timeout_check():
+    session.permanent = True
+
+    # Skip static/login/logout
+    if request.endpoint in ["static", "login", "logout", "calculate"]:
+        return
+
+    if "user" in session:
+        now = datetime.now(timezone.utc).timestamp()  # store as float seconds since epoch
+        last_activity = session.get("last_activity")
+        timeout_seconds = app.permanent_session_lifetime.total_seconds()
+
+        if last_activity:
+            elapsed = now - float(last_activity)
+            print(f"⏱ Elapsed: {elapsed:.2f}s / Timeout: {timeout_seconds:.2f}s")
+
+            if elapsed > timeout_seconds:
+                flash("You have been logged out due to inactivity.", "warning")
+                session.pop("user", None)
+                session.pop("role", None)
+                session.pop("last_activity", None)
+                return redirect(url_for("login"))
+
+        # ✅ Always update (this guarantees persistence)
+        session["last_activity"] = now
+
+
 
 @app.route("/")
 def home():
     return render_template("home.html")  # still "coming soon"
 
+# -------------------------
+# 3️⃣  User model
+# -------------------------
+class User(db.Model):
+    __tablename__ = "users"
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(50), unique=True, nullable=False)
+    password_hash = db.Column(db.String(255), nullable=False)
+    role = db.Column(db.String(20), default="customer")
+
+    def __repr__(self):
+        return f"<User {self.username}>"
+
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        username = request.form["username"]
+        password = request.form["password"]
+
+        user = User.query.filter_by(username=username).first()
+
+        if user and check_password_hash(user.password_hash, password):
+            session["user"] = user.username
+            session["role"] = user.role
+            # ✅ redirect to protected page after login
+            return redirect(url_for("testquote007"))
+        else:
+            return "❌ Invalid username or password."
+
+    return render_template_string("""
+        <h2>Login</h2>
+        <form method="post">
+            <input name="username" placeholder="Username" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <button type="submit">Login</button>
+        </form>
+    """)
+
+@app.route("/logout")
+def logout():
+    session.pop("user", None)
+    session.pop("role", None)
+    return redirect(url_for("home"))  # or any existing route in your app
+
 
 @app.route("/testquote007")
+@login_required  # ✅ protects this route
 def testquote007():
     pricing = load_json("pricing.json")
     dynamic_modifiers = load_json("dynamic_modifiers.json")
@@ -294,6 +402,10 @@ def calculate():
 
 
 if __name__ == "__main__":
+    with app.app_context():
+        db.create_all()  # ensures the users table exists in Neon
+        print("✅ Verified: users table exists in Neon.")    
+        
     debug_mode = os.environ.get("debug_mode", "false").lower() == "true"
     port = int(os.environ.get("PORT", 10000))  # use Render's PORT if present, else fallback
     app.run(host="0.0.0.0", port=port, debug=debug_mode)
