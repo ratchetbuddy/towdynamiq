@@ -334,7 +334,7 @@ def calculate():
 
         standard_total += standard_subtotal
         todynamiq_total += service_total
-        overall_pct_chng = (todynamiq_total-standard_total)/todynamiq_total * 100
+        overall_pct_chng = (todynamiq_total-standard_total)/standard_total * 100
 
 
     # -------------------------
