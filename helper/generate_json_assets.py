@@ -4,6 +4,7 @@ import os
 from collections import defaultdict
 import re
 
+
 def parse_condition(expr: str):
     expr = expr.strip()
 
@@ -40,39 +41,7 @@ def split_top_level(expr: str, op: str):
     parts.append(expr[start:].strip())
     return [p for p in parts if p]
 
-import csv
-import json
-import os
-from collections import defaultdict
 
-def parse_condition(expr: str):
-    expr = expr.strip()
-
-    if expr.startswith("(") and expr.endswith(")"):
-        return parse_condition(expr[1:-1].strip())
-
-    parts = split_top_level(expr, "|")
-    if len(parts) > 1:
-        return {"type": "OR", "triggers": [parse_condition(p) for p in parts]}
-
-    parts = split_top_level(expr, "&")
-    if len(parts) > 1:
-        return {"type": "AND", "triggers": [parse_condition(p) for p in parts]}
-
-    return {"type": "SINGLE", "triggers": [expr.strip()]}
-
-def split_top_level(expr: str, op: str):
-    parts, depth, start = [], 0, 0
-    for i, ch in enumerate(expr):
-        if ch == "(":
-            depth += 1
-        elif ch == ")":
-            depth -= 1
-        elif ch == op and depth == 0:
-            parts.append(expr[start:i].strip())
-            start = i + 1
-    parts.append(expr[start:].strip())
-    return [p for p in parts if p]
 
 def collect_all_modifiers(csv_file):
     all_mods = set()

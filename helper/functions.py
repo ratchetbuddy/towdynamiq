@@ -46,18 +46,25 @@ def get_billable_miles(actual_miles: int, dynamic_modifiers: dict) -> int:
 
     elif mode == "pattern":
         rules = dynamic_modifiers["bucket_mileage_pricing"]["pattern"]
-        if actual_miles <= 5:
-            return 0
+        free = rules.get("free_range", {})
+
+        # Handle free range
+        if free and free["min"] <= actual_miles <= free["max"]:
+            return free.get("billable_miles", free["max"])
+
         start = rules["start"]
         step = rules["first_step"]
         cap = start + step - 1
+
         while cap < rules["max_miles"]:
             if actual_miles <= cap:
                 return cap
             step += rules["step_growth"]
             start = cap + 1
             cap = start + step - 1
+
         return rules["max_miles"]
+
 
     raise ValueError(f"Unknown mileage mode: {mode}")
 

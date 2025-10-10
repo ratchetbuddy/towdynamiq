@@ -206,7 +206,7 @@
       "free_range": {
         "min": 0,
         "max": 5,
-        "billable_miles": 0
+        "billable_miles": 5
       }
     }
   },
